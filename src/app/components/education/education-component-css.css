@@ -1,0 +1,33 @@
+.education-section {
+  margin-top: 20px;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #3498db;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.education-item {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border-left: 3px solid #3498db;
+}
+
+.education-item h3 {
+  color: #3498db;
+  margin: 0 0 8px 0;
+}
+
+.education-item p {
+  margin: 0;
+  color: #7f8c8d;
+}

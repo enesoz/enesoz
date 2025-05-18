@@ -1,0 +1,14 @@
+<div class="skills-section">
+  <h2>TEKNİK BECERİLER</h2>
+  
+  <div class="skills-grid">
+    <div *ngFor="let key of getSkillKeys()" class="skill-category">
+      <h3>{{ key | titlecase }}</h3>
+      <div class="skill-tags">
+        <span *ngFor="let skill of skills[key]" class="skill-tag">
+          {{ skill }}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

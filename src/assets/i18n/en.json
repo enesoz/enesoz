@@ -1,0 +1,41 @@
+{
+  "header": {
+    "name": "Full Name",
+    "title": "Title",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "website": "Website"
+  },
+  "technicalSkills": {
+    "title": "Technical Skills",
+    "languages": "Programming Languages",
+    "frameworks": "Frameworks & Libraries",
+    "tools": "Tools & Technologies"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "company": "Company",
+    "position": "Position",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "current": "Present",
+    "responsibilities": "Responsibilities"
+  },
+  "education": {
+    "title": "Education",
+    "school": "School",
+    "degree": "Degree",
+    "field": "Field of Study",
+    "graduationDate": "Graduation Date"
+  },
+  "awards": {
+    "title": "Awards & Certifications",
+    "name": "Award Name",
+    "date": "Date",
+    "issuer": "Issuing Organization"
+  },
+  "print": {
+    "printCV": "Print CV"
+  }
+}

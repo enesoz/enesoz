@@ -1,0 +1,41 @@
+{
+  "header": {
+    "name": "Ad Soyad",
+    "title": "Ünvan",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "address": "Adres",
+    "website": "Web sitesi"
+  },
+  "technicalSkills": {
+    "title": "Teknik Beceriler",
+    "languages": "Programlama Dilleri",
+    "frameworks": "Çerçeveler ve Kütüphaneler",
+    "tools": "Araçlar ve Teknolojiler"
+  },
+  "experience": {
+    "title": "İş Deneyimi",
+    "company": "Şirket",
+    "position": "Pozisyon",
+    "startDate": "Başlangıç Tarihi",
+    "endDate": "Bitiş Tarihi",
+    "current": "Şu anda",
+    "responsibilities": "Sorumluluklar"
+  },
+  "education": {
+    "title": "Eğitim",
+    "school": "Okul",
+    "degree": "Derece",
+    "field": "Alan",
+    "graduationDate": "Mezuniyet Tarihi"
+  },
+  "awards": {
+    "title": "Ödüller ve Sertifikalar",
+    "name": "Ödül Adı",
+    "date": "Tarih",
+    "issuer": "Veren Kuruluş"
+  },
+  "print": {
+    "printCV": "CV'yi Yazdır"
+  }
+}

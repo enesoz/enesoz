@@ -1,0 +1,34 @@
+<div class="header">
+  <div class="personal-info">
+    <h1>{{ personalInfo.name }} {{ personalInfo.surname }}</h1>
+    <p class="location">{{ personalInfo.location }}</p>
+    <div class="titles">
+      <span *ngFor="let title of personalInfo.titles">{{ title }}</span>
+    </div>
+  </div>
+  
+  <div class="contact-info">
+    <h3>İletişim Bilgileri:</h3>
+    <p>{{ personalInfo.contact.phone }}</p>
+    <p>{{ personalInfo.contact.email }}</p>
+    
+    <h3>Web Profilleri:</h3>
+    <ul>
+      <li *ngFor="let profile of personalInfo.webProfiles">
+        <a [href]="'https://' + profile.url" target="_blank">{{ profile.name }}</a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="about-section">
+    <h3>HAKKINDA</h3>
+    <p>
+      <strong>Diller:</strong> 
+      <span *ngFor="let lang of personalInfo.about.languages; let last = last">
+        {{ lang.name }} ({{ lang.level }}){{ !last ? ', ' : '' }}
+      </span>
+    </p>
+    <p><strong>Tecrübe:</strong> {{ personalInfo.about.experience }}</p>
+    <p><strong>Askerlik Durumu:</strong> {{ personalInfo.about.militaryObligation }}</p>
+  </div>
+</div>
