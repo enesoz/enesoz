@@ -8,10 +8,11 @@ import {ExperienceComponent} from './components/experience/experience-component-
 import {EducationComponent} from './components/education/education-component-ts';
 import {AwardsComponent} from './components/awards/awards-component-ts';
 import {TranslateService} from '../services/translate_service';
+import {NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, PrintPageComponent, HeaderComponent, TechnicalSkillsComponent, ExperienceComponent, EducationComponent, AwardsComponent],
+  imports: [RouterOutlet, PrintPageComponent, HeaderComponent, TechnicalSkillsComponent, ExperienceComponent, EducationComponent, AwardsComponent, NgIf],
   templateUrl: 'app.component.html',
   styleUrl: 'app.component.css'
 })
