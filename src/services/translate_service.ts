@@ -1,8 +1,8 @@
 // src/services/translate.service.ts
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
-import { catchError, map, shareReplay } from 'rxjs/operators';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {Observable, of} from 'rxjs';
+import {catchError, map, shareReplay} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'

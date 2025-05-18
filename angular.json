@@ -86,9 +86,16 @@
             ],
             "styles": [
               "src/styles.css"
+            ]
+          },
+          "cli": {
+            "analytics": false,
+            "schematicCollections": [
+              "@angular/material"
             ],
-            "scripts": []
+            "packageManager": "npm"
           }
+        }
         }
       }
     }

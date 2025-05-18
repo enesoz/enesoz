@@ -1,10 +1,19 @@
-import { Component, Input } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Award} from '../../models/AwardInterface';
+import {TranslatePipe} from '../../../services/translate_pipe';
 
 @Component({
   selector: 'app-awards',
-  templateUrl: './awards.component.html',
-  styleUrls: ['./awards.component.css']
+  templateUrl: 'awards-component.html',
+  imports: [
+    TranslatePipe
+  ],
+  styleUrls: ['awards-component.css']
 })
 export class AwardsComponent {
-  @Input() awards: any[] = [];
+  @Input() awards: Award[] = [];
+
+  ngOnInit() {
+    console.log(this.awards);
+  }
 }

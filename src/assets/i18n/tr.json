@@ -30,10 +30,10 @@
     "graduationDate": "Mezuniyet Tarihi"
   },
   "awards": {
-    "title": "Ödüller ve Sertifikalar",
+    "title": "BAŞARILAR VE ÖDÜLLER",
     "name": "Ödül Adı",
     "date": "Tarih",
-    "issuer": "Veren Kuruluş"
+    "issuer": "Veren Kuruluş",
   },
   "print": {
     "printCV": "CV'yi Yazdır"

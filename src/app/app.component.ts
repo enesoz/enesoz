@@ -12,8 +12,8 @@ import {TranslateService} from '../services/translate_service';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, PrintPageComponent, HeaderComponent, TechnicalSkillsComponent, ExperienceComponent, EducationComponent, AwardsComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: 'app.component.html',
+  styleUrl: 'app.component.css'
 })
 export class AppComponent {
   title = 'my-cv';
