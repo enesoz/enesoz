@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {CvService} from '../services/cv-service-ts';
 import {PrintPageComponent} from './components/print-page/print-page-component-ts';
@@ -8,15 +8,15 @@ import {ExperienceComponent} from './components/experience/experience-component-
 import {EducationComponent} from './components/education/education-component-ts';
 import {AwardsComponent} from './components/awards/awards-component-ts';
 import {TranslateService} from '../services/translate_service';
-import {NgIf} from '@angular/common';
+import {CommonModule} from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, PrintPageComponent, HeaderComponent, TechnicalSkillsComponent, ExperienceComponent, EducationComponent, AwardsComponent, NgIf],
+  imports: [RouterOutlet, PrintPageComponent, HeaderComponent, TechnicalSkillsComponent, ExperienceComponent, EducationComponent, AwardsComponent, CommonModule],
   templateUrl: 'app.component.html',
   styleUrl: 'app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'my-cv';
   cvData: any;
   loading = true;
@@ -32,19 +32,20 @@ export class AppComponent {
   ngOnInit() {
     // Önce varsayılan dil çevirilerini yükle
     this.translateService.loadTranslations(this.translateService.getCurrentLang())
-      .subscribe(() => {
-        // Sonra CV verilerini yükle
-        this.cvService.getCvData().subscribe(
-          (data) => {
-            this.cvData = data;
-            this.loading = false;
-          },
-          (error) => {
-            console.error('Error loading CV data:', error);
-            this.error = true;
-            this.loading = false;
-          }
-        );
+      .subscribe({
+        next: () => {
+          this.cvService.getCvData().subscribe({
+            next: (data) => {
+              this.cvData = data;
+              this.loading = false;
+            },
+            error: (error) => {
+              console.error('Error loading CV data:', error);
+              this.error = true;
+              this.loading = false;
+            }
+          });
+        }
       });
   }
 

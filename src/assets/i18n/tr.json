@@ -5,7 +5,13 @@
     "email": "E-posta",
     "phone": "Telefon",
     "address": "Adres",
-    "website": "Web sitesi"
+    "website": "Web sitesi",
+    "contactInfo": "İletişim Bilgileri",
+    "websites": "Web Siteleri",
+    "about": "HAKKINDA",
+    "languages": "Diller",
+    "experience": "Tecrübe",
+    "militaryObligation": "Askerlik Durumu"
   },
   "technicalSkills": {
     "title": "Teknik Beceriler",
@@ -36,6 +42,8 @@
     "issuer": "Veren Kuruluş"
   },
   "print": {
-    "printCV": "CV'yi Yazdır"
+    "printCV": "CV'yi Yazdır",
+    "downloadPDF": "PDF İndir",
+    "downloadAlert": "PDF indirme işlevi entegre edilecek. Şimdilik Yazdır diyaloğu açılacak, PDF olarak kaydedin."
   }
 }

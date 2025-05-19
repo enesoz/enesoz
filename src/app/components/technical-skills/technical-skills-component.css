@@ -1,3 +1,4 @@
+
 .skills-section {
   margin-top: 20px;
 }
@@ -18,6 +19,8 @@ h2 {
 .skill-category h3 {
   color: #3498db;
   margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .skill-tags {
@@ -27,15 +30,29 @@ h2 {
 }
 
 .skill-tag {
-  background-color: #ecf0f1;
+  background-color: #f0f4f8;
   color: #2c3e50;
-  padding: 5px 10px;
-  border-radius: 4px;
+  padding: 6px 12px;
+  border-radius: 20px;
   font-size: 14px;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+  background-color: #e1e8ed;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 768px) {
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .skill-tag {
+    font-size: 13px;
+    padding: 5px 10px;
   }
 }

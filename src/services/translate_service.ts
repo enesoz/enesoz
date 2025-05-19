@@ -34,8 +34,8 @@ export class TranslateService {
           this.translations[lang] = response;
           return true;
         }),
-        catchError(() => {
-          console.error(`Could not load translations for language ${lang}`);
+        catchError((err) => {
+          console.error(`Could not load translations for language ${lang} due to reason ${err.message}`);
           return of(false);
         }),
         shareReplay(1)

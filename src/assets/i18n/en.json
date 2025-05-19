@@ -5,7 +5,13 @@
     "email": "Email",
     "phone": "Phone",
     "address": "Address",
-    "website": "Website"
+    "website": "Website",
+    "contactInfo": "Contact Information",
+    "websites": "Websites",
+    "about": "About",
+    "languages": "Languages",
+    "experience": "Experience",
+    "militaryObligation": "Military Obligation"
   },
   "technicalSkills": {
     "title": "Technical Skills",
@@ -36,6 +42,8 @@
     "issuer": "Issuing Organization"
   },
   "print": {
-    "printCV": "Print CV"
+    "printCV": "Print CV",
+    "downloadPDF": "Download PDF",
+    "downloadAlert": "PDF download functionality will be integrated. For now, the Print dialog will open, save as PDF."
   }
 }
