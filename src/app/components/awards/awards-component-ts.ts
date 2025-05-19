@@ -14,8 +14,4 @@ import {NgForOf} from '@angular/common';
 })
 export class AwardsComponent {
   @Input() awards: Award[] = [];
-
-  ngOnInit() {
-    console.log(this.awards);
-  }
 }

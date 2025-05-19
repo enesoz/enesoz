@@ -8,9 +8,8 @@ body {
   color: #2c3e50;
   line-height: 1.6;
 }
-
-titles {
-  color: #e74c3c;
+.my-titles{
+  color: #c12a2a !important;
 }
 
 * {
