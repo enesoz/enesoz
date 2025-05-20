@@ -59,7 +59,6 @@ export class TranslateService {
         return key; // Çeviri bulunamadı, anahtarı döndür
       }
     }
-
     return value;
   }
 }

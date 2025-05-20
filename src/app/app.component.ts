@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {RouterOutlet} from '@angular/router';
+import {RouterOutlet, ActivatedRoute} from '@angular/router';
 import {CvService} from '../services/cv-service-ts';
 import {PrintPageComponent} from './components/print-page/print-page-component-ts';
 import {HeaderComponent} from './components/header/header-component-ts';
@@ -16,7 +16,7 @@ import {CommonModule} from '@angular/common';
   templateUrl: 'app.component.html',
   styleUrl: 'app.component.css'
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'my-cv';
   cvData: any;
   loading = true;
@@ -25,31 +25,40 @@ export class AppComponent implements OnInit{
 
   constructor(
     private cvService: CvService,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private route: ActivatedRoute
   ) {
   }
 
   ngOnInit() {
-    // Önce varsayılan dil çevirilerini yükle
-    this.translateService.loadTranslations(this.translateService.getCurrentLang())
-      .subscribe({
-        next: () => {
-          this.cvService.getCvData().subscribe({
-            next: (data) => {
-              this.cvData = data;
-              this.loading = false;
-            },
-            error: (error) => {
-              console.error('Error loading CV data:', error);
-              this.error = true;
-              this.loading = false;
-            }
-          });
-        }
-      });
+    // Route parametresinden dili al ve dil değiştirme işlemini gerçekleştir
+    this.route.paramMap.subscribe(params => {
+      const langParam = params.get('lang');
+      this.changeLanguage(langParam);
+    });
   }
 
-  changeLanguage(lang: string) {
-    this.translateService.setLanguage(lang).subscribe();
+
+  private loadCvData() {
+    this.cvService.getCvData().subscribe({
+      next: (data) => {
+        this.cvData = data;
+        this.loading = false;
+      },
+      error: (error) => {
+        console.error('Error loading CV data:', error);
+        this.error = true;
+        this.loading = false;
+      }
+    });
+  }
+
+  changeLanguage(lang: string | null) {
+    let langToUse = lang === null ? 'tr' : lang;
+    this.translateService.setLanguage(langToUse).subscribe({
+      next: () => {
+        this.loadCvData();
+      }
+    });
   }
 }
