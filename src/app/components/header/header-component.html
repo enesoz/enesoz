@@ -1,4 +1,15 @@
 <div class="header">
+  <div class="language-switcher">
+    <div class="lang-options">
+      <button
+        *ngFor="let lang of languages"
+        [class.active]="isActive(lang.code)"
+        (click)="switchLanguage(lang.code)">
+        {{ lang.name }}
+      </button>
+    </div>
+  </div>
+
   <div class="personal-info">
     <h1>{{ personalInfo.name }} {{ personalInfo.surname }}</h1>
     <p class="location">{{ personalInfo.location }}</p>
@@ -8,14 +19,25 @@
   </div>
 
   <div class="contact-info">
-    <h3 class="titles">{{ 'header.contactInfo' | translate}}</h3>
-    <p>{{ personalInfo.contact.phone }}</p>
-    <p>{{ personalInfo.contact.email }}</p>
+    <h3 class="section-title">{{ 'header.contactInfo' | translate}}</h3>
 
-    <h3> {{ 'header.websites'| translate }}</h3>
-    <ul>
-      <li *ngFor="let profile of personalInfo.webProfiles">
-        <a [href]="'https://' + profile.url" target="_blank">{{ profile.name }}</a>
+    <div class="contact-item">
+      <div class="contact-icon">📱</div>
+      <div class="contact-text">{{ personalInfo.contact.phone }}</div>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-icon">✉️</div>
+      <div class="contact-text">
+        <a href="mailto:{{ personalInfo.contact.email }}">{{ personalInfo.contact.email }}</a>
+      </div>
+    </div>
+
+    <h3 class="section-title">{{ 'header.websites'| translate }}</h3>
+    <ul class="website-list">
+      <li *ngFor="let profile of personalInfo.webProfiles" class="website-item">
+        <div class="contact-icon">🔗</div>
+        <a [href]="'https://' + profile.url" target="_blank" class="website-link">{{ profile.name }}</a>
       </li>
     </ul>
   </div>

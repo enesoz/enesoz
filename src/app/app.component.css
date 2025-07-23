@@ -1,31 +1,52 @@
+:root {
+  /* Color Scheme */
+  --primary-color: #3498db;      /* Blue */
+  --secondary-color: #2c3e50;    /* Dark Blue */
+  --text-color: #333333;         /* Dark Gray */
+  --light-gray: #7f8c8d;         /* Light Gray */
+  --background-color: #ffffff;   /* White */
+  --accent-color: #e74c3c;       /* Red - for errors and important highlights */
+  --border-color: #eeeeee;       /* Very Light Gray - for borders */
+  --hover-color: #2980b9;        /* Darker Blue - for hover states */
+  --light-bg-color: #f9f9f9;     /* Very Light Gray - for section backgrounds */
+
+  /* Spacing */
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 15px;
+  --spacing-lg: 20px;
+  --spacing-xl: 30px;
+}
+
 .cv-container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: var(--spacing-lg);
   font-family: 'Roboto', Arial, sans-serif;
-  background-color: #fff;
+  background-color: var(--background-color);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: var(--text-color);
 }
 
 .main-content {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  margin-top: 30px;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
 }
 
 .loading, .error {
   text-align: center;
-  padding: 20px;
+  padding: var(--spacing-lg);
   font-size: 18px;
 }
 
 .error {
-  color: #e74c3c;
+  color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
   .cv-container {
-    padding: 10px;
+    padding: var(--spacing-sm);
   }
 }

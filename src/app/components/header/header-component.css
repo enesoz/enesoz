@@ -1,80 +1,159 @@
 .header {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-areas:
-    "personal contact"
-    "about about";
-  gap: 20px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #3498db;
+    "language language"
+    "personal personal"
+    "contact about";
+  gap: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.language-switcher {
+  grid-area: language;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: var(--spacing-sm);
+}
+
+.lang-options {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.lang-options button {
+  background-color: var(--light-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.lang-options button:hover {
+  background-color: var(--border-color);
+}
+
+.lang-options button.active {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border-color: var(--primary-color);
 }
 
 .personal-info {
   grid-area: personal;
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
 }
 
 .contact-info {
   grid-area: contact;
+  padding: var(--spacing-md);
+  background-color: var(--light-bg-color);
+  border-radius: 5px;
 }
 
 .about-section {
   grid-area: about;
+  padding: var(--spacing-md);
+  background-color: var(--light-bg-color);
+  border-radius: 5px;
 }
 
 h1 {
   font-size: 36px;
-  color: #2c3e50;
-  margin-bottom: 5px;
+  color: var(--secondary-color);
+  margin-bottom: var(--spacing-xs);
 }
 
 .location {
   font-size: 18px;
-  color: #7f8c8d;
-  margin-bottom: 15px;
+  color: var(--light-gray);
+  margin-bottom: var(--spacing-md);
 }
 
 .h-titles {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 15px;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
 }
 
 .h-titles span {
-  background-color: #3498db;
-  color: #fff;
-  padding: 5px 10px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: 4px;
   font-size: 14px;
 }
 
-h3 {
-  margin-bottom: 8px;
-  color: #3498db;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 5px;
+.section-title {
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--spacing-xs);
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.contact-info p {
-  margin: 5px 0;
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
 }
 
-.contact-info ul {
+.contact-icon {
+  font-size: 20px;
+  margin-right: var(--spacing-sm);
+  color: var(--primary-color);
+  width: 25px;
+  text-align: center;
+}
+
+.contact-text {
+  flex: 1;
+}
+
+.website-list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: var(--spacing-sm) 0;
 }
 
-.contact-info ul li {
-  margin-bottom: 5px;
+.website-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.website-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.website-link:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.about-section p {
+  margin: var(--spacing-sm) 0;
+  line-height: 1.5;
 }
 
 .contact-info a {
-  color: #3498db;
+  color: var(--primary-color);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .contact-info a:hover {
+  color: var(--secondary-color);
   text-decoration: underline;
 }
 
@@ -82,8 +161,45 @@ h3 {
   .header {
     grid-template-columns: 1fr;
     grid-template-areas:
+      "language"
       "personal"
       "contact"
       "about";
+    gap: var(--spacing-md);
+  }
+
+  .personal-info {
+    text-align: center;
+  }
+
+  .h-titles {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .location {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    gap: var(--spacing-sm);
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .h-titles span {
+    font-size: 12px;
+    padding: var(--spacing-xs);
+  }
+
+  .personal-info, .contact-info, .about-section {
+    padding: var(--spacing-sm);
   }
 }
