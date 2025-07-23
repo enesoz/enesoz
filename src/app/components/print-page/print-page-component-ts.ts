@@ -24,20 +24,20 @@ import {TranslateService} from '../../../services/translate_service';
     .print-actions {
       display: flex;
       justify-content: flex-end;
-      margin-bottom: 20px;
-      gap: 10px;
+      margin-bottom: var(--spacing-lg);
+      gap: var(--spacing-sm);
     }
 
     .print-button, .download-button {
       padding: 8px 16px;
-      background-color: #3498db;
-      color: white;
+      background-color: var(--primary-color);
+      color: var(--background-color);
       border: none;
       border-radius: 4px;
       cursor: pointer;
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: var(--spacing-xs);
     }
 
     .download-button {
@@ -45,7 +45,7 @@ import {TranslateService} from '../../../services/translate_service';
     }
 
     .print-button:hover {
-      background-color: #2980b9;
+      background-color: var(--hover-color);
     }
 
     .download-button:hover {

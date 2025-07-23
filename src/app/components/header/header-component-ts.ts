@@ -1,8 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PersonalInfo } from '../../models/PersonalInfoInterfaces';
 import { TranslatePipe } from '../../../services/translate_pipe';
-import { NgFor, NgForOf, NgIf } from '@angular/common';
+import { NgForOf } from '@angular/common';
 import { TranslateService } from '../../../services/translate_service';
+import { Router } from '@angular/router';
 
 /**
  * Header component that displays personal information and provides language switching functionality
@@ -12,8 +13,7 @@ import { TranslateService } from '../../../services/translate_service';
   templateUrl: 'header-component.html',
   imports: [
     TranslatePipe,
-    NgForOf,
-    NgIf
+    NgForOf
   ],
   styleUrls: ['header-component.css']
 })
@@ -32,8 +32,12 @@ export class HeaderComponent implements OnInit {
   /**
    * Constructor with dependency injection
    * @param translateService - Service for handling translations
+   * @param router - Router for navigation
    */
-  constructor(private translateService: TranslateService) {}
+  constructor(
+    private translateService: TranslateService,
+    private router: Router
+  ) {}
 
   /**
    * Initialize component
@@ -48,6 +52,10 @@ export class HeaderComponent implements OnInit {
    * @param lang - Language code to switch to
    */
   switchLanguage(lang: string): void {
+    // Navigate to the route with the selected language code
+    this.router.navigate([lang]);
+
+    // Update the current language in the service and component
     this.translateService.setLanguage(lang).subscribe(success => {
       if (success) {
         this.currentLang = lang;

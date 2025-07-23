@@ -1,4 +1,4 @@
-<div class="cv-container" *ngIf="!loading && !error">
+<main class="cv-container" *ngIf="!loading && !error">
   <app-print-page></app-print-page>
   <app-header [personalInfo]="cvData.personalInfo"></app-header>
 
@@ -9,12 +9,25 @@
     <app-awards [awards]="cvData.awards"></app-awards>
   </div>
 
-  <div *ngIf="loading" class="loading">
-    Yükleniyor...
-  </div>
+  <footer class="cv-footer">
+    <p>© {{ currentYear }} {{ cvData.personalInfo?.name }} {{ cvData.personalInfo?.surname }}</p>
+    <p>Last updated: July 2025</p>
+  </footer>
+</main>
 
-  <div *ngIf="error" class="error">
-    CV verisi yüklenirken bir hata oluştu. Lütfen sayfayı yenileyin.
-  </div>
+<div *ngIf="loading" class="loading" role="status" aria-live="polite">
+  <svg class="spinner" viewBox="0 0 50 50" aria-hidden="true">
+    <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+  </svg>
+  <span>Yükleniyor...</span>
+</div>
+
+<div *ngIf="error" class="error" role="alert">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="10"></circle>
+    <line x1="12" y1="8" x2="12" y2="12"></line>
+    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+  </svg>
+  CV verisi yüklenirken bir hata oluştu. Lütfen sayfayı yenileyin.
 </div>
 

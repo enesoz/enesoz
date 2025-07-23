@@ -22,6 +22,7 @@ export class AppComponent implements OnInit {
   loading = true;
   error = false;
   languages = ['tr', 'en'];
+  currentYear = new Date().getFullYear();
 
   constructor(
     private cvService: CvService,
