@@ -1,17 +1,17 @@
-import {Component, OnInit} from '@angular/core';
-import {RouterOutlet, ActivatedRoute} from '@angular/router';
-import {CvService} from '../services/cv-service-ts';
-import {PrintPageComponent} from './components/print-page/print-page.component';
-import {HeaderComponent} from './components/header/header.component';
-import {TechnicalSkillsComponent} from './components/technical-skills/technical-skills-component-ts';
-import {ExperienceComponent} from './components/experience/experience-component-ts';
-import {EducationComponent} from './components/education/education-component-ts';
-import {AwardsComponent} from './components/awards/awards-component-ts';
-import {ContactInfoComponent} from './components/contact-info/contact-info-component-ts';
-import {AboutComponent} from './components/about/about.component';
-import {TranslateService} from '../services/translate_service';
-import {CommonModule} from '@angular/common';
-import {TranslatePipe} from '../services/translate_pipe';
+import { Component, OnInit } from '@angular/core';
+import { RouterOutlet, ActivatedRoute } from '@angular/router';
+import { CvService } from '../services/cv.service';
+import { PrintPageComponent } from './components/print-page/print-page.component';
+import { HeaderComponent } from './components/header/header.component';
+import { TechnicalSkillsComponent } from './components/technical-skills/technical-skills-component-ts';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education-component-ts';
+import { AwardsComponent } from './components/awards/awards-component-ts';
+import { ContactInfoComponent } from './components/contact-info/contact-info-component-ts';
+import { AboutComponent } from './components/about/about.component';
+import { TranslateService } from '../services/translate.service';
+import { CommonModule } from '@angular/common';
+import { CvData } from './models/CvDataInterface';
 
 @Component({
   selector: 'app-root',
@@ -24,15 +24,14 @@ import {TranslatePipe} from '../services/translate_pipe';
     AwardsComponent,
     ContactInfoComponent,
     AboutComponent,
-    CommonModule,
-    TranslatePipe
+    CommonModule
   ],
   templateUrl: 'app.component.html',
   styleUrl: 'app.component.css'
 })
 export class AppComponent implements OnInit {
   title = 'my-cv';
-  cvData: any;
+  cvData: CvData | null = null;
   loading = true;
   error = false;
   languages = ['tr', 'en'];
@@ -46,7 +45,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    // Route parametresinden dili al ve dil değiştirme işlemini gerçekleştir
+    // Get language from route parameters and change the language
     this.route.paramMap.subscribe(params => {
       const langParam = params.get('lang');
       this.changeLanguage(langParam);

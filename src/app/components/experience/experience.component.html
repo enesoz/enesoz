@@ -1,0 +1,24 @@
+<div class="experience-section">
+  <h2 class="my-titles">{{ 'experience.title'| translate }}</h2>
+
+  <div class="timeline">
+    <div *ngFor="let exp of experiences" class="job">
+      <div class="job-header">
+        <div class="job-title">
+          <h3 class="boldTitle">{{ exp.title }}, {{ exp.company }}</h3>
+          <p class="location-period">{{ exp.location }} | {{ exp.period }}</p>
+        </div>
+      </div>
+
+      <div class="job-description" *ngIf="exp.description">
+        <p>{{ exp.description }}</p>
+      </div>
+
+      <div class="responsibilities" *ngIf="exp.responsibilities && exp.responsibilities.length > 0">
+        <ul>
+          <li *ngFor="let responsibility of exp.responsibilities">{{ responsibility }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
