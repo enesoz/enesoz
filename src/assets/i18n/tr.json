@@ -17,7 +17,13 @@
     "title": "Teknik Beceriler",
     "languages": "Programlama Dilleri",
     "frameworks": "Çerçeveler ve Kütüphaneler",
-    "tools": "Araçlar ve Teknolojiler"
+    "tools": "Araçlar ve Teknolojiler",
+    "microservice": "Mikroservisler",
+    "bigData": "Büyük Veri",
+    "cloud": "Bulut Teknolojileri",
+    "databases": "Veritabanları",
+    "monitoring": "İzleme Araçları",
+    "other": "Diğer Teknolojiler"
   },
   "experience": {
     "title": "İş Deneyimi",

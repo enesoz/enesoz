@@ -3,7 +3,7 @@ import { RouterOutlet, ActivatedRoute } from '@angular/router';
 import { CvService } from '../services/cv.service';
 import { PrintPageComponent } from './components/print-page/print-page.component';
 import { HeaderComponent } from './components/header/header.component';
-import { TechnicalSkillsComponent } from './components/technical-skills/technical-skills-component-ts';
+import { TechnicalSkillsComponent } from './components/technical-skills/technical-skills.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education-component-ts';
 import { AwardsComponent } from './components/awards/awards.component';

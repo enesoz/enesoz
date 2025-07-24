@@ -5,21 +5,21 @@
 
   <div class="main-content">
     <div class="left-column">
-      <app-header [personalInfo]="cvData?.personalInfo"></app-header>
-      <app-contact-info [contact]="cvData?.personalInfo?.contact" [webProfiles]="cvData?.personalInfo?.webProfiles"></app-contact-info>
+      <app-header [personalInfo]="cvData.personalInfo"></app-header>
+      <app-contact-info [contact]="cvData.personalInfo.contact" [webProfiles]="cvData.personalInfo.webProfiles"></app-contact-info>
     </div>
 
     <div class="right-column">
-      <app-about [about]="cvData?.personalInfo?.about"></app-about>
-      <app-technical-skills [skills]="cvData?.technicalSkills"></app-technical-skills>
-      <app-experience [experiences]="cvData?.experiences"></app-experience>
-      <app-education [education]="cvData?.education"></app-education>
-      <app-awards [awards]="cvData?.awards"></app-awards>
+      <app-about [about]="cvData.personalInfo.about"></app-about>
+      <app-technical-skills [skills]="cvData.technicalSkills"></app-technical-skills>
+      <app-experience [experiences]="cvData.experiences"></app-experience>
+      <app-education [education]="cvData.education"></app-education>
+      <app-awards [awards]="cvData.awards"></app-awards>
     </div>
   </div>
 
   <footer class="cv-footer">
-    <p>© {{ currentYear }} {{ cvData?.personalInfo?.name }} {{ cvData?.personalInfo?.surname }}</p>
+    <p>© {{ currentYear }} {{ cvData.personalInfo.name }} {{ cvData.personalInfo.surname }}</p>
     <p>Last updated: July 2025</p>
   </footer>
 </main>

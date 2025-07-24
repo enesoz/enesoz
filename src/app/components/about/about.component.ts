@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { About } from '../../models/PersonalInfoInterfaces';
 import { TranslatePipe } from '../../../services/translate_pipe';
-import { NgForOf, NgIf } from '@angular/common';
+import { NgForOf } from '@angular/common';
 
 /**
  * About component that displays personal information like languages, experience, and military obligation
@@ -12,8 +12,7 @@ import { NgForOf, NgIf } from '@angular/common';
   styleUrls: ['./about.component.css'],
   imports: [
     TranslatePipe,
-    NgForOf,
-    NgIf
+    NgForOf
   ]
 })
 export class AboutComponent {

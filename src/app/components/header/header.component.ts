@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PersonalInfo } from '../../models/PersonalInfoInterfaces';
-import { TranslatePipe } from '../../../services/translate_pipe';
 import { NgForOf } from '@angular/common';
 import { TranslateService } from '../../../services/translate_service';
 import { Router } from '@angular/router';
@@ -13,7 +12,6 @@ import { Router } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
   imports: [
-    TranslatePipe,
     NgForOf
   ]
 })

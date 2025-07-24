@@ -2,7 +2,8 @@ export interface Experience {
   title: string;
   company: string;
   location: string;
-  period: string;
+  start: string;
+  end: string;
   description?: string;
   responsibilities?: string[];
 }

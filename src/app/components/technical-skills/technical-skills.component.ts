@@ -1,17 +1,16 @@
 import { Component, Input } from '@angular/core';
 import {TechnicalSkill} from '../../models/TechnicalSkillsInterface';
-import {NgFor, NgForOf, TitleCasePipe} from '@angular/common';
+import {NgFor} from '@angular/common';
 import {TranslatePipe} from '../../../services/translate_pipe';
 
 @Component({
   selector: 'app-technical-skills',
-  templateUrl: 'technical-skills-component.html',
+  templateUrl: 'technical-skills.component.html',
   imports: [
-    TitleCasePipe,
     TranslatePipe,
-    NgFor,
+    NgFor
   ],
-  styleUrls: ['technical-skills-component.css']
+  styleUrls: ['technical-skills.component.css']
 })
 export class TechnicalSkillsComponent {
   @Input() skills!: TechnicalSkill[];

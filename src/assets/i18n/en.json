@@ -8,7 +8,7 @@
     "website": "Website",
     "contactInfo": "Contact Information",
     "websites": "Websites",
-    "about": "About",
+    "about": "ABOUT",
     "languages": "Languages",
     "experience": "Experience",
     "militaryObligation": "Military Obligation"
@@ -17,7 +17,13 @@
     "title": "Technical Skills",
     "languages": "Programming Languages",
     "frameworks": "Frameworks & Libraries",
-    "tools": "Tools & Technologies"
+    "tools": "Tools & Technologies",
+    "microservice": "Microservices",
+    "bigData": "Big Data",
+    "cloud": "Cloud Technologies",
+    "databases": "Databases",
+    "monitoring": "Monitoring Tools",
+    "other": "Other Technologies"
   },
   "experience": {
     "title": "Work Experience",
@@ -36,7 +42,7 @@
     "graduationDate": "Graduation Date"
   },
   "awards": {
-    "title": "Awards & Certifications",
+    "title": "ACHIEVEMENTS AND AWARDS",
     "name": "Award Name",
     "date": "Date",
     "issuer": "Issuing Organization"

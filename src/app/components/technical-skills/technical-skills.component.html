@@ -3,7 +3,7 @@
 
   <div class="skills-grid">
     <div *ngFor="let key of getSkillKeys()" class="skill-category">
-      <h3>{{ key | titlecase }}</h3>
+      <h3>{{ 'technicalSkills.' + key | translate }}</h3>
       <div class="skill-tags">
         <span *ngFor="let skill of getSkillsBy(key)" class="skill-tag">
           {{ skill }}

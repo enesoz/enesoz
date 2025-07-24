@@ -40,7 +40,8 @@
       "title": "Senior Software Engineering Consultant",
       "company": "Zoolatech",
       "location": "Remote",
-      "period": "August 2023 - now",
+      "start": "August 2023",
+      "end": "now",
       "description": "As a contractor, I have made noteworthy contributions to various projects for Zoolatech's prominent client, MasterControl.",
       "responsibilities": [
         "Assisted the CMX development team in crafting robust web applications using cutting-edge technologies such as Java 17, Angular 13, TypeScript, Docker, and more.",
@@ -56,7 +57,8 @@
       "title": "Software Development Team Lead",
       "company": "Semtrio Sustainability",
       "location": "İstanbul, Turkey",
-      "period": "March 2022 – July 2023",
+      "start": "March 2022",
+      "end": "July 2023",
       "responsibilities": [
         "Led the software team of 10(+/-) people (Developers, Analysts, Testers, QA) in building both front-end GUIs, REST APIs, and back-end servers for stable, high availability web services using Java Spring boot, Docker, VueJS 2, RabbitMQ, Redis, PostgreSQL, Swagger, AWS S3, Lambda, Cognito",
         "Redesigned monolithic application and developed five sub-applications and their services",
@@ -69,14 +71,16 @@
       "title": "Software Architect",
       "company": "I2I Systems",
       "location": "İstanbul, Turkey",
-      "period": "January 2021 - February 2022",
+      "start": "January 2021",
+      "end": "February 2022",
       "description": "Promoted"
     },
     {
       "title": "Sr. Software Analysis Developer",
       "company": "I2I Systems",
       "location": "İstanbul, Turkey",
-      "period": "June 2018 – January 2021",
+      "start": "June 2018",
+      "end": "January 2021",
       "responsibilities": [
         "Created three clustered, highly available, multi-threaded applications of twenty-eight microservices using Java 11, Kafka, Akka, VoltDB, Oracle, Hazelcast, Elastic, etc.",
         "Prepared development environment for CI/CD concept, 100% faster and fail-safe deployment capability gained. Guided the company in converting the team development culture and environment in this way.",
@@ -91,7 +95,8 @@
       "title": "Software Engineer",
       "company": "Republic of Turkey Prime Ministry Office",
       "location": "Ankara, Turkey",
-      "period": "March 2016 – June 2018",
+      "start": "March 2016",
+      "end": "June 2018",
       "responsibilities": [
         "Architected web application projects using JSF, Spring Framework, PrimeFaces, Elastic, Apache Kafka, etc.",
         "Designed and developed a big-data streaming application and report system by clustered Elastic",
@@ -103,7 +108,8 @@
       "title": "Software Engineer",
       "company": "Netas",
       "location": "İstanbul, Turkey",
-      "period": "March 2013 – March 2016",
+      "start": "March 2013",
+      "end": "March 2016",
       "responsibilities": [
         "Participated in AYDES (Disaster Management and Decision Support System) project modules using Spring, Spring Security, Spring EhCache, JSF 2.0, PrimeFaces, JDBC Template, Web Services (Rest and SOAP), JavaScript",
         "Designed and Developed GEO Data Modules as a Geo-Modules Prime",
@@ -117,7 +123,8 @@
       "title": "Software Engineer",
       "company": "Huawei",
       "location": "İstanbul, Turkey",
-      "period": "August 2011 – July 2012",
+      "start": "August 2011",
+      "end": "July 2012",
       "responsibilities": [
         "CRM Project involved, and bug fixing has been done",
         "Contributed to the project using JSF, EclipseLink, JQuery",
@@ -130,7 +137,8 @@
       "title": "Jr. Software Engineer",
       "company": "Efe Eroğlu Yazılım Ltd. Şti",
       "location": "Eskişehir, Turkey",
-      "period": "June 2010 – February 2011",
+      "start": "June 2010",
+      "end": "February 2011",
       "responsibilities": [
         "Used technologies that Jboss Seam, RichFaces, PrimeFaces, JSF 2.0, EJB 3.0, Glassfish AS, Hibernate, Ant",
         "Improved project unused functionality, restructured by customer request"
