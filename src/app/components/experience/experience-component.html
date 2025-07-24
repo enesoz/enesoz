@@ -5,8 +5,7 @@
     <div *ngFor="let exp of experiences" class="job">
       <div class="job-header">
         <div class="job-title">
-          <h3>{{ exp.title }}</h3>
-          <h4>{{ exp.company }}</h4>
+          <h3 style="font-weight: bolder">{{ exp.title }}, {{ exp.company}}</h3>
           <p class="location-period">{{ exp.location }} | {{ exp.period }}</p>
         </div>
       </div>

@@ -42,6 +42,7 @@ h2 {
   box-shadow: var(--box-shadow-sm);
   transition: transform var(--transition-fast);
   z-index: 1;
+  column-span: var(10px);
 }
 
 .job:hover {

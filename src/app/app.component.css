@@ -97,7 +97,7 @@ h2.my-titles,
 
 .main-content {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 34% 66%;
   gap: var(--spacing-xl);
   margin-top: 0;
   padding: var(--spacing-xl);
