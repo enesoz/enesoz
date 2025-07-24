@@ -126,3 +126,9 @@ h2 {
     margin-top: var(--spacing-xs);
   }
 }
+
+.boldTitle {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #000000;
+}

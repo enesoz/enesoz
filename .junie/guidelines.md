@@ -1,6 +1,226 @@
-# Style Guidelines for CV Project
+# CV Project Development Guidelines
 
-This document outlines the style guidelines to follow when making changes to the CV project.
+This document provides essential information for developers working on the CV project, including build instructions, testing information, and style guidelines.
+
+## Build and Configuration
+
+### Project Setup
+
+1. **Prerequisites**:
+   - Node.js (v18+)
+   - npm (v9+)
+   - Angular CLI (v19+)
+
+2. **Installation**:
+   ```bash
+   npm install
+   ```
+
+3. **Development Server**:
+   ```bash
+   npm start
+   ```
+   This will start the development server at `http://localhost:4200/`.
+
+4. **Production Build**:
+   ```bash
+   npm run build
+   ```
+   The build artifacts will be stored in the `dist/my-cv` directory.
+
+### Configuration Details
+
+- **Angular Configuration**: The project uses Angular v19.2.0 with standard Angular CLI configuration in `angular.json`.
+- **TypeScript Configuration**: 
+  - The project uses strict TypeScript settings with additional strict checks enabled.
+  - Configuration is split between `tsconfig.json` (base), `tsconfig.app.json` (app-specific), and `tsconfig.spec.json` (test-specific).
+
+## Testing
+
+### Testing Framework
+
+The project uses Jasmine for testing with Karma as the test runner, which is the standard testing setup for Angular applications.
+
+### Running Tests
+
+```bash
+npm test
+```
+
+This command will execute the unit tests via Karma in a browser.
+
+### Writing Tests
+
+#### Component Testing Example
+
+Here's an example of how to test a component with dependencies:
+
+```typescript
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HeaderComponent } from './header-component-ts';
+import { TranslateService } from '../../../services/translate_service';
+import { Router } from '@angular/router';
+import { of } from 'rxjs';
+import { PersonalInfo } from '../../models/PersonalInfoInterfaces';
+
+// Mock data for testing
+const mockPersonalInfo: PersonalInfo = {
+  name: 'John',
+  surname: 'Doe',
+  location: 'New York',
+  titles: ['Developer', 'Designer'],
+  about: {
+    languages: [
+      { name: 'English', level: 'Native' },
+      { name: 'Spanish', level: 'Intermediate' }
+    ],
+    experience: '5 years',
+    militaryObligation: 'Completed'
+  }
+};
+
+// Mock services
+class MockTranslateService {
+  getCurrentLang() {
+    return 'en';
+  }
+  
+  setLanguage(lang: string) {
+    return of(true);
+  }
+}
+
+class MockRouter {
+  navigate(commands: any[]) {
+    return Promise.resolve(true);
+  }
+}
+
+describe('HeaderComponent', () => {
+  let component: HeaderComponent;
+  let fixture: ComponentFixture<HeaderComponent>;
+  let translateService: TranslateService;
+  let router: Router;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [HeaderComponent],
+      providers: [
+        { provide: TranslateService, useClass: MockTranslateService },
+        { provide: Router, useClass: MockRouter }
+      ]
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(HeaderComponent);
+    component = fixture.componentInstance;
+    translateService = TestBed.inject(TranslateService);
+    router = TestBed.inject(Router);
+    
+    // Set input property
+    component.personalInfo = mockPersonalInfo;
+    
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+
+  it('should initialize with the current language from the service', () => {
+    expect(component.currentLang).toBe('en');
+  });
+
+  it('should switch language when switchLanguage is called', () => {
+    // Spy on the router navigate method
+    const navigateSpy = spyOn(router, 'navigate').and.callThrough();
+    // Spy on the translateService setLanguage method
+    const setLanguageSpy = spyOn(translateService, 'setLanguage').and.returnValue(of(true));
+    
+    // Call the method
+    component.switchLanguage('tr');
+    
+    // Verify the router was called with the correct parameters
+    expect(navigateSpy).toHaveBeenCalledWith(['tr']);
+    // Verify the translate service was called with the correct parameters
+    expect(setLanguageSpy).toHaveBeenCalledWith('tr');
+    // Verify the current language was updated
+    expect(component.currentLang).toBe('tr');
+  });
+});
+```
+
+#### Testing Services with HTTP
+
+For services that make HTTP requests, use `HttpClientTestingModule`:
+
+```typescript
+import { TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { TranslateService } from './translate_service';
+
+describe('TranslateService', () => {
+  let service: TranslateService;
+  let httpMock: HttpTestingController;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule],
+      providers: [TranslateService]
+    });
+    service = TestBed.inject(TranslateService);
+    httpMock = TestBed.inject(HttpTestingController);
+  });
+
+  afterEach(() => {
+    httpMock.verify();
+  });
+
+  it('should load translations', () => {
+    const mockTranslations = { 'header.about': 'About' };
+    
+    service.loadTranslations('en').subscribe(result => {
+      expect(result).toBeTrue();
+    });
+    
+    const req = httpMock.expectOne('/assets/i18n/en.json');
+    expect(req.request.method).toBe('GET');
+    req.flush(mockTranslations);
+    
+    expect(service.translate('header.about')).toBe('About');
+  });
+});
+```
+
+### Test Coverage
+
+To generate a test coverage report:
+
+```bash
+ng test --code-coverage
+```
+
+The coverage report will be available in the `coverage/` directory.
+
+## Project Structure
+
+The project follows a standard Angular architecture:
+
+- `src/app`: Main application code
+  - `components`: UI components organized by feature
+  - `models`: TypeScript interfaces/classes for data models
+- `src/assets`: Static assets including i18n files
+- `src/services`: Service classes for shared functionality
+- `src/styles`: Global styles
+
+## Internationalization (i18n)
+
+The project uses a custom translation service for internationalization:
+
+- Translation files are stored in `src/assets/i18n/{lang}.json`
+- The default language is Turkish ('tr')
+- Currently supported languages are English ('en') and Turkish ('tr')
+- The `TranslateService` handles loading and retrieving translations
+- The `TranslatePipe` is used in templates to translate keys
 
 ## CSS Guidelines
 
