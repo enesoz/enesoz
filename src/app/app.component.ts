@@ -1,17 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { RouterOutlet, ActivatedRoute } from '@angular/router';
-import { CvService } from '../services/cv.service';
-import { PrintPageComponent } from './components/print-page/print-page.component';
-import { HeaderComponent } from './components/header/header.component';
-import { TechnicalSkillsComponent } from './components/technical-skills/technical-skills.component';
-import { ExperienceComponent } from './components/experience/experience.component';
-import { EducationComponent } from './components/education/education-component-ts';
-import { AwardsComponent } from './components/awards/awards.component';
-import { ContactInfoComponent } from './components/contact-info/contact-info-component-ts';
-import { AboutComponent } from './components/about/about.component';
-import { TranslateService } from '../services/translate.service';
-import { CommonModule } from '@angular/common';
-import { CvData } from './models/CvDataInterface';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {CvService} from '../services/cv.service';
+import {PrintPageComponent} from './components/print-page/print-page.component';
+import {HeaderComponent} from './components/header/header.component';
+import {TechnicalSkillsComponent} from './components/technical-skills/technical-skills.component';
+import {ExperienceComponent} from './components/experience/experience.component';
+import {EducationComponent} from './components/education/education-component-ts';
+import {AwardsComponent} from './components/awards/awards.component';
+import {ContactInfoComponent} from './components/contact-info/contact-info-component-ts';
+import {AboutComponent} from './components/about/about.component';
+import {TranslateService} from '../services/translate.service';
+import {CommonModule} from '@angular/common';
+import {CvData} from './models/CvDataInterface';
 
 @Component({
   selector: 'app-root',
