@@ -6,7 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { TechnicalSkillsComponent } from './components/technical-skills/technical-skills-component-ts';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education-component-ts';
-import { AwardsComponent } from './components/awards/awards-component-ts';
+import { AwardsComponent } from './components/awards/awards.component';
 import { ContactInfoComponent } from './components/contact-info/contact-info-component-ts';
 import { AboutComponent } from './components/about/about.component';
 import { TranslateService } from '../services/translate.service';

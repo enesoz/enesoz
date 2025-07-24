@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import {TechnicalSkills} from '../../models/TechnicalSkillsInterface';
+import {TechnicalSkill} from '../../models/TechnicalSkillsInterface';
 import {NgFor, NgForOf, TitleCasePipe} from '@angular/common';
 import {TranslatePipe} from '../../../services/translate_pipe';
 
@@ -14,7 +14,7 @@ import {TranslatePipe} from '../../../services/translate_pipe';
   styleUrls: ['technical-skills-component.css']
 })
 export class TechnicalSkillsComponent {
-  @Input() skills!: TechnicalSkills[];
+  @Input() skills!: TechnicalSkill[];
 
   getSkillKeys(): string[] {
     return Object.keys(this.skills);

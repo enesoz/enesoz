@@ -1,4 +1,4 @@
-export interface TechnicalSkills {
+export interface TechnicalSkill {
   languages: string[];
   frameworks: string[];
   microservice: string[];
