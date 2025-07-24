@@ -11,11 +11,21 @@ export class TranslateService {
   private translations: any = {};
   private currentLang = 'tr'; // Varsayılan dil
   private translationsLoaded: { [key: string]: Observable<boolean> } = {};
+  private readonly LANG_STORAGE_KEY = 'cv_app_language';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    // Retrieve stored language preference on initialization
+    const storedLang = localStorage.getItem(this.LANG_STORAGE_KEY);
+    if (storedLang) {
+      this.currentLang = storedLang;
+      this.loadTranslations(storedLang).subscribe();
+    }
+  }
 
   public setLanguage(lang: string): Observable<boolean> {
     this.currentLang = lang;
+    // Store language preference in localStorage
+    localStorage.setItem(this.LANG_STORAGE_KEY, lang);
     return this.loadTranslations(lang);
   }
 

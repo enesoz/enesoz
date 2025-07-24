@@ -1,8 +1,21 @@
 import { Routes } from '@angular/router';
 import {AppComponent} from './app.component';
 
+// Route configuration constants
+const DEFAULT_LANGUAGE = 'tr';
+const ROOT_PATH = '';
+const LANGUAGE_PARAM_PATH = ':lang';
+const FULL_PATH_MATCH = 'full';
+
 export const routes: Routes = [
-  { path: '', redirectTo: 'tr', pathMatch: 'full' },
-  { path: ':lang', component: AppComponent }
+    {
+        path: ROOT_PATH,
+        redirectTo: DEFAULT_LANGUAGE,
+        pathMatch: FULL_PATH_MATCH
+    },
+    {
+        path: LANGUAGE_PARAM_PATH,
+        component: AppComponent
+    }
 ];
 

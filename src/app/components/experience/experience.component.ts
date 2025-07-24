@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Experience } from '../../models/ExperienceInterface';
-import { TranslatePipe } from '../../pipes/translate.pipe';
+import { TranslatePipe } from '../../../services/translate_pipe';
 import { NgForOf, NgIf } from '@angular/common';
 
 @Component({
