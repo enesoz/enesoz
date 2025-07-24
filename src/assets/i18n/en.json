@@ -11,7 +11,9 @@
     "about": "ABOUT",
     "languages": "Languages",
     "experience": "Experience",
-    "militaryObligation": "Military Obligation"
+    "militaryObligation": "Military Obligation",
+    "years": "years",
+    "months": "months"
   },
   "technicalSkills": {
     "title": "Technical Skills",

@@ -6,6 +6,6 @@
         {{ lang.name }} ({{ lang.level }}){{ !last ? ', ' : '' }}
       </span>
   </p>
-  <p><strong>{{ 'header.experience' | translate }}:</strong> {{ about.experience }}</p>
+  <p><strong>{{ 'header.experience' | translate }}:</strong> {{ calculatedExperience || about.experience }}</p>
   <p><strong>{{ 'header.militaryObligation' | translate }}:</strong> {{ about.militaryObligation }}</p>
 </section>

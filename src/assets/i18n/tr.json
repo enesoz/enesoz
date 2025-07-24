@@ -11,7 +11,9 @@
     "about": "HAKKINDA",
     "languages": "Diller",
     "experience": "Tecrübe",
-    "militaryObligation": "Askerlik Durumu"
+    "militaryObligation": "Askerlik Durumu",
+    "years": "yıl",
+    "months": "ay"
   },
   "technicalSkills": {
     "title": "Teknik Beceriler",
