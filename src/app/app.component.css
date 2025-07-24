@@ -97,12 +97,21 @@ h2.my-titles,
 
 .main-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 30% 70%;
   gap: var(--spacing-xl);
   margin-top: 0;
   padding: var(--spacing-xl);
   background-color: var(--background-color);
+  align-items: start;
 }
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
 
 /* Component containers */
 app-technical-skills,
@@ -114,6 +123,7 @@ app-awards {
   padding: var(--spacing-lg);
   box-shadow: var(--box-shadow-sm);
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  border: var(--border-width-sm) solid var(--border-color);
 }
 
 app-technical-skills:hover,
@@ -216,6 +226,69 @@ app-awards:hover {
   line-height: 1.6;
 }
 
+/* Education section styles */
+.education-item {
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  background-color: var(--light-bg-color);
+  border-radius: var(--border-radius-md);
+  border-left: var(--border-width-lg) solid var(--secondary-color);
+  transition: all var(--transition-fast);
+}
+
+.education-item:hover {
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow-sm);
+  transform: translateX(5px);
+}
+
+.education-item h3 {
+  color: var(--primary-color);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-xs);
+}
+
+.education-item h4 {
+  color: var(--secondary-color);
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.education-period {
+  color: var(--light-gray);
+  font-size: var(--font-size-sm);
+  font-style: italic;
+}
+
+/* Awards section styles */
+.award-item {
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  background-color: var(--light-bg-color);
+  border-radius: var(--border-radius-md);
+  border-left: var(--border-width-lg) solid var(--accent-color);
+  transition: all var(--transition-fast);
+}
+
+.award-item:hover {
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow-sm);
+  transform: translateX(5px);
+}
+
+.award-item h3 {
+  color: var(--primary-color);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-xs);
+}
+
+.award-date {
+  color: var(--light-gray);
+  font-size: var(--font-size-sm);
+  font-style: italic;
+}
+
 .cv-footer {
   margin-top: 0;
   padding: var(--spacing-lg);
@@ -305,6 +378,11 @@ app-awards:hover {
     padding: var(--spacing-md);
   }
 
+  .left-column,
+  .right-column {
+    gap: var(--spacing-lg);
+  }
+
   app-technical-skills,
   app-experience,
   app-education,
@@ -326,6 +404,11 @@ app-awards:hover {
   }
 
   .main-content {
+    gap: var(--spacing-md);
+  }
+
+  .left-column,
+  .right-column {
     gap: var(--spacing-md);
   }
 }

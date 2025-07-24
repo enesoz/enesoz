@@ -1,0 +1,15 @@
+<section class="about-section">
+  <h2 class="section-title">{{ 'header.about' | translate }}</h2>
+  <div class="about-item">
+    <strong>{{ 'about.languages' | translate }}:</strong>
+    <span *ngFor="let lang of about.languages; let last = last">
+      {{ lang.name }} ({{ lang.level }}){{ !last ? ', ' : '' }}
+    </span>
+  </div>
+  <div class="about-item">
+    <strong>{{ 'about.experience' | translate }}:</strong> {{ about.experience }}
+  </div>
+  <div class="about-item">
+    <strong>{{ 'about.militaryObligation' | translate }}:</strong> {{ about.militaryObligation }}
+  </div>
+</section>

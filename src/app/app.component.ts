@@ -7,12 +7,26 @@ import {TechnicalSkillsComponent} from './components/technical-skills/technical-
 import {ExperienceComponent} from './components/experience/experience-component-ts';
 import {EducationComponent} from './components/education/education-component-ts';
 import {AwardsComponent} from './components/awards/awards-component-ts';
+import {ContactInfoComponent} from './components/contact-info/contact-info-component-ts';
+import {AboutComponent} from './components/about/about-component-ts';
 import {TranslateService} from '../services/translate_service';
 import {CommonModule} from '@angular/common';
+import {TranslatePipe} from '../services/translate_pipe';
 
 @Component({
   selector: 'app-root',
-  imports: [PrintPageComponent, HeaderComponent, TechnicalSkillsComponent, ExperienceComponent, EducationComponent, AwardsComponent, CommonModule],
+  imports: [
+    PrintPageComponent,
+    HeaderComponent,
+    TechnicalSkillsComponent,
+    ExperienceComponent,
+    EducationComponent,
+    AwardsComponent,
+    ContactInfoComponent,
+    AboutComponent,
+    CommonModule,
+    TranslatePipe
+  ],
   templateUrl: 'app.component.html',
   styleUrl: 'app.component.css'
 })
