@@ -60,7 +60,6 @@
   box-shadow: var(--box-shadow-sm);
   transition: transform var(--transition-fast);
   z-index: 1;
-  column-span: var(10px);
 }
 
 .job:hover {
@@ -84,7 +83,7 @@
 .job-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
   flex-wrap: wrap;
 }
 
@@ -109,12 +108,12 @@
 }
 
 .job-description {
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
   line-height: var(--line-height-normal);
 }
 
 .responsibilities ul {
-  margin: 0;
+  margin: var(--spacing-sm) 0 0 0;
   padding-left: var(--spacing-lg);
 }
 

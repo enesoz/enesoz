@@ -1,0 +1,20 @@
+<div class="print-actions">
+  <button (click)="printCV()" class="print-button">
+    <span class="icon">🖨️</span> {{ 'print.printCV' | translate }}
+  </button>
+  <button (click)="downloadPDF()" class="download-button">
+    <span class="icon">📥</span> {{ 'print.downloadPDF' | translate }}
+  </button>
+</div>
+<nav class="language-switcher">
+  <div class="lang-options">
+    <button
+      *ngFor="let lang of languages"
+      [class.active]="isActive(lang.code)"
+      (click)="switchLanguage(lang.code)"
+      [attr.aria-pressed]="isActive(lang.code)"
+      [attr.aria-label]="'Switch to ' + lang.name + ' language'">
+      {{ lang.name }}
+    </button>
+  </div>
+</nav>

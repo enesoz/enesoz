@@ -1,0 +1,12 @@
+<header class="header">
+  <section class="personal-info">
+    <h1>{{ personalInfo.name }} {{ personalInfo.surname }}</h1>
+    <p class="location">
+      <span class="location-icon">📍</span>
+      <span>{{ personalInfo.location }}</span>
+    </p>
+    <div class="h-titles">
+      <span *ngFor="let title of personalInfo.titles">{{ title }}</span>
+    </div>
+  </section>
+</header>

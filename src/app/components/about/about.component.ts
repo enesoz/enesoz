@@ -8,13 +8,13 @@ import { NgForOf, NgIf } from '@angular/common';
  */
 @Component({
   selector: 'app-about',
-  templateUrl: 'about-component.html',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.css'],
   imports: [
     TranslatePipe,
     NgForOf,
     NgIf
-  ],
-  styleUrls: ['about-component.css']
+  ]
 })
 export class AboutComponent {
   @Input() about!: About;

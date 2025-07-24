@@ -1,14 +1,14 @@
 import {Component, OnInit} from '@angular/core';
 import {RouterOutlet, ActivatedRoute} from '@angular/router';
 import {CvService} from '../services/cv-service-ts';
-import {PrintPageComponent} from './components/print-page/print-page-component-ts';
-import {HeaderComponent} from './components/header/header-component-ts';
+import {PrintPageComponent} from './components/print-page/print-page.component';
+import {HeaderComponent} from './components/header/header.component';
 import {TechnicalSkillsComponent} from './components/technical-skills/technical-skills-component-ts';
 import {ExperienceComponent} from './components/experience/experience-component-ts';
 import {EducationComponent} from './components/education/education-component-ts';
 import {AwardsComponent} from './components/awards/awards-component-ts';
 import {ContactInfoComponent} from './components/contact-info/contact-info-component-ts';
-import {AboutComponent} from './components/about/about-component-ts';
+import {AboutComponent} from './components/about/about.component';
 import {TranslateService} from '../services/translate_service';
 import {CommonModule} from '@angular/common';
 import {TranslatePipe} from '../services/translate_pipe';

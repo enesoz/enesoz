@@ -55,7 +55,7 @@
 
 .skill-category h3 {
   color: var(--primary-color);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-bold);
   border-bottom: var(--border-width-sm) solid var(--border-color);
@@ -65,7 +65,7 @@
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-sm);
 }
 
 .skill-tag {

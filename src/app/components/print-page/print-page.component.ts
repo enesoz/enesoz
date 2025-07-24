@@ -1,24 +1,36 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { PersonalInfo } from '../../models/PersonalInfoInterfaces';
-import { TranslatePipe } from '../../../services/translate_pipe';
-import { NgForOf } from '@angular/common';
-import { TranslateService } from '../../../services/translate_service';
-import { Router } from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {Title} from '@angular/platform-browser';
+import {TranslatePipe} from '../../../services/translate_pipe';
+import {TranslateService} from '../../../services/translate_service';
+import {NgForOf} from '@angular/common';
+import {Router} from '@angular/router';
 
-/**
- * Header component that displays personal information and provides language switching functionality
- */
 @Component({
-  selector: 'app-header',
-  templateUrl: 'header-component.html',
+  selector: 'app-print-page',
+  standalone: true,
+  templateUrl: './print-page.component.html',
+  styleUrls: ['./print-page.component.css'],
   imports: [
     TranslatePipe,
     NgForOf
-  ],
-  styleUrls: ['header-component.css']
+  ]
 })
-export class HeaderComponent implements OnInit {
-  @Input() personalInfo!: PersonalInfo;
+export class PrintPageComponent implements OnInit {
+  constructor(private titleService: Title, private translateService: TranslateService, private router: Router
+  ) {}
+
+  printCV(): void {
+    this.titleService.setTitle('Enes Özdemir - CV');
+    window.print();
+  }
+
+  downloadPDF(): void {
+    // This function would normally require a PDF conversion service
+    // Let's simply redirect to the print dialog
+    alert(this.translateService.translate('print.downloadAlert'));
+    this.printCV();
+  }
+
 
   // Available languages
   languages = [
@@ -28,16 +40,6 @@ export class HeaderComponent implements OnInit {
 
   // Current language
   currentLang: string = 'tr';
-
-  /**
-   * Constructor with dependency injection
-   * @param translateService - Service for handling translations
-   * @param router - Router for navigation
-   */
-  constructor(
-    private translateService: TranslateService,
-    private router: Router
-  ) {}
 
   /**
    * Initialize component
