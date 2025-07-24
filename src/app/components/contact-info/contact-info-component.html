@@ -1,5 +1,5 @@
-<section class="contact-info" *ngIf="contact && webProfiles">
-  <h2 class="section-title">{{ 'header.contactInfo' | translate}}</h2>
+<section class="contact-info cv-section" *ngIf="contact && webProfiles">
+  <h2 class="my-titles">{{ 'header.contactInfo' | translate}}</h2>
 
   <div class="contact-item" *ngIf="contact?.phone">
     <span class="contact-icon">
@@ -28,7 +28,7 @@
     </div>
   </div>
 
-  <h2 class="section-title" *ngIf="webProfiles?.length">{{ 'header.websites'| translate }}</h2>
+  <h2 class="my-titles" *ngIf="webProfiles?.length">{{ 'header.websites'| translate }}</h2>
   <ul class="website-list" *ngIf="webProfiles?.length">
     <li *ngFor="let profile of webProfiles" class="website-item">
       <span class="contact-icon">

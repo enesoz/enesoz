@@ -1,8 +1,8 @@
-<div class="skills-section">
+<div class="skills-section cv-section">
   <h2 class="my-titles">{{ 'technicalSkills.title' | translate }}</h2>
 
   <div class="skills-grid">
-    <div *ngFor="let key of getSkillKeys()" class="skill-category">
+    <div *ngFor="let key of getSkillKeys()" class="skill-category cv-item">
       <h3>{{ 'technicalSkills.' + key | translate }}</h3>
       <div class="skill-tags">
         <span *ngFor="let skill of getSkillsBy(key)" class="skill-tag">

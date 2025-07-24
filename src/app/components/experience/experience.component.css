@@ -1,37 +1,10 @@
+/* Host element uses global cv-component styles via the :host-context selector */
 :host {
-  display: block;
-  background-color: var(--background-color);
-  border-radius: var(--border-radius-md);
-  padding: var(--spacing-lg);
-  box-shadow: var(--box-shadow-sm);
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-  border: var(--border-width-sm) solid var(--border-color);
+  display: block; /* Keep this to ensure proper display */
 }
 
-:host:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--box-shadow-md);
-}
+/* Section styles are now handled by global cv-section class */
 
-.experience-section {
-  margin-top: var(--spacing-lg);
-  padding: var(--spacing-md);
-  background-color: var(--background-color);
-  border-radius: var(--border-radius-md);
-  box-shadow: var(--box-shadow-sm);
-}
-
-.my-titles {
-  position: relative;
-  font-size: var(--font-size-xl);
-  font-weight: 700;
-  color: var(--primary-color);
-  margin-bottom: var(--spacing-lg);
-  padding-bottom: var(--spacing-sm);
-  border-bottom: var(--border-width-md) solid var(--secondary-color);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
 
 .timeline {
   display: flex;

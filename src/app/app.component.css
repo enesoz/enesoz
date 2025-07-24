@@ -112,6 +112,46 @@ h2.my-titles,
   gap: var(--spacing-xl);
 }
 
+/* Common Component Styles */
+.cv-component {
+  display: block;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--box-shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  border: var(--border-width-sm) solid var(--border-color);
+}
+
+.cv-component:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow-md);
+}
+
+/* Common Section Styles */
+.cv-section {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background-color: var(--background-color);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow-sm);
+}
+
+/* Common Item Styles */
+.cv-item {
+  padding: var(--spacing-md);
+  background-color: var(--light-bg-color);
+  border-radius: var(--border-radius-md);
+  border-left: var(--border-width-lg) solid var(--primary-color);
+  box-shadow: var(--box-shadow-sm);
+  transition: transform var(--transition-fast);
+}
+
+.cv-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow-md);
+}
+
 /* Section width styles */
 .experience-section,
 .education-section,
