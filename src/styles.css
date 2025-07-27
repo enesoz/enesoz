@@ -1,7 +1,7 @@
 :root {
   /* Color Scheme */
-  --primary-color: #502c2f;
-  --secondary-color: #3498db;
+  --primary-color: rgba(255, 255, 255, 0.26);
+  --secondary-color: #252526;
   --text-color: #333333;
   --light-gray: #7f8c8d;
   --background-color: #ffffff;
@@ -9,6 +9,31 @@
   --border-color: #eeeeee;
   --hover-color: #2980b9;
   --light-bg-color: #f8f9fa;
+
+  /* Additional Colors */
+  --body-bg-color: #f5f7fa;
+  --dark-blue: #34495e;
+  --light-blue: #ecf0f1;
+  --green: #2ecc71;
+  --dark-green: #27ae60;
+  --white: #fff;
+
+  /* Transparent Colors */
+  --black-10: rgba(0, 0, 0, 0.1);
+  --black-15: rgba(0, 0, 0, 0.15);
+  --black-20: rgba(0, 0, 0, 0.2);
+  --black-25: rgba(0, 0, 0, 0.25);
+  --black-30: rgba(0, 0, 0, 0.3);
+
+  --white-10: rgba(255, 255, 255, 0.1);
+  --white-15: rgba(255, 255, 255, 0.15);
+  --white-20: rgba(255, 255, 255, 0.2);
+  --white-25: rgba(255, 255, 255, 0.25);
+  --white-30: rgba(255, 255, 255, 0.3);
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-80: rgba(255, 255, 255, 0.8);
+  --white-90: rgba(255, 255, 255, 0.9);
+  --white-95: rgba(255, 255, 255, 0.95);
 
   /* Spacing */
   --spacing-xs: 5px;
@@ -53,8 +78,8 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #f5f6fa;
-  color: #2c3e50;
+  background-color: var(--body-bg-color);
+  color: var(--dark-blue);
   line-height: 1.6;
 }
 

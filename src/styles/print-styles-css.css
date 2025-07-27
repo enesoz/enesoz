@@ -3,23 +3,23 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: var(--white);
   }
-  
+
   .cv-container {
     box-shadow: none;
     max-width: 100%;
     padding: 0;
   }
-  
+
   h1, h2, h3, h4 {
     page-break-after: avoid;
   }
-  
+
   .experience-section, .education-section, .awards-section {
     page-break-inside: avoid;
   }
-  
+
   .job {
     page-break-inside: avoid;
   }
