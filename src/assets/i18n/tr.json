@@ -16,7 +16,7 @@
     "months": "ay"
   },
   "technicalSkills": {
-    "title": "Teknik Beceriler",
+    "title": "TEKNİK BECERİLER",
     "languages": "Programlama Dilleri",
     "frameworks": "Çerçeveler ve Kütüphaneler",
     "tools": "Araçlar ve Teknolojiler",
@@ -28,7 +28,7 @@
     "other": "Diğer Teknolojiler"
   },
   "experience": {
-    "title": "İş Deneyimi",
+    "title": "İŞ DENEYİMİ",
     "company": "Şirket",
     "position": "Pozisyon",
     "startDate": "Başlangıç Tarihi",
@@ -37,7 +37,7 @@
     "responsibilities": "Sorumluluklar"
   },
   "education": {
-    "title": "Eğitim",
+    "title": "EĞİTİM",
     "school": "Okul",
     "degree": "Derece",
     "field": "Alan",

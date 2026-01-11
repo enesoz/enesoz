@@ -1,73 +1,56 @@
-/* Host element uses global cv-component styles via the :host-context selector */
-:host {
-  display: block; /* Keep this to ensure proper display */
+/* Contact info styling to match PDF */
+.contact-section {
+  margin: 20px 0;
 }
 
-/* Section styles are now handled by global cv-section class */
-
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-md);
-  margin-bottom: var(--spacing-md);
-  padding: var(--spacing-sm);
-  border-radius: var(--border-radius-sm);
-  transition: background-color var(--transition-fast);
+/* Headings - consistent styling */
+.contact-section h3,
+.web-profiles h4 {
+  font-size: var(--font-size-md);
+  color: var(--light-gray);
+  margin: 15px 0 10px 0;
+  font-weight: var(--font-weight-normal);
 }
 
-.contact-item:hover {
-  background-color: var(--light-bg-color);
+.contact-section h3 {
+  margin-top: 0;
 }
 
-.contact-icon {
-  font-size: var(--font-size-lg);
-  width: 24px;
-  text-align: center;
-  color: var(--secondary-color);
+/* Contact info text */
+.contact-info p {
+  margin: 0 0 5px 0;
+  font-size: var(--font-size-md);
+  color: var(--primary-color);
+  line-height: 1.6;
 }
 
-.contact-text a {
-  color: var(--text-color);
+/* Links - consistent styling */
+.contact-info a,
+.web-profiles a {
   text-decoration: none;
-  font-weight: var(--font-weight-medium);
-  transition: color var(--transition-fast);
+  font-size: var(--font-size-md);
 }
 
-.contact-text a:hover {
-  color: var(--secondary-color);
+.contact-info a {
+  color: var(--primary-color);
+}
+
+.web-profiles a {
+  color: var(--link-color);
+}
+
+.contact-info a:hover,
+.web-profiles a:hover {
   text-decoration: underline;
 }
 
-.website-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
-  padding-left: 0;
-  list-style-type: none;
+/* List styling */
+.web-profiles ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.website-item {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-md);
-  padding: var(--spacing-sm);
-  border-radius: var(--border-radius-sm);
-  transition: background-color var(--transition-fast);
-}
-
-.website-item:hover {
-  background-color: var(--light-bg-color);
-}
-
-.website-link {
-  color: var(--text-color);
-  text-decoration: none;
-  font-weight: var(--font-weight-medium);
-  transition: color var(--transition-fast);
-}
-
-.website-link:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
+.web-profiles li {
+  margin: 0 0 5px 0;
 }

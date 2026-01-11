@@ -1,55 +1,19 @@
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
-  line-height: var(--line-height-normal);
-  color: var(--text-color);
-  background-color: var(--body-bg-color);
-  margin: 0;
-  padding: 0;
-  font-weight: var(--font-weight-normal);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
-  margin-top: 0;
-  letter-spacing: -0.02em;
-  font-weight: var(--font-weight-bold);
-}
-
-.my-titles {
-  position: relative;
-  font-size: var(--font-size-xl);
-  font-weight: 700;
-  color: var(--primary-color);
-  margin-bottom: var(--spacing-lg);
-  padding-bottom: var(--spacing-sm);
-  border-bottom: var(--border-width-md) solid var(--secondary-color);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
+/* Clean, PDF-matching CV container */
 .cv-container {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0;
-  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 60px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   background-color: var(--background-color);
-  box-shadow: 0 0 30px var(--black-10);
   color: var(--text-color);
-  border-radius: var(--border-radius-lg);
-  overflow: hidden;
 }
 
 .main-content {
   display: grid;
-  grid-template-columns: 34% 66%;
-  gap: var(--spacing-xl);
+  grid-template-columns: 32% 68%;
+  gap: 40px;
   margin-top: 0;
-  padding: var(--spacing-xl);
+  padding: 0;
   background-color: var(--background-color);
   align-items: start;
 }
@@ -58,72 +22,26 @@ h1, h2, h3, h4, h5, h6 {
 .right-column {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xl);
-  margin: var(--spacing-md);
-}
-
-/* Common Component Styles */
-.cv-component {
-  display: block;
-  background-color: var(--background-color);
-  border-radius: var(--border-radius-md);
-  padding: var(--spacing-lg);
-  box-shadow: var(--box-shadow-sm);
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-  border: var(--border-width-sm) solid var(--border-color);
-}
-
-.cv-component:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--box-shadow-md);
-}
-
-/* Common Section Styles */
-.cv-section {
-  margin-top: var(--spacing-lg);
-  padding: var(--spacing-md);
-  background-color: var(--background-color);
-  border-radius: var(--border-radius-md);
-  box-shadow: var(--box-shadow-sm);
-}
-
-/* Common Item Styles */
-.cv-item {
-  padding: var(--spacing-md);
-  background-color: var(--light-bg-color);
-  border-radius: var(--border-radius-md);
-  border-left: var(--border-width-lg) solid var(--primary-color);
-  box-shadow: var(--box-shadow-sm);
-  transition: transform var(--transition-fast);
-}
-
-.cv-item:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--box-shadow-md);
-}
-
-/* Section width styles */
-.experience-section,
-.education-section,
-.awards-section {
-  width: 100%;
+  gap: 30px;
 }
 
 .cv-footer {
-  margin-top: 0;
-  padding: var(--spacing-lg);
-  border-top: var(--border-width-sm) solid var(--border-color);
+  margin-top: 30px;
+  padding: 20px 0;
+  border-top: 1px solid var(--border-color);
   text-align: center;
   color: var(--light-gray);
   font-size: var(--font-size-sm);
-  background-color: var(--light-bg-color);
+  background-color: transparent;
 }
 
 .cv-footer p {
-  margin: var(--spacing-xs) 0;
+  margin: 5px 0;
 }
 
-.loading, .error {
+/* Loading and error states */
+.loading,
+.error {
   position: fixed;
   top: 0;
   left: 0;
@@ -175,10 +93,12 @@ h1, h2, h3, h4, h5, h6 {
     stroke-dasharray: 1, 150;
     stroke-dashoffset: 0;
   }
+
   50% {
     stroke-dasharray: 90, 150;
     stroke-dashoffset: -35;
   }
+
   100% {
     stroke-dasharray: 90, 150;
     stroke-dashoffset: -124;
@@ -187,49 +107,12 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .cv-container {
-    margin: 1rem;
-    max-width: none;
-    border-radius: var(--border-radius-md);
+    margin: 0;
+    padding: 20px;
   }
 
   .main-content {
     grid-template-columns: 1fr;
-    gap: var(--spacing-lg);
-    padding: var(--spacing-md);
-  }
-
-  .left-column,
-  .right-column {
-    gap: var(--spacing-lg);
-  }
-
-  app-technical-skills,
-  app-experience,
-  app-education,
-  app-awards {
-    padding: var(--spacing-md);
+    gap: 30px;
   }
 }
-
-@media print {
-  .cv-container {
-    max-width: none;
-    margin: 0;
-    box-shadow: none;
-    padding: 0;
-  }
-
-  .cv-footer {
-    page-break-inside: avoid;
-  }
-
-  .main-content {
-    gap: var(--spacing-md);
-  }
-
-  .left-column,
-  .right-column {
-    gap: var(--spacing-md);
-  }
-}
-

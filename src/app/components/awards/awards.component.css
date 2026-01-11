@@ -1,9 +1,13 @@
 /* Host element uses global cv-component styles via the :host-context selector */
 :host {
-  display: block; /* Keep this to ensure proper display */
+  display: block;
+  /* Keep this to ensure proper display */
 }
 
-/* Section styles are now handled by global cv-section class */
+/* Section styles - component-specific */
+.awards-section {
+  width: 100%;
+}
 
 /* List specific styles */
 .awards-list {

@@ -26,7 +26,7 @@ export class AboutComponent implements OnChanges {
   constructor(private translateService: TranslateService) { }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['experiences']) {
+    if (changes['experiences'] || changes['about']) {
       this.calculateTotalExperience();
     }
   }

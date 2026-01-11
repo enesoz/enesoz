@@ -17,7 +17,7 @@ This document contains a list of tasks to improve the CV project. Mark tasks as 
 
 ## Technical Improvements
 
-- [ ] Optimize CSS for better performance
-- [ ] Ensure all components follow Angular best practices
+- [x] Optimize CSS for better performance (removed unused variables, consolidated duplicates)
+- [x] Ensure all components follow Angular best practices (OnPush change detection)
 - [ ] Add proper documentation to all components
 - [ ] Implement proper translation service integration

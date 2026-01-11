@@ -1,39 +1,41 @@
-<main class="cv-container" *ngIf="!loading && !error && cvData">
+<main class="cv-container" *ngIf="!loading && !error && cvData" role="main" aria-label="Curriculum Vitae">
   <app-print-page></app-print-page>
 
   <div class="main-content">
-    <div class="left-column">
+    <aside class="left-column" role="complementary" aria-label="Personal Information">
       <app-header [personalInfo]="cvData.personalInfo"></app-header>
-      <app-contact-info [contact]="cvData.personalInfo.contact" [webProfiles]="cvData.personalInfo.webProfiles"></app-contact-info>
-    </div>
+      <app-contact-info [contact]="cvData.personalInfo.contact"
+        [webProfiles]="cvData.personalInfo.webProfiles"></app-contact-info>
+    </aside>
 
-    <div class="right-column">
+    <section class="right-column" role="region" aria-label="Professional Details">
       <app-about [about]="cvData.personalInfo.about" [experiences]="cvData.experiences"></app-about>
       <app-technical-skills [skills]="cvData.technicalSkills"></app-technical-skills>
       <app-experience [experiences]="cvData.experiences"></app-experience>
       <app-education [education]="cvData.education"></app-education>
       <app-awards [awards]="cvData.awards"></app-awards>
-    </div>
+    </section>
   </div>
 
-  <footer class="cv-footer">
+  <footer class="cv-footer" role="contentinfo">
     <p>© {{ currentYear }} {{ cvData.personalInfo.name }} {{ cvData.personalInfo.surname }}</p>
     <p>Last updated: {{ lastUpdated | date:'MMMM yyyy' }}</p>
   </footer>
 </main>
 
-<div *ngIf="loading" class="loading" role="status" aria-live="polite">
-  <svg class="spinner" viewBox="0 0 50 50" aria-hidden="true">
+<div *ngIf="loading" class="loading" role="status" aria-live="polite" aria-busy="true">
+  <svg class="spinner" viewBox="0 0 50 50" aria-hidden="true" focusable="false">
     <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
   </svg>
-  <span>Loading...</span>
+  <span>Loading CV data...</span>
 </div>
 
-<div *ngIf="error" class="error" role="alert">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<div *ngIf="error" class="error" role="alert" aria-live="assertive">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
     <circle cx="12" cy="12" r="10"></circle>
     <line x1="12" y1="8" x2="12" y2="12"></line>
     <line x1="12" y1="16" x2="12.01" y2="16"></line>
   </svg>
-  {{ errorMessage || 'An error occurred while loading CV data. Please refresh the page.' }}
+  <p>{{ errorMessage || 'An error occurred while loading CV data. Please refresh the page.' }}</p>
 </div>

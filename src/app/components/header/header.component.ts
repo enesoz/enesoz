@@ -1,6 +1,6 @@
-import {Component, Input} from '@angular/core';
-import {PersonalInfo} from '../../models/PersonalInfoInterfaces';
-import {NgForOf} from '@angular/common';
+import { Component, Input } from '@angular/core';
+import { PersonalInfo } from '../../models/PersonalInfoInterfaces';
+import { NgForOf } from '@angular/common';
 
 /**
  * Header component that displays personal information and provides language switching functionality

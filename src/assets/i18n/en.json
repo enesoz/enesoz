@@ -16,7 +16,7 @@
     "months": "months"
   },
   "technicalSkills": {
-    "title": "Technical Skills",
+    "title": "TECHNICAL SKILLS",
     "languages": "Programming Languages",
     "frameworks": "Frameworks & Libraries",
     "tools": "Tools & Technologies",
@@ -28,7 +28,7 @@
     "other": "Other Technologies"
   },
   "experience": {
-    "title": "Work Experience",
+    "title": "WORK EXPERIENCE",
     "company": "Company",
     "position": "Position",
     "startDate": "Start Date",
@@ -37,7 +37,7 @@
     "responsibilities": "Responsibilities"
   },
   "education": {
-    "title": "Education",
+    "title": "EDUCATION",
     "school": "School",
     "degree": "Degree",
     "field": "Field of Study",

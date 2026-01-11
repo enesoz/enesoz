@@ -91,12 +91,14 @@ export class CvPageComponent implements OnInit, OnDestroy {
 
     changeLanguage(lang: string | null): void {
         const langToUse = lang ?? 'tr';
+        console.log(`📄 cv-page changeLanguage called with: ${lang}, using: ${langToUse}`);
         this.loading = true;
         this.error = false;
 
         this.translateService.setLanguage(langToUse)
             .pipe(
                 finalize(() => {
+                    console.log(`📄 cv-page finalize called, error: ${this.error}`);
                     if (!this.error) {
                         this.loadCvData();
                     } else {
@@ -107,6 +109,7 @@ export class CvPageComponent implements OnInit, OnDestroy {
             )
             .subscribe({
                 next: () => {
+                    console.log(`📄 cv-page setLanguage next callback`);
                     // Translation loaded successfully
                 },
                 error: (err) => {

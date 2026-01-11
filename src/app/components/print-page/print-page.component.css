@@ -5,7 +5,8 @@
   gap: var(--spacing-sm);
 }
 
-.print-button, .download-button {
+.print-button,
+.download-button {
   padding: var(--spacing-xs) var(--spacing-md);
   background-color: var(--primary-color);
   color: var(--background-color);
@@ -31,12 +32,6 @@
 
 .icon {
   font-size: var(--font-size-md);
-}
-
-@media print {
-  .print-actions {
-    display: none;
-  }
 }
 
 .language-switcher {

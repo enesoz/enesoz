@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, of, throwError } from 'rxjs';
+import { Observable, of, throwError, BehaviorSubject } from 'rxjs';
 import { catchError, map, shareReplay } from 'rxjs/operators';
 
 /**
@@ -21,6 +21,10 @@ export class TranslateService {
   private currentLang = 'tr'; // Default language
   private translationsLoaded: { [key: string]: Observable<boolean> } = {};
 
+  // Observable to notify components when language changes
+  private languageChange$ = new BehaviorSubject<string>(this.currentLang);
+  public readonly onLanguageChange$ = this.languageChange$.asObservable();
+
   constructor(private http: HttpClient) { }
 
   /**
@@ -29,7 +33,10 @@ export class TranslateService {
    * @returns Observable that completes when translations are loaded
    */
   public setLanguage(lang: string): Observable<boolean> {
+    console.log(`🌍 setLanguage called with lang: ${lang}, previous currentLang: ${this.currentLang}`);
     this.currentLang = lang;
+    this.languageChange$.next(lang); // Notify subscribers of language change
+    console.log(`🌍 currentLang updated to: ${this.currentLang}`);
     return this.loadTranslations(lang);
   }
 
@@ -81,7 +88,10 @@ export class TranslateService {
    * @returns Translated text or the key if translation is not found
    */
   public translate(key: string): string {
+    console.log(`🔤 Translating key: ${key}, currentLang: ${this.currentLang}`);
+
     if (!this.translations[this.currentLang]) {
+      console.warn(`⚠️ Translations not loaded for ${this.currentLang}`);
       return key; // Translations not loaded, return the key
     }
 
@@ -92,10 +102,13 @@ export class TranslateService {
       if (value && typeof value === 'object' && k in value) {
         value = value[k];
       } else {
+        console.warn(`⚠️ Translation not found for key: ${key}`);
         return key; // Translation not found, return the key
       }
     }
 
-    return typeof value === 'string' ? value : JSON.stringify(value);
+    const result = typeof value === 'string' ? value : JSON.stringify(value);
+    console.log(`✅ Translation result for ${key}: ${result}`);
+    return result;
   }
 }

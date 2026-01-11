@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Contact, WebProfile } from '../../models/PersonalInfoInterfaces';
 import { TranslatePipe } from '../../../services/translate.pipe';
-import { NgForOf, NgIf } from '@angular/common';
+import { NgForOf } from '@angular/common';
 
 /**
  * Contact Info component that displays contact information and web profiles
@@ -11,8 +11,7 @@ import { NgForOf, NgIf } from '@angular/common';
   templateUrl: 'contact-info-component.html',
   imports: [
     TranslatePipe,
-    NgForOf,
-    NgIf
+    NgForOf
   ],
   styleUrls: ['contact-info-component.css']
 })

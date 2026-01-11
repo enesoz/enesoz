@@ -1,9 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { TranslatePipe } from '../../../services/translate.pipe';
 import { TranslateService } from '../../../services/translate.service';
 import { NgForOf } from '@angular/common';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-print-page',
@@ -15,8 +17,14 @@ import { Router } from '@angular/router';
     NgForOf
   ]
 })
-export class PrintPageComponent implements OnInit {
-  constructor(private titleService: Title, private translateService: TranslateService, private router: Router
+export class PrintPageComponent implements OnInit, OnDestroy {
+  private destroy$ = new Subject<void>();
+
+  constructor(
+    private titleService: Title,
+    private translateService: TranslateService,
+    private router: Router,
+    private route: ActivatedRoute
   ) { }
 
   printCV(): void {
@@ -42,11 +50,29 @@ export class PrintPageComponent implements OnInit {
   currentLang: string = 'tr';
 
   /**
-   * Initialize component
+   * Initialize component and subscribe to route changes
    */
   ngOnInit(): void {
     // Get current language from service
     this.currentLang = this.translateService.getCurrentLang();
+
+    // Subscribe to route parameter changes to keep currentLang in sync
+    this.route.paramMap
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(params => {
+        const langParam = params.get('lang');
+        if (langParam) {
+          this.currentLang = langParam;
+        }
+      });
+  }
+
+  /**
+   * Cleanup subscriptions
+   */
+  ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 
   /**
@@ -54,15 +80,9 @@ export class PrintPageComponent implements OnInit {
    * @param lang - Language code to switch to
    */
   switchLanguage(lang: string): void {
-    // Navigate to the route with the selected language code
+    // Only navigate - the cv-page component will handle the language change
+    // and we'll get notified via route parameter subscription
     this.router.navigate([lang]);
-
-    // Update the current language in the service and component
-    this.translateService.setLanguage(lang).subscribe(success => {
-      if (success) {
-        this.currentLang = lang;
-      }
-    });
   }
 
   /**

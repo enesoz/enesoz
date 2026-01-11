@@ -1,18 +1,20 @@
-/* Host element uses global cv-component styles via the :host-context selector */
-:host {
-  display: block; /* Keep this to ensure proper display */
+/* About section styling to match PDF */
+.about-section {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
-/* Section styles are now handled by global cv-section class */
-
-
-
-.about-item {
-  margin-bottom: var(--spacing-md);
-  line-height: var(--line-height-normal);
+.about-section p {
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+  color: var(--text-color);
+  font-size: var(--font-size-md);
 }
 
-.about-item strong {
-  color: var(--primary-color);
+.about-section strong {
   font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
 }

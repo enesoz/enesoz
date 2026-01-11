@@ -1,124 +1,76 @@
-/* Host element uses global cv-component styles via the :host-context selector */
-:host {
-  display: block; /* Keep this to ensure proper display */
+/* Experience section styling to match PDF */
+.experience-section {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  width: 100%;
 }
-
-/* Section styles are now handled by global cv-section class */
-
 
 .timeline {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-xl);
-  position: relative;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: calc(var(--border-width-lg) / 2);
-  width: 2px;
-  background-color: var(--border-color);
-  z-index: 0;
+  display: block;
 }
 
 .job {
-  padding: var(--spacing-md);
-  border-left: var(--border-width-lg) solid var(--primary-color);
-  background-color: var(--light-bg-color);
-  border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
-  position: relative;
-  box-shadow: var(--box-shadow-sm);
-  transition: transform var(--transition-fast);
-  z-index: 1;
-}
-
-.job:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--box-shadow-md);
-}
-
-.job:before {
-  content: '';
-  position: absolute;
-  left: calc(-1 * (var(--border-width-lg) / 2 + 7px));
-  top: var(--spacing-md);
-  width: 15px;
-  height: 15px;
-  border-radius: var(--border-radius-circle);
-  background-color: var(--primary-color);
-  box-shadow: var(--box-shadow-sm);
-  z-index: 2;
+  margin: 0 0 25px 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 .job-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--spacing-md);
-  flex-wrap: wrap;
+  margin: 0 0 10px 0;
 }
 
 .job-title h3 {
-  color: var(--primary-color);
-  margin: 0 0 var(--spacing-xs) 0;
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
+  margin: 0 0 5px 0;
+  line-height: 1.4;
 }
 
-.job-title h4 {
-  color: var(--secondary-color);
-  margin: 0 0 var(--spacing-xs) 0;
-  font-weight: var(--font-weight-normal);
-  font-size: var(--font-size-sm);
+.boldTitle {
+  font-size: var(--font-size-md) !important;
+  font-weight: var(--font-weight-bold) !important;
+  color: var(--primary-color) !important;
+  margin: 0 !important;
 }
 
 .location-period {
   font-size: var(--font-size-sm);
   color: var(--light-gray);
-  margin: 0;
+  margin: 0 0 10px 0;
+  font-weight: var(--font-weight-normal);
+  font-style: italic;
 }
 
 .job-description {
-  margin-bottom: var(--spacing-md);
-  line-height: var(--line-height-normal);
+  margin: 0 0 10px 0;
+}
+
+.job-description p {
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+  color: var(--text-color);
+  font-size: var(--font-size-md);
+}
+
+.responsibilities {
+  margin: 0;
 }
 
 .responsibilities ul {
-  margin: var(--spacing-sm) 0 0 0;
-  padding-left: var(--spacing-lg);
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
 }
 
 .responsibilities li {
-  margin-bottom: var(--spacing-xs);
-  line-height: var(--line-height-normal);
-}
-
-@media (max-width: 768px) {
-  .experience-section {
-    padding: var(--spacing-sm);
-  }
-
-  h2 {
-    font-size: var(--font-size-lg);
-  }
-
-  .job {
-    padding: var(--spacing-sm);
-  }
-
-  .job-header {
-    flex-direction: column;
-  }
-
-  .location-period {
-    margin-top: var(--spacing-xs);
-  }
-}
-
-.boldTitle {
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-md);
+  margin: 0 0 8px 0;
+  line-height: 1.6;
   color: var(--text-color);
+  font-size: var(--font-size-md);
 }

@@ -1,71 +1,51 @@
-
-/* Host element uses global cv-component styles via the :host-context selector */
-:host {
-  display: block; /* Keep this to ensure proper display */
+/* Technical Skills styling to match PDF */
+.skills-section {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
-/* Section styles are now handled by global cv-section class */
-
-/* Grid specific styles */
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: var(--spacing-lg);
+  display: block;
 }
 
-/* Category specific styles are now handled by global cv-item class */
+.skill-category {
+  margin: 0 0 15px 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
 
 .skill-category h3 {
-  color: var(--primary-color);
-  margin-bottom: var(--spacing-md);
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-bold);
-  border-bottom: var(--border-width-sm) solid var(--border-color);
-  padding-bottom: var(--spacing-xs);
+  color: var(--primary-color);
+  margin: 0 0 5px 0;
 }
 
 .skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-sm);
+  display: block;
+  line-height: 1.6;
 }
 
 .skill-tag {
-  background-color: var(--light-bg-color);
-  color: var(--secondary-color);
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: var(--border-radius-lg);
-  font-size: var(--font-size-sm);
-  display: inline-block;
-  box-shadow: var(--box-shadow-sm);
-  transition: all var(--transition-fast);
-  border: var(--border-width-sm) solid var(--border-color);
+  display: inline;
+  background: transparent;
+  color: var(--text-color);
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-normal);
 }
 
-.skill-tag:hover {
-  background-color: var(--primary-color);
-  color: var(--background-color);
-  transform: translateY(-2px);
-  box-shadow: var(--box-shadow-md);
-  border-color: var(--primary-color);
+.skill-tag::after {
+  content: ", ";
 }
 
-@media (max-width: 768px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-md);
-  }
-
-  .skill-tag {
-    font-size: var(--font-size-xs);
-    padding: var(--spacing-xs) var(--spacing-sm);
-  }
-
-  h2 {
-    font-size: var(--font-size-lg);
-  }
-
-  .skills-section {
-    padding: var(--spacing-sm);
-  }
+.skill-tag:last-child::after {
+  content: "";
 }
