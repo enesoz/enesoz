@@ -1,7 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
+import { Observable, of, throwError } from 'rxjs';
 import { catchError, map, shareReplay } from 'rxjs/operators';
+
+/**
+ * Translation value type - can be nested
+ */
+interface TranslationValue {
+  [key: string]: string | TranslationValue;
+}
 
 /**
  * Service for handling translations in the application
@@ -10,11 +17,11 @@ import { catchError, map, shareReplay } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class TranslateService {
-  private translations: Record<string, Record<string, any>> = {};
+  private translations: Record<string, TranslationValue> = {};
   private currentLang = 'tr'; // Default language
   private translationsLoaded: { [key: string]: Observable<boolean> } = {};
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   /**
    * Sets the current language and loads translations
@@ -40,19 +47,27 @@ export class TranslateService {
    * @returns Observable that completes when translations are loaded
    */
   public loadTranslations(lang: string): Observable<boolean> {
+    // Check if already loaded in memory
+    if (this.translations[lang]) {
+      return of(true);
+    }
+
+    // Check if loading is in progress
     if (this.translationsLoaded[lang]) {
       return this.translationsLoaded[lang];
     }
 
-    this.translationsLoaded[lang] = this.http.get(`/assets/i18n/${lang}.json`)
+    this.translationsLoaded[lang] = this.http.get<TranslationValue>(`/assets/i18n/${lang}.json`)
       .pipe(
         map(response => {
-          this.translations[lang] = response as Record<string, any>;
+          this.translations[lang] = response;
           return true;
         }),
-        catchError((err) => {
-          console.error(`Could not load translations for language ${lang} due to reason ${err.message}`);
-          return of(false);
+        catchError((err: Error) => {
+          console.error(`Could not load translations for language ${lang} due to reason: ${err.message}`);
+          // Clear failed cache entry so it can be retried
+          delete this.translationsLoaded[lang];
+          return throwError(() => new Error(`Translation load failed for ${lang}`));
         }),
         shareReplay(1)
       );
@@ -71,15 +86,16 @@ export class TranslateService {
     }
 
     const keys = key.split('.');
-    let value = this.translations[this.currentLang];
+    let value: string | TranslationValue = this.translations[this.currentLang];
 
     for (const k of keys) {
-      if (value && value[k] !== undefined) {
+      if (value && typeof value === 'object' && k in value) {
         value = value[k];
       } else {
         return key; // Translation not found, return the key
       }
     }
+
     return typeof value === 'string' ? value : JSON.stringify(value);
   }
 }

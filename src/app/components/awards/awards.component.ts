@@ -1,7 +1,7 @@
-import {Component, Input} from '@angular/core';
-import {Award} from '../../models/AwardInterface';
-import {TranslatePipe} from '../../../services/translate_pipe';
-import {NgForOf} from '@angular/common';
+import { Component, Input } from '@angular/core';
+import { Award } from '../../models/AwardInterface';
+import { TranslatePipe } from '../../../services/translate.pipe';
+import { NgForOf } from '@angular/common';
 
 @Component({
   selector: 'app-awards',

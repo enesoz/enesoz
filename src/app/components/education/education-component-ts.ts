@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
-import {Education} from '../../models/EducationInterface';
-import {TranslatePipe} from '../../../services/translate_pipe';
-import {NgForOf} from '@angular/common';
+import { Education } from '../../models/EducationInterface';
+import { TranslatePipe } from '../../../services/translate.pipe';
+import { NgForOf } from '@angular/common';
 
 @Component({
   selector: 'app-education',

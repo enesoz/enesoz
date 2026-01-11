@@ -1,6 +1,6 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { About } from '../../models/PersonalInfoInterfaces';
-import { TranslatePipe } from '../../../services/translate_pipe';
+import { TranslatePipe } from '../../../services/translate.pipe';
 import { NgForOf } from '@angular/common';
 import { Experience } from '../../models/ExperienceInterface';
 import { TranslateService } from '../../../services/translate.service';
@@ -23,7 +23,7 @@ export class AboutComponent implements OnChanges {
 
   calculatedExperience: string = '';
 
-  constructor(private translateService: TranslateService) {}
+  constructor(private translateService: TranslateService) { }
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['experiences']) {

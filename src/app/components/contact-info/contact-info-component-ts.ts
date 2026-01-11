@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Contact, WebProfile } from '../../models/PersonalInfoInterfaces';
-import { TranslatePipe } from '../../../services/translate_pipe';
+import { TranslatePipe } from '../../../services/translate.pipe';
 import { NgForOf, NgIf } from '@angular/common';
 
 /**

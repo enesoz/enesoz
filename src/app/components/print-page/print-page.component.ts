@@ -1,9 +1,9 @@
-import {Component, OnInit} from '@angular/core';
-import {Title} from '@angular/platform-browser';
-import {TranslatePipe} from '../../../services/translate_pipe';
-import {TranslateService} from '../../../services/translate_service';
-import {NgForOf} from '@angular/common';
-import {Router} from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { TranslatePipe } from '../../../services/translate.pipe';
+import { TranslateService } from '../../../services/translate.service';
+import { NgForOf } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-print-page',
@@ -17,7 +17,7 @@ import {Router} from '@angular/router';
 })
 export class PrintPageComponent implements OnInit {
   constructor(private titleService: Title, private translateService: TranslateService, private router: Router
-  ) {}
+  ) { }
 
   printCV(): void {
     this.titleService.setTitle('Enes Özdemir - CV');

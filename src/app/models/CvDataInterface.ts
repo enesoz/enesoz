@@ -9,7 +9,7 @@ import { TechnicalSkill } from './TechnicalSkillsInterface';
  */
 export interface CvData {
   personalInfo: PersonalInfo;
-  technicalSkills: TechnicalSkill[];
+  technicalSkills: TechnicalSkill;
   experiences: Experience[];
   education: Education[];
   awards: Award[];
