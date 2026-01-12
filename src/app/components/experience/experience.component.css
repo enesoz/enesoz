@@ -1,37 +1,36 @@
-/* Experience section styling to match PDF */
+/* Experience section styling to match PDF structure with grouping */
 .experience-section {
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .timeline {
-  display: block;
-}
-
-.job {
-  margin: 0 0 25px 0;
-  padding: 0;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-.job-header {
-  margin: 0 0 10px 0;
   display: flex;
-  align-items: flex-start;
-  gap: 15px;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Group Container */
+.company-group {
+  break-inside: avoid;
+  /* Print optimization */
+  position: relative;
+}
+
+/* Header */
+.company-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
 }
 
 .company-logo {
-  width: 44px;
-  height: 44px;
-  object-fit: contain;
+  width: 48px;
+  height: 48px;
   border-radius: 8px;
+  object-fit: contain;
   background-color: #fff;
   border: 1px solid #eee;
   padding: 4px;
@@ -39,53 +38,128 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.job-title h3 {
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-bold);
+.company-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
   color: var(--primary-color);
-  margin: 0 0 5px 0;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
-.boldTitle {
-  font-size: var(--font-size-md) !important;
-  font-weight: var(--font-weight-bold) !important;
-  color: var(--primary-color) !important;
-  margin: 0 !important;
-}
-
-.location-period {
-  font-size: var(--font-size-sm);
+.company-location {
+  font-size: 0.85rem;
   color: var(--light-gray);
-  margin: 0 0 10px 0;
-  font-weight: var(--font-weight-normal);
+  margin-top: 2px;
+}
+
+/* Roles List */
+.company-roles {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+
+/* Individual Role Item */
+.role-item {
+  position: relative;
+  padding-left: 48px;
+  /* Align with right side of logo approx */
+  padding-bottom: 25px;
+}
+
+.role-item.last-role {
+  padding-bottom: 0;
+}
+
+/* Timeline Indicator (Dot + Line) */
+/* Aligning with center of 48px logo -> 24px center */
+.role-timeline-indicator {
+  position: absolute;
+  left: 24px;
+  top: 6px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-50%);
+}
+
+.role-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--light-gray);
+  z-index: 2;
+  margin-bottom: 4px;
+}
+
+.role-line {
+  width: 2px;
+  flex-grow: 1;
+  background-color: #e0e0e0;
+  /* Light gray line */
+  min-height: 10px;
+}
+
+/* Connect to the previous element if not first? */
+/* Actually, the line should extend UP to the logo? 
+   Ideally, yes. But simple dot connectors are fine for now. 
+*/
+
+/* Role Content */
+.role-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.role-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.role-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.role-period {
+  font-size: 0.85rem;
+  color: var(--light-gray);
   font-style: italic;
 }
 
-.job-description {
-  margin: 0 0 10px 0;
-}
-
-.job-description p {
-  margin: 0 0 10px 0;
-  line-height: 1.6;
+.role-description p {
+  margin: 4px 0 0 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
   color: var(--text-color);
-  font-size: var(--font-size-md);
-}
-
-.responsibilities {
-  margin: 0;
 }
 
 .responsibilities ul {
-  margin: 0;
-  padding-left: 20px;
+  margin: 8px 0 0 18px;
+  padding: 0;
   list-style-type: disc;
 }
 
 .responsibilities li {
-  margin: 0 0 8px 0;
-  line-height: 1.6;
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+  line-height: 1.5;
   color: var(--text-color);
-  font-size: var(--font-size-md);
+}
+
+/* Print Overrides */
+@media print {
+  .company-group {
+    break-inside: avoid;
+  }
 }

@@ -188,18 +188,28 @@
     },
     {
       "title": "Software Engineer",
-      "company": "Netas",
+      "company": "NETAŞ",
       "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://netas.com.tr&size=128",
       "location": "İstanbul, Turkey",
-      "start": "March 2013",
+      "start": "February 2014",
       "end": "March 2016",
+      "description": "Developed Enterprise Application projects",
       "responsibilities": [
-        "Participated in AYDES (Disaster Management and Decision Support System) project modules using Spring, Spring Security, Spring EhCache, JSF 2.0, PrimeFaces, JDBC Template, Web Services (Rest and SOAP), JavaScript",
+        "Participated Analyze, Design phases and developed AYDES project modules which using Spring, Spring Security, Spring EhCache, JSF 2.0, PrimeFaces, JDBC Template, Web Services (Rest and SOAP), JavaScript",
         "Designed and Developed GEO Data Modules as a Geo-Modules Prime",
-        "Coordinate communication between NETAS and Başarsoft, which is a map provider and prepared map component by JavaScript",
-        "Participated in the Mobile Application Developer team for the Turkcell BIP project as a Back-end Developer",
-        "Prepared Group Chat Feature for application with a fast and secure solution",
-        "Used CDI, Hibernate, JAX-RS, and J2EE components on Client-Server architecture"
+        "Coordinate communication between NETAS and Başarsoft which is map provider and coded map component by JavaScript"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "NETAŞ",
+      "location": "İstanbul, Turkey",
+      "start": "March 2013",
+      "end": "February 2014",
+      "responsibilities": [
+        "Participated in Mobile Application Developer team for Turkcell BIP project as a Back-end Developer",
+        "Developed Group Chat Feature to application with a fast and secure solution",
+        "Used CDI, Hibernate, JAX-RS, J2EE components on Client-Server architecture"
       ]
     },
     {

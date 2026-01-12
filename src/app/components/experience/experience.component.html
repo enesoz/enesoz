@@ -2,25 +2,47 @@
   <h2 class="my-titles">{{ 'experience.title'| translate }}</h2>
 
   <div class="timeline">
-    <div *ngFor="let exp of experiences" class="job">
-      <div class="job-header">
-        <img *ngIf="exp.logoUrl" [src]="exp.logoUrl" class="company-logo" alt="{{ exp.company }} logo" loading="lazy"
-          (error)="exp.logoUrl = undefined" data-html2canvas-ignore="true">
-        <div class="job-title">
-          <h3 class="boldTitle">{{ exp.title }}, {{ exp.company }}</h3>
-          <p class="location-period">{{ exp.location }} | {{ exp.start }} - {{ exp.end }}</p>
+    <div *ngFor="let group of groupedExperiences" class="company-group">
+
+      <!-- Company Header (Shared) -->
+      <div class="company-header">
+        <img *ngIf="group.logoUrl" [src]="group.logoUrl" class="company-logo" alt="{{ group.company }} logo"
+          loading="lazy" (error)="group.logoUrl = undefined" data-html2canvas-ignore="true">
+        <div class="company-info">
+          <h3 class="company-name">{{ group.company }}</h3>
+          <span class="company-location">{{ group.location }}</span>
         </div>
       </div>
 
-      <div class="job-description" *ngIf="exp.description">
-        <p>{{ exp.description }}</p>
+      <!-- Roles List -->
+      <div class="company-roles">
+        <div *ngFor="let exp of group.roles; let isLast = last" class="role-item" [class.last-role]="isLast">
+
+          <!-- Timeline Vertical Line Context -->
+          <div class="role-timeline-indicator">
+            <div class="role-dot"></div>
+            <div class="role-line" *ngIf="!isLast"></div>
+          </div>
+
+          <div class="role-content">
+            <div class="role-header">
+              <h4 class="role-title">{{ exp.title }}</h4>
+              <span class="role-period">{{ exp.start }} - {{ exp.end }}</span>
+            </div>
+
+            <div class="role-description" *ngIf="exp.description">
+              <p>{{ exp.description }}</p>
+            </div>
+
+            <div class="responsibilities" *ngIf="exp.responsibilities && exp.responsibilities.length > 0">
+              <ul>
+                <li *ngFor="let responsibility of exp.responsibilities">{{ responsibility }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="responsibilities" *ngIf="exp.responsibilities && exp.responsibilities.length > 0">
-        <ul>
-          <li *ngFor="let responsibility of exp.responsibilities">{{ responsibility }}</li>
-        </ul>
-      </div>
     </div>
   </div>
 </div>
