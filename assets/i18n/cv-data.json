@@ -1,0 +1,248 @@
+{
+  "personalInfo": {
+    "name": "Enes",
+    "surname": "Özdemir",
+    "location": "İstanbul, TURKEY",
+    "titles": [
+      "Java Specialist",
+      "Software Architect",
+      "Full-Stack Developer"
+    ],
+    "contact": {
+      "phone": "+90 533 690 65 47",
+      "email": "csenes1987@gmail.com"
+    },
+    "webProfiles": [
+      {
+        "name": "LinkedIn",
+        "url": "www.linkedin.com/in/eneso"
+      },
+      {
+        "name": "GitHub",
+        "url": "github.com/enesoz"
+      },
+      {
+        "name": "HackerRank",
+        "url": "hackerrank.com/csenes1987"
+      }
+    ],
+    "about": {
+      "languages": [
+        {
+          "name": "Turkish",
+          "level": "Native"
+        },
+        {
+          "name": "English",
+          "level": "Professional Working"
+        }
+      ],
+      "experience": "14+ years",
+      "militaryObligation": "Completed"
+    }
+  },
+  "technicalSkills": {
+    "languages": [
+      "Java",
+      "JavaScript",
+      "Scala",
+      "SQL"
+    ],
+    "frameworks": [
+      "Spring",
+      "Spring Boot",
+      "JPA",
+      "Hibernate",
+      "VueJS 2.0",
+      "Angular (2-7-16)",
+      "NodeJS",
+      "NGINX",
+      "Swagger",
+      "AOP",
+      "JSF2.2",
+      "Seam 2.0",
+      "EJB 3.0",
+      "Dagger"
+    ],
+    "microservice": [
+      "Spring Cloud",
+      "Apache Akka",
+      "Java Concurrent API",
+      "RabbitMQ"
+    ],
+    "bigData": [
+      "Apache Kafka",
+      "Kafka Streaming",
+      "Apache Spark",
+      "Spark Streaming"
+    ],
+    "cloud": [
+      "AWS (Glue, RDS, Route 53, S3, EC2, Cognito, IAM, Lambda, SNS)",
+      "DigitalOcean (Droplets, Databases, Spaces, Load Balancers)"
+    ],
+    "databases": [
+      "Oracle",
+      "PostgreSQL",
+      "MongoDB",
+      "Elastic",
+      "Redis",
+      "Hazelcast",
+      "VoltDB"
+    ],
+    "monitoring": [
+      "Kibana",
+      "Grafana",
+      "Graylog",
+      "Prometheus",
+      "CloudWatch",
+      "Datadog"
+    ],
+    "other": [
+      "Maven",
+      "Gradle",
+      "JIRA API",
+      "Nexus",
+      "SonarQube",
+      "Archiva",
+      "GitLab CI/CD",
+      "Jenkins",
+      "Bitbucket",
+      "SonarQube",
+      "Docker",
+      "Git",
+      "Keycloak"
+    ]
+  },
+  "experiences": [
+    {
+      "title": "Senior Software Engineering Consultant",
+      "company": "Zoolatech",
+      "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://zoolatech.com&size=128",
+      "location": "Remote",
+      "start": "August 2023",
+      "end": "now",
+      "description": "As a contractor, I have made noteworthy contributions to various projects for Zoolatech's prominent client, MasterControl.",
+      "responsibilities": [
+        "Assisted the CMX development team in crafting robust web applications using cutting-edge technologies such as Java 17, Angular 13, TypeScript, Docker, and more.",
+        "Created unit and integration tests using Mockito, JUnit, and the Spring Tests framework to achieve the testing coverage objective.",
+        "Participated in a scrum team and accomplished the given goals per sprint",
+        "Attended customer quarter/yearly planning events on site",
+        "Participated in the AMx migration team to facilitate the transfer of essential data from the current application to the future using AWS Glue, Spark in Java, Scala, Dagger, etc.",
+        "Crafted and showcased innovative technical solutions for challenging epics.",
+        "Developed component and end-to-end tests to ensure comprehensive code coverage and robust performance."
+      ]
+    },
+    {
+      "title": "Software Development Team Lead",
+      "company": "Semtrio Sustainability",
+      "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://semtrio.com&size=128",
+      "location": "İstanbul, Turkey",
+      "start": "March 2022",
+      "end": "July 2023",
+      "responsibilities": [
+        "Led the software team of 10(+/-) people (Developers, Analysts, Testers, QA) in building both front-end GUIs, REST APIs, and back-end servers for stable, high availability web services using Java Spring boot, Docker, VueJS 2, RabbitMQ, Redis, PostgreSQL, Swagger, AWS S3, Lambda, Cognito",
+        "Redesigned monolithic application and developed five sub-applications and their services",
+        "Prepared CI / CD environment by using Docker, Digital Ocean, AWS, GitLab CI, and Shell Scripts for seven applications",
+        "Enhanced code quality by doing code reviews, arranged meetups for knowledge sharing on the team, pair programming, and tool usage",
+        "Hired, coached, and mentored junior team members on Java and JavaScript best practices design patterns and encouraged them to adapt to development environments"
+      ]
+    },
+    {
+      "title": "Software Architect",
+      "company": "I2I Systems",
+      "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://i2i-systems.com&size=128",
+      "location": "İstanbul, Turkey",
+      "start": "January 2021",
+      "end": "February 2022",
+      "description": "Promoted"
+    },
+    {
+      "title": "Sr. Software Analysis Developer",
+      "company": "I2I Systems",
+      "location": "İstanbul, Turkey",
+      "start": "June 2018",
+      "end": "January 2021",
+      "responsibilities": [
+        "Created three clustered, highly available, multi-threaded applications of twenty-eight microservices using Java 11, Kafka, Akka, VoltDB, Oracle, Hazelcast, Elastic, etc.",
+        "Prepared development environment for CI/CD concept, 100% faster and fail-safe deployment capability gained. Guided the company in converting the team development culture and environment in this way.",
+        "Proved enhancements with POC developments and transformed technologies with new trends.",
+        "Architected and coded fast, reliable, non-intrusive clustered applications on a microservices architecture with Kafka, achieving the goal of 100K TPS.",
+        "Designed system KPI monitoring using Grafana, Kibana, and Elastic",
+        "Architected Angular + Spring Boot application that applies server-client architecture to enhance user experiences.",
+        "Coded Node.js + Vue.js dashboard application"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Republic of Turkey Prime Ministry Office",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png",
+      "location": "Ankara, Turkey",
+      "start": "March 2016",
+      "end": "June 2018",
+      "responsibilities": [
+        "Architected web application projects using JSF, Spring Framework, PrimeFaces, Elastic, Apache Kafka, etc.",
+        "Designed and developed a big-data streaming application and report system by clustered Elastic",
+        "Spearheaded the project's change management and then led the team, including nine developers, as a Scrum Master.",
+        "Completed 41 sprints, mainly two to three weeks, with 1000+ issues fixed."
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Netas",
+      "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://netas.com.tr&size=128",
+      "location": "İstanbul, Turkey",
+      "start": "March 2013",
+      "end": "March 2016",
+      "responsibilities": [
+        "Participated in AYDES (Disaster Management and Decision Support System) project modules using Spring, Spring Security, Spring EhCache, JSF 2.0, PrimeFaces, JDBC Template, Web Services (Rest and SOAP), JavaScript",
+        "Designed and Developed GEO Data Modules as a Geo-Modules Prime",
+        "Coordinate communication between NETAS and Başarsoft, which is a map provider and prepared map component by JavaScript",
+        "Participated in the Mobile Application Developer team for the Turkcell BIP project as a Back-end Developer",
+        "Prepared Group Chat Feature for application with a fast and secure solution",
+        "Used CDI, Hibernate, JAX-RS, and J2EE components on Client-Server architecture"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Huawei",
+      "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://huawei.com&size=128",
+      "location": "İstanbul, Turkey",
+      "start": "August 2011",
+      "end": "July 2012",
+      "responsibilities": [
+        "CRM Project involved, and bug fixing has been done",
+        "Contributed to the project using JSF, EclipseLink, JQuery",
+        "Implemented two modules using JSF 1.0, private ORM lib, JSF Facelets 1.1 in Tabs Project",
+        "Worked with a multi-national team on a customer location in Cairo, Egypt, to develop PTF Project using JSF 2.0, JPA, Richfaces",
+        "Implemented features and bug fixing with Used Spring Framework, Web Services, and private Facelet lib in NGIN Project"
+      ]
+    },
+    {
+      "title": "Jr. Software Engineer",
+      "company": "Efe Eroğlu Yazılım Ltd. Şti",
+      "logoUrl": "https://ui-avatars.com/api/?name=Efe+Eroglu&background=random&color=fff",
+      "location": "Eskişehir, Turkey",
+      "start": "June 2010",
+      "end": "February 2011",
+      "responsibilities": [
+        "Used technologies that Jboss Seam, RichFaces, PrimeFaces, JSF 2.0, EJB 3.0, Glassfish AS, Hibernate, Ant",
+        "Improved project unused functionality, restructured by customer request"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "İstanbul University",
+      "degree": "BSc. Computer Engineering",
+      "location": "İstanbul, Turkey"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Netas Success Awards 2013"
+    },
+    {
+      "title": "Placed %4 among ~1,5 million participants in the University Entrance Exam 2005"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "header": {
+    "name": "Ad Soyad",
+    "title": "Ünvan",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "address": "Adres",
+    "website": "Web sitesi",
+    "contactInfo": "İletişim Bilgileri",
+    "websites": "Web Siteleri",
+    "about": "HAKKINDA",
+    "languages": "Diller",
+    "experience": "Tecrübe",
+    "militaryObligation": "Askerlik Durumu",
+    "years": "yıl",
+    "months": "ay"
+  },
+  "technicalSkills": {
+    "title": "TEKNİK BECERİLER",
+    "languages": "Programlama Dilleri",
+    "frameworks": "Çerçeveler ve Kütüphaneler",
+    "tools": "Araçlar ve Teknolojiler",
+    "microservice": "Mikroservisler",
+    "bigData": "Büyük Veri",
+    "cloud": "Bulut Teknolojileri",
+    "databases": "Veritabanları",
+    "monitoring": "İzleme Araçları",
+    "other": "Diğer Teknolojiler"
+  },
+  "experience": {
+    "title": "İŞ DENEYİMİ",
+    "company": "Şirket",
+    "position": "Pozisyon",
+    "startDate": "Başlangıç Tarihi",
+    "endDate": "Bitiş Tarihi",
+    "current": "Şu anda",
+    "responsibilities": "Sorumluluklar"
+  },
+  "education": {
+    "title": "EĞİTİM",
+    "school": "Okul",
+    "degree": "Derece",
+    "field": "Alan",
+    "graduationDate": "Mezuniyet Tarihi"
+  },
+  "awards": {
+    "title": "BAŞARILAR VE ÖDÜLLER",
+    "name": "Ödül Adı",
+    "date": "Tarih",
+    "issuer": "Veren Kuruluş"
+  },
+  "print": {
+    "printCV": "CV'yi Yazdır",
+    "downloadPDF": "PDF İndir",
+    "downloadAlert": "PDF indirme işlevi entegre edilecek. Şimdilik Yazdır diyaloğu açılacak, PDF olarak kaydedin."
+  }
+}
