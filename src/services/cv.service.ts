@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { CvData } from '../app/models/CvDataInterface';
-
-import * as jsonData from '../assets/cv-data.json';
 
 /**
  * Service for retrieving CV data
@@ -11,11 +10,16 @@ import * as jsonData from '../assets/cv-data.json';
   providedIn: 'root'
 })
 export class CvService {
+  constructor(private http: HttpClient) { }
+
   /**
-   * Gets the CV data from the JSON file
+   * Gets the CV data from the JSON file based on language
+   * @param lang - Language code ('en' or 'tr')
    * @returns Observable with the CvData
    */
-  getCvData(): Observable<CvData> {
-    return of(jsonData as unknown as CvData);
+  getCvData(lang: string = 'en'): Observable<CvData> {
+    const filename = lang === 'tr' ? 'cv-data.tr.json' : 'cv-data.json';
+    // Use the reliable i18n folder
+    return this.http.get<CvData>(`assets/i18n/${filename}`);
   }
 }

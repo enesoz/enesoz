@@ -39,9 +39,10 @@
     gap: 15px;
   }
 
-  /* Hide print buttons */
-  .print-actions {
-    display: none;
+  /* Hide print buttons and language switcher */
+  .print-actions,
+  .language-switcher {
+    display: none !important;
   }
 
   /* Ensure proper colors for print */

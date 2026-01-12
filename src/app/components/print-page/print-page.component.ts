@@ -32,11 +32,37 @@ export class PrintPageComponent implements OnInit, OnDestroy {
     window.print();
   }
 
-  downloadPDF(): void {
-    // This function would normally require a PDF conversion service
-    // Let's simply redirect to the print dialog
-    alert(this.translateService.translate('print.downloadAlert'));
-    this.printCV();
+  async downloadPDF(): Promise<void> {
+    const element = document.querySelector('.cv-container') as HTMLElement;
+    if (!element) return;
+
+    // Add class to hide UI elements
+    document.body.classList.add('generating-pdf');
+
+    try {
+      // Dynamically import html2pdf to avoid SSR/build issues if any
+      const html2pdf = (await import('html2pdf.js')).default;
+
+      const opt = {
+        margin: 10,
+        filename: 'Enes_Ozdemir_CV.pdf',
+        image: { type: 'jpeg' as const, quality: 0.98 },
+        html2canvas: {
+          scale: 2,
+          useCORS: true,
+          logging: false
+        },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' as const }
+      };
+
+      // Generate and open in new tab
+      await html2pdf().set(opt).from(element).output('bloburl').then((pdfUrl: string) => {
+        window.open(pdfUrl, '_blank');
+      });
+    } finally {
+      // Remove class to show UI elements again
+      document.body.classList.remove('generating-pdf');
+    }
   }
 
 

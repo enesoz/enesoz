@@ -104,3 +104,155 @@ body {
   margin-top: 0;
   padding: 0;
 }
+
+/* Print styles - Highly optimized for density (Target: 3 pages) */
+@media print {
+
+  /* Use almost full page width/height */
+  @page {
+    margin: 10mm 10mm 10mm 10mm;
+    size: auto;
+  }
+
+  /* Override variables for print density */
+  :root {
+    --font-size-xs: 9px;
+    --font-size-sm: 10px;
+    --font-size-md: 11px;
+    /* SIGNIFICANT REDUCTION: 14px -> 11px */
+    --font-size-lg: 13px;
+    /* 16px -> 13px */
+    --font-size-xl: 16px;
+    /* 18px -> 16px */
+    --font-size-xxl: 22px;
+    /* 28px -> 22px */
+
+    --spacing-xs: 2px;
+    --spacing-sm: 5px;
+    --spacing-md: 8px;
+    /* 15px -> 8px */
+    --spacing-lg: 12px;
+    /* 20px -> 12px */
+    --spacing-xl: 15px;
+    /* 30px -> 15px */
+
+    --line-height-normal: 1.35;
+    /* Compress vertical space */
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-normal);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .cv-container {
+    box-shadow: none;
+    max-width: 100%;
+    /* Use full available print width */
+    margin: 0 !important;
+    padding: 0 !important;
+    /* Remove container padding entirely, rely on page margins */
+  }
+
+  /* Force 2-column grid layout with tighter gap */
+  .main-content {
+    display: grid !important;
+    grid-template-columns: 28% 68% !important;
+    /* Slightly narrower left column */
+    gap: 25px !important;
+    /* 40px -> 25px */
+  }
+
+  .left-column,
+  .right-column {
+    gap: 15px !important;
+    /* 30px -> 15px */
+  }
+
+  /* Compact Headers */
+  h1 {
+    font-size: 24px !important;
+    margin-bottom: 5px !important;
+  }
+
+  h2 {
+    font-size: 16px !important;
+    margin-bottom: 5px !important;
+  }
+
+  h3 {
+    font-size: 13px !important;
+    margin-bottom: 2px !important;
+  }
+
+  /* Compact Section Titles */
+  .my-titles {
+    font-size: 14px !important;
+    margin: 0 0 8px 0 !important;
+    /* 15px -> 8px */
+  }
+
+  /* Compact Lists */
+  ul {
+    margin: 0 !important;
+    padding-left: 15px !important;
+  }
+
+  li {
+    margin-bottom: 2px !important;
+    /* Tighten list items */
+  }
+
+  p {
+    margin: 0 0 5px 0 !important;
+  }
+
+  /* Prevent page breaks within elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  .my-titles {
+    page-break-after: avoid;
+  }
+
+  /* CRITICAL FIX: Allow sections to break across pages, but keep items intact */
+  /* This eliminates the huge gap by letting the section start immediately */
+  .experience-section,
+  .education-section,
+  .awards-section,
+  .cv-footer {
+    page-break-inside: auto !important;
+  }
+
+  /* Only prevent breaking inside individual items */
+  .job,
+  .education-item,
+  .award-item,
+  .skill-category {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Hide UI elements */
+  .print-actions,
+  .language-switcher {
+    display: none !important;
+  }
+
+  .header {
+    background: transparent !important;
+    color: var(--text-color) !important;
+  }
+}
+/* Styles for dynamic PDF generation (html2pdf) */
+.generating-pdf .print-actions,
+.generating-pdf .language-switcher,
+.generating-pdf .cv-footer {
+  display: none !important;
+}

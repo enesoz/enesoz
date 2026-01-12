@@ -67,8 +67,8 @@ export class CvPageComponent implements OnInit, OnDestroy {
         this.destroy$.complete();
     }
 
-    private loadCvData(): void {
-        this.cvService.getCvData()
+    private loadCvData(lang: string): void {
+        this.cvService.getCvData(lang)
             .pipe(
                 retry(2),
                 catchError(err => {
@@ -100,7 +100,7 @@ export class CvPageComponent implements OnInit, OnDestroy {
                 finalize(() => {
                     console.log(`📄 cv-page finalize called, error: ${this.error}`);
                     if (!this.error) {
-                        this.loadCvData();
+                        this.loadCvData(langToUse);
                     } else {
                         this.loading = false;
                     }
