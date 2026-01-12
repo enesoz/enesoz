@@ -188,18 +188,28 @@
         },
         {
             "title": "Yazılım Mühendisi",
-            "company": "Netaş",
+            "company": "NETAŞ",
             "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://netas.com.tr&size=128",
             "location": "İstanbul, Türkiye",
-            "start": "Mart 2013",
+            "start": "Şubat 2014",
             "end": "Mart 2016",
+            "description": "Kurumsal Uygulama projeleri geliştirildi",
             "responsibilities": [
-                "Spring, Spring Security, Spring EhCache, JSF 2.0, PrimeFaces, JDBC Template, Web Services (Rest ve SOAP), JavaScript kullanarak AYDES (Afet Yönetim ve Karar Destek Sistemi) proje modüllerine katıldım",
-                "Geo-Modüller Prime olarak GEO Veri Modüllerini Tasarladım ve Geliştirdim",
-                "Harita sağlayıcısı olan Başarsoft ile Netaş arasındaki iletişimi koordine ettim ve JavaScript ile harita bileşeni hazırladım",
-                "Turkcell BIP projesi için Mobil Uygulama Geliştirici ekibine Back-end Geliştirici olarak katıldım",
-                "Uygulama için hızlı ve güvenli bir çözümle Grup Sohbet Özelliği hazırladım",
-                "İstemci-Sunucu mimarisinde CDI, Hibernate, JAX-RS ve J2EE bileşenlerini kullandım"
+                "AYDES proje modüllerinin analiz ve tasarım aşamalarına katılındı; Spring, Spring Security, Spring EhCache, JSF 2.0, PrimeFaces, JDBC Template, Web Servisleri (Rest ve SOAP) ve JavaScript kullanılarak geliştirmeler yapıldı",
+                "Geo-Modüller Prime olarak GEO Veri Modülleri tasarlandı ve geliştirildi",
+                "Harita sağlayıcısı Başarsoft ile NETAŞ arasındaki iletişim koordine edildi ve JavaScript ile harita bileşeni kodlandı"
+            ]
+        },
+        {
+            "title": "Yazılım Mühendisi",
+            "company": "NETAŞ",
+            "location": "İstanbul, Türkiye",
+            "start": "Mart 2013",
+            "end": "Şubat 2014",
+            "responsibilities": [
+                "Turkcell BIP projesinde Mobil Uygulama Geliştirme ekibinde Back-end Geliştirici olarak yer alındı",
+                "Uygulama için hızlı ve güvenli bir çözümle Grup Sohbet Özelliği geliştirildi",
+                "İstemci-Sunucu mimarisinde CDI, Hibernate, JAX-RS ve J2EE bileşenleri kullanıldı"
             ]
         },
         {
