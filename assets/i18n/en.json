@@ -1,0 +1,57 @@
+{
+  "header": {
+    "name": "Full Name",
+    "title": "Title",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "website": "Website",
+    "contactInfo": "Contact Information",
+    "websites": "Websites",
+    "about": "ABOUT",
+    "languages": "Languages",
+    "experience": "Experience",
+    "militaryObligation": "Military Obligation",
+    "years": "years",
+    "months": "months"
+  },
+  "technicalSkills": {
+    "title": "TECHNICAL SKILLS",
+    "languages": "Programming Languages",
+    "frameworks": "Frameworks & Libraries",
+    "tools": "Tools & Technologies",
+    "microservice": "Microservices",
+    "bigData": "Big Data",
+    "cloud": "Cloud Technologies",
+    "databases": "Databases",
+    "monitoring": "Monitoring Tools",
+    "other": "Other Technologies"
+  },
+  "experience": {
+    "title": "WORK EXPERIENCE",
+    "company": "Company",
+    "position": "Position",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "current": "Present",
+    "responsibilities": "Responsibilities"
+  },
+  "education": {
+    "title": "EDUCATION",
+    "school": "School",
+    "degree": "Degree",
+    "field": "Field of Study",
+    "graduationDate": "Graduation Date"
+  },
+  "awards": {
+    "title": "ACHIEVEMENTS AND AWARDS",
+    "name": "Award Name",
+    "date": "Date",
+    "issuer": "Issuing Organization"
+  },
+  "print": {
+    "printCV": "Print CV",
+    "downloadPDF": "Download PDF",
+    "downloadAlert": "PDF download functionality will be integrated. For now, the Print dialog will open, save as PDF."
+  }
+}
