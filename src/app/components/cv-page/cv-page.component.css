@@ -1,2 +1,17 @@
 /* Reuse existing app component styles */
 @import '../../app.component.css';
+
+.footer-stats {
+    margin-top: 10px;
+    opacity: 0.7;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--light-gray);
+}
+
+.separator {
+    opacity: 0.5;
+}

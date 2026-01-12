@@ -4,6 +4,8 @@
   <div class="timeline">
     <div *ngFor="let exp of experiences" class="job">
       <div class="job-header">
+        <img *ngIf="exp.logoUrl" [src]="exp.logoUrl" class="company-logo" alt="{{ exp.company }} logo" loading="lazy"
+          (error)="exp.logoUrl = undefined" data-html2canvas-ignore="true">
         <div class="job-title">
           <h3 class="boldTitle">{{ exp.title }}, {{ exp.company }}</h3>
           <p class="location-period">{{ exp.location }} | {{ exp.start }} - {{ exp.end }}</p>

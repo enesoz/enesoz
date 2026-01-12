@@ -2,10 +2,11 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { TranslatePipe } from '../../../services/translate.pipe';
 import { TranslateService } from '../../../services/translate.service';
-import { NgForOf } from '@angular/common';
+import { CommonModule } from '@angular/common'; // Import CommonModule
 import { Router, ActivatedRoute } from '@angular/router';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { StatsService } from '../../../services/stats.service';
 
 @Component({
   selector: 'app-print-page',
@@ -13,8 +14,8 @@ import { takeUntil } from 'rxjs/operators';
   templateUrl: './print-page.component.html',
   styleUrls: ['./print-page.component.css'],
   imports: [
-    TranslatePipe,
-    NgForOf
+    CommonModule, // Use CommonModule
+    TranslatePipe
   ]
 })
 export class PrintPageComponent implements OnInit, OnDestroy {
@@ -24,11 +25,13 @@ export class PrintPageComponent implements OnInit, OnDestroy {
     private titleService: Title,
     private translateService: TranslateService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private statsService: StatsService
   ) { }
 
   printCV(): void {
-    this.titleService.setTitle('Enes Özdemir - CV');
+    this.titleService.setTitle(`Enes_Ozdemir_CV_${this.currentLang.toUpperCase()}`);
+    this.statsService.incrementDownloads().pipe(takeUntil(this.destroy$)).subscribe();
     window.print();
   }
 
@@ -45,17 +48,19 @@ export class PrintPageComponent implements OnInit, OnDestroy {
 
       const opt = {
         margin: 10,
-        filename: 'Enes_Ozdemir_CV.pdf',
+        filename: `Enes_Ozdemir_CV_${this.currentLang.toUpperCase()}.pdf`,
         image: { type: 'jpeg' as const, quality: 0.98 },
         html2canvas: {
           scale: 2,
           useCORS: true,
           logging: false
         },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' as const }
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' as const },
+        pagebreak: { mode: ['css', 'legacy'], avoid: ['.job', '.education-item', '.award-item', '.skill-category'] }
       };
 
       // Generate and open in new tab
+      this.statsService.incrementDownloads().pipe(takeUntil(this.destroy$)).subscribe();
       await html2pdf().set(opt).from(element).output('bloburl').then((pdfUrl: string) => {
         window.open(pdfUrl, '_blank');
       });

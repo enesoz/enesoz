@@ -22,6 +22,21 @@
 
 .job-header {
   margin: 0 0 10px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.company-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 4px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .job-title h3 {

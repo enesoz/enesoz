@@ -6,4 +6,5 @@ export interface Experience {
   end: string;
   description?: string;
   responsibilities?: string[];
+  logoUrl?: string;
 }

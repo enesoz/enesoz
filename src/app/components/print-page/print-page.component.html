@@ -1,20 +1,24 @@
-<div class="print-actions">
-  <button (click)="printCV()" class="print-button">
-    <span class="icon">🖨️</span> {{ 'print.printCV' | translate }}
-  </button>
-  <button (click)="downloadPDF()" class="download-button">
-    <span class="icon">📥</span> {{ 'print.downloadPDF' | translate }}
-  </button>
-</div>
-<nav class="language-switcher">
-  <div class="lang-options">
-    <button
-      *ngFor="let lang of languages"
-      [class.active]="isActive(lang.code)"
-      (click)="switchLanguage(lang.code)"
-      [attr.aria-pressed]="isActive(lang.code)"
-      [attr.aria-label]="'Switch to ' + lang.name + ' language'">
-      {{ lang.name }}
+<div class="controls-overlay">
+  <!-- Language Switcher -->
+  <div class="control-group lang-group">
+    <button *ngFor="let lang of languages" class="control-btn lang-btn" [class.active]="isActive(lang.code)"
+      (click)="switchLanguage(lang.code)" [attr.aria-pressed]="isActive(lang.code)"
+      [attr.aria-label]="'Switch to ' + lang.name">
+      {{ lang.code | uppercase }}
     </button>
   </div>
-</nav>
+
+  <div class="separator"></div>
+
+  <!-- Actions -->
+  <div class="control-group action-group">
+    <button (click)="printCV()" class="control-btn action-btn" title="Print CV">
+      <span class="icon">🖨️</span>
+      <span class="label">{{ 'print.printCV' | translate }}</span>
+    </button>
+    <button (click)="downloadPDF()" class="control-btn action-btn" title="Download PDF">
+      <span class="icon">📥</span>
+      <span class="label">{{ 'print.downloadPDF' | translate }}</span>
+    </button>
+  </div>
+</div>

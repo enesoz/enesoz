@@ -18,7 +18,7 @@ interface TranslationValue {
 })
 export class TranslateService {
   private translations: Record<string, TranslationValue> = {};
-  private currentLang = 'tr'; // Default language
+  private currentLang = 'en'; // Default language
   private translationsLoaded: { [key: string]: Observable<boolean> } = {};
 
   // Observable to notify components when language changes
@@ -33,10 +33,8 @@ export class TranslateService {
    * @returns Observable that completes when translations are loaded
    */
   public setLanguage(lang: string): Observable<boolean> {
-    console.log(`🌍 setLanguage called with lang: ${lang}, previous currentLang: ${this.currentLang}`);
     this.currentLang = lang;
     this.languageChange$.next(lang); // Notify subscribers of language change
-    console.log(`🌍 currentLang updated to: ${this.currentLang}`);
     return this.loadTranslations(lang);
   }
 
@@ -64,7 +62,7 @@ export class TranslateService {
       return this.translationsLoaded[lang];
     }
 
-    this.translationsLoaded[lang] = this.http.get<TranslationValue>(`/assets/i18n/${lang}.json`)
+    this.translationsLoaded[lang] = this.http.get<TranslationValue>(`assets/i18n/${lang}.json`)
       .pipe(
         map(response => {
           this.translations[lang] = response;
@@ -88,11 +86,8 @@ export class TranslateService {
    * @returns Translated text or the key if translation is not found
    */
   public translate(key: string): string {
-    console.log(`🔤 Translating key: ${key}, currentLang: ${this.currentLang}`);
-
     if (!this.translations[this.currentLang]) {
-      console.warn(`⚠️ Translations not loaded for ${this.currentLang}`);
-      return key; // Translations not loaded, return the key
+      return key;
     }
 
     const keys = key.split('.');
@@ -102,13 +97,11 @@ export class TranslateService {
       if (value && typeof value === 'object' && k in value) {
         value = value[k];
       } else {
-        console.warn(`⚠️ Translation not found for key: ${key}`);
-        return key; // Translation not found, return the key
+        return key;
       }
     }
 
     const result = typeof value === 'string' ? value : JSON.stringify(value);
-    console.log(`✅ Translation result for ${key}: ${result}`);
     return result;
   }
 }

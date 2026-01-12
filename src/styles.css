@@ -256,3 +256,12 @@ body {
 .generating-pdf .cv-footer {
   display: none !important;
 }
+
+/* Hide cursor effect in print and PDF generation */
+@media print { app-cursor-effect { display: none !important; } }
+.generating-pdf app-cursor-effect { display: none !important; }
+
+.generating-pdf .controls-overlay { display: none !important; }
+
+.generating-pdf .company-logo { display: none !important; }
+@media print { .company-logo { display: none !important; } }

@@ -20,6 +20,11 @@
   <footer class="cv-footer" role="contentinfo">
     <p>© {{ currentYear }} {{ cvData.personalInfo.name }} {{ cvData.personalInfo.surname }}</p>
     <p>Last updated: {{ lastUpdated | date:'MMMM yyyy' }}</p>
+    <div class="footer-stats" *ngIf="viewCount > 0">
+      <small>Views: {{ viewCount }}</small>
+      <span class="separator">|</span>
+      <small>Downloads: {{ downloadCount }}</small>
+    </div>
   </footer>
 </main>
 

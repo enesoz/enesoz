@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { CvPageComponent } from './components/cv-page/cv-page.component';
 
 // Route configuration constants
-const DEFAULT_LANGUAGE = 'tr';
+const DEFAULT_LANGUAGE = 'en';
 const ROOT_PATH = '';
 const LANGUAGE_PARAM_PATH = ':lang';
 const FULL_PATH_MATCH = 'full';
@@ -16,6 +16,10 @@ export const routes: Routes = [
     {
         path: LANGUAGE_PARAM_PATH,
         component: CvPageComponent
+    },
+    {
+        path: '**',
+        redirectTo: DEFAULT_LANGUAGE
     }
 ];
 

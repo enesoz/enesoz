@@ -1,9 +1,10 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { takeUntil, retry, catchError, finalize } from 'rxjs/operators';
 import { CvService } from '../../../services/cv.service';
 import { TranslateService } from '../../../services/translate.service';
+import { StatsService } from '../../../services/stats.service';
 import { CvData } from '../../models/CvDataInterface';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
@@ -43,13 +44,17 @@ export class CvPageComponent implements OnInit, OnDestroy {
     errorMessage = '';
     currentYear = new Date().getFullYear();
     lastUpdated = new Date('2025-07-01');
+    viewCount = 0;
+    downloadCount = 0;
 
     private destroy$ = new Subject<void>();
 
     constructor(
         private route: ActivatedRoute,
+        private router: Router,
         private cvService: CvService,
-        private translateService: TranslateService
+        private translateService: TranslateService,
+        private statsService: StatsService
     ) { }
 
     ngOnInit(): void {
@@ -60,6 +65,10 @@ export class CvPageComponent implements OnInit, OnDestroy {
                 const langParam = params.get('lang');
                 this.changeLanguage(langParam);
             });
+
+        // Load stats
+        this.statsService.incrementViews().pipe(takeUntil(this.destroy$)).subscribe(count => this.viewCount = count);
+        this.statsService.getDownloads().pipe(takeUntil(this.destroy$)).subscribe(count => this.downloadCount = count);
     }
 
     ngOnDestroy(): void {
@@ -90,7 +99,7 @@ export class CvPageComponent implements OnInit, OnDestroy {
     }
 
     changeLanguage(lang: string | null): void {
-        const langToUse = lang ?? 'tr';
+        const langToUse = lang ?? 'en';
         console.log(`📄 cv-page changeLanguage called with: ${lang}, using: ${langToUse}`);
         this.loading = true;
         this.error = false;
@@ -98,24 +107,26 @@ export class CvPageComponent implements OnInit, OnDestroy {
         this.translateService.setLanguage(langToUse)
             .pipe(
                 finalize(() => {
-                    console.log(`📄 cv-page finalize called, error: ${this.error}`);
                     if (!this.error) {
                         this.loadCvData(langToUse);
                     } else {
                         this.loading = false;
+                        // Determine if we should redirect or show error
+                        // If language load failed, it likely means invalid language -> Redirect to home
+                        console.warn(`Redirecting to home due to language load failure: ${langToUse}`);
+                        this.router.navigate(['/']);
                     }
                 }),
                 takeUntil(this.destroy$)
             )
             .subscribe({
                 next: () => {
-                    console.log(`📄 cv-page setLanguage next callback`);
                     // Translation loaded successfully
                 },
                 error: (err) => {
                     console.error('Error loading translations:', err);
-                    this.errorMessage = 'Failed to load translations. Please refresh the page.';
                     this.error = true;
+                    // Error state is handled in finalize to allow redirect
                 }
             });
     }
