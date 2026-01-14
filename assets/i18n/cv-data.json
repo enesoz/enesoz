@@ -121,6 +121,7 @@
       "location": "Remote",
       "start": "August 2023",
       "end": "now",
+      "isCurrent": true,
       "description": "As a contractor, I have made noteworthy contributions to various projects for Zoolatech's prominent client, MasterControl.",
       "responsibilities": [
         "Assisted the CMX development team in crafting robust web applications using cutting-edge technologies such as Java 17, Angular 13, TypeScript, Docker, and more.",

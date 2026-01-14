@@ -121,6 +121,7 @@
             "location": "Uzaktan",
             "start": "Ağustos 2023",
             "end": "Halen",
+            "isCurrent": true,
             "description": "Yüklenici olarak, Zoolatech'in önemli müşterisi MasterControl için çeşitli projelerde kayda değer katkılarda bulundum.",
             "responsibilities": [
                 "CMX geliştirme ekibine Java 17, Angular 13, TypeScript, Docker gibi son teknolojileri kullanarak sağlam web uygulamaları oluşturmada yardımcı oldum.",
