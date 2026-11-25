@@ -44,7 +44,7 @@
   },
   "technicalSkills": {
     "languages": [
-      "Java (8–17)",
+      "Java",
       "Scala",
       "JavaScript / TypeScript",
       "SQL"
@@ -151,7 +151,7 @@
       "isCurrent": true,
       "description": "Client: MasterControl",
       "responsibilities": [
-        "Owned features end to end across the stack — OpenAPI contracts, Java 17 / Spring Boot 3.x services, Kafka (Confluent + Avro) and AWS SQS/SNS event flows, Kubernetes / ArgoCD GitOps deployment, and a React / TypeScript frontend.",
+        "Owned features end to end across the stack — OpenAPI contracts, Java / Spring Boot 3.x services, Kafka (Confluent + Avro) and AWS SQS/SNS event flows, Kubernetes / ArgoCD GitOps deployment, and a React / TypeScript frontend.",
         "Built cloud-native microservices on a hexagonal architecture with PostgreSQL, event-driven domain events, and the transactional outbox pattern.",
         "Hardened legacy-to-modern data-migration pipelines (Scala, config-driven ETL) by resolving idempotency, file-verification, special-character, null-safety, and audit edge cases.",
         "Implemented tenant-aware features: record-level capture, row-level-security (RLS) authorization filtering, read-model synchronization, and service-to-service permission checks.",
@@ -194,7 +194,7 @@
       "start": "June 2019",
       "end": "January 2021",
       "responsibilities": [
-        "Architected and built three clustered, highly available, multi-threaded applications spanning 28 microservices (Java 11, Kafka, Akka, VoltDB, Oracle, Hazelcast, Elasticsearch).",
+        "Architected and built three clustered, highly available, multi-threaded applications spanning 28 microservices (Java, Kafka, Akka, VoltDB, Oracle, Hazelcast, Elasticsearch).",
         "Designed a Kafka-based microservices architecture achieving 100K TPS with low-latency, non-intrusive processing.",
         "Introduced CI/CD, enabling fail-safe deployments and shifting the team's delivery culture.",
         "Built KPI / observability dashboards (Grafana, Kibana, Elasticsearch) and an Angular + Spring Boot client-server application; developed a Node.js + Vue.js dashboard."
