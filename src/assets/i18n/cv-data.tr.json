@@ -44,7 +44,7 @@
   },
   "technicalSkills": {
     "languages": [
-      "Java (8–17)",
+      "Java",
       "Scala",
       "JavaScript / TypeScript",
       "SQL"
@@ -151,7 +151,7 @@
       "isCurrent": true,
       "description": "Müşteri: MasterControl",
       "responsibilities": [
-        "Feature'ları tüm stack boyunca uçtan uca sahiplendim — OpenAPI contract'ları, Java 17 / Spring Boot 3.x servisleri, Kafka (Confluent + Avro) ve AWS SQS/SNS event flow'ları, Kubernetes / ArgoCD GitOps deployment ve React / TypeScript frontend.",
+        "Feature'ları tüm stack boyunca uçtan uca sahiplendim — OpenAPI contract'ları, Java / Spring Boot 3.x servisleri, Kafka (Confluent + Avro) ve AWS SQS/SNS event flow'ları, Kubernetes / ArgoCD GitOps deployment ve React / TypeScript frontend.",
         "PostgreSQL, event-driven domain event'ler ve transactional outbox pattern ile hexagonal architecture üzerinde cloud-native microservice'ler geliştirdim.",
         "Legacy'den modern sisteme data migration pipeline'larını (Scala, config-driven ETL) idempotency, file verification, special character, null-safety ve audit edge case'lerini çözerek sağlamlaştırdım.",
         "Tenant-aware feature'lar geliştirdim: record-level capture, row-level security (RLS) ile authorization filtering, read-model synchronization ve service-to-service permission check'leri.",
@@ -194,7 +194,7 @@
       "start": "Haziran 2019",
       "end": "Ocak 2021",
       "responsibilities": [
-        "28 microservice'ten oluşan üç adet clustered, highly available, multi-threaded uygulamayı tasarlayıp geliştirdim (Java 11, Kafka, Akka, VoltDB, Oracle, Hazelcast, Elasticsearch).",
+        "28 microservice'ten oluşan üç adet clustered, highly available, multi-threaded uygulamayı tasarlayıp geliştirdim (Java, Kafka, Akka, VoltDB, Oracle, Hazelcast, Elasticsearch).",
         "Low-latency, non-intrusive processing ile 100K TPS'e ulaşan Kafka tabanlı bir microservice architecture tasarladım.",
         "CI/CD'yi hayata geçirerek fail-safe deployment'ları mümkün kıldım ve ekibin delivery kültürünü dönüştürdüm.",
         "KPI / observability dashboard'ları (Grafana, Kibana, Elasticsearch) ve Angular + Spring Boot client-server uygulaması geliştirdim; Node.js + Vue.js ile bir dashboard geliştirdim."
