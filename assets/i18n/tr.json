@@ -18,14 +18,17 @@
   "technicalSkills": {
     "title": "TEKNİK BECERİLER",
     "languages": "Programlama Dilleri",
-    "frameworks": "Çerçeveler ve Kütüphaneler",
-    "tools": "Araçlar ve Teknolojiler",
-    "microservice": "Mikroservisler",
-    "bigData": "Büyük Veri",
-    "cloud": "Bulut Teknolojileri",
-    "databases": "Veritabanları",
-    "monitoring": "İzleme Araçları",
-    "other": "Diğer Teknolojiler"
+    "backendArchitecture": "Backend ve Mimari",
+    "messagingStreaming": "Mesajlaşma ve Veri Akışı",
+    "dataMigration": "Veri ve Taşıma",
+    "cachingPerformance": "Önbellekleme ve Performans",
+    "cloudDevops": "Bulut ve DevOps",
+    "observability": "Gözlemlenebilirlik",
+    "frontend": "Frontend",
+    "testing": "Test",
+    "aiAssisted": "AI Destekli Geliştirme",
+    "tooling": "Araçlar",
+    "leadership": "Liderlik"
   },
   "experience": {
     "title": "İŞ DENEYİMİ",

@@ -1,260 +1,267 @@
 {
-    "personalInfo": {
-        "name": "Enes",
-        "surname": "Özdemir",
-        "location": "İstanbul, TÜRKİYE",
-        "titles": [
-            "Java Uzmanı",
-            "Yazılım Mimarı",
-            "Full-Stack Geliştirici"
-        ],
-        "contact": {
-            "phone": "+90 533 690 65 47",
-            "email": "csenes1987@gmail.com"
-        },
-        "webProfiles": [
-            {
-                "name": "LinkedIn",
-                "url": "www.linkedin.com/in/eneso"
-            },
-            {
-                "name": "GitHub",
-                "url": "github.com/enesoz"
-            },
-            {
-                "name": "HackerRank",
-                "url": "hackerrank.com/csenes1987"
-            }
-        ],
-        "about": {
-            "languages": [
-                {
-                    "name": "Türkçe",
-                    "level": "Anadil"
-                },
-                {
-                    "name": "İngilizce",
-                    "level": "Profesyonel Çalışma Yetkinliği"
-                }
-            ],
-            "experience": "14+ yıl",
-            "militaryObligation": "Tamamlandı"
-        }
-    },
-    "technicalSkills": {
-        "languages": [
-            "Java",
-            "JavaScript",
-            "Scala",
-            "SQL"
-        ],
-        "frameworks": [
-            "Spring",
-            "Spring Boot",
-            "JPA",
-            "Hibernate",
-            "VueJS 2.0",
-            "Angular (2-7-16)",
-            "NodeJS",
-            "NGINX",
-            "Swagger",
-            "AOP",
-            "JSF2.2",
-            "Seam 2.0",
-            "EJB 3.0",
-            "Dagger"
-        ],
-        "microservice": [
-            "Spring Cloud",
-            "Apache Akka",
-            "Java Concurrent API",
-            "RabbitMQ"
-        ],
-        "bigData": [
-            "Apache Kafka",
-            "Kafka Streaming",
-            "Apache Spark",
-            "Spark Streaming"
-        ],
-        "cloud": [
-            "AWS (Glue, RDS, Route 53, S3, EC2, Cognito, IAM, Lambda, SNS)",
-            "DigitalOcean (Droplets, Databases, Spaces, Load Balancers)"
-        ],
-        "databases": [
-            "Oracle",
-            "PostgreSQL",
-            "MongoDB",
-            "Elastic",
-            "Redis",
-            "Hazelcast",
-            "VoltDB"
-        ],
-        "monitoring": [
-            "Kibana",
-            "Grafana",
-            "Graylog",
-            "Prometheus",
-            "CloudWatch",
-            "Datadog"
-        ],
-        "other": [
-            "Maven",
-            "Gradle",
-            "JIRA API",
-            "Nexus",
-            "SonarQube",
-            "Archiva",
-            "GitLab CI/CD",
-            "Jenkins",
-            "Bitbucket",
-            "SonarQube",
-            "Docker",
-            "Git",
-            "Keycloak"
-        ]
-    },
-    "experiences": [
-        {
-            "title": "Kıdemli Yazılım Mühendisliği Danışmanı",
-            "company": "Zoolatech",
-            "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://zoolatech.com&size=128",
-            "location": "Uzaktan",
-            "start": "Ağustos 2023",
-            "end": "Halen",
-            "isCurrent": true,
-            "description": "Yüklenici olarak, Zoolatech'in önemli müşterisi MasterControl için çeşitli projelerde kayda değer katkılarda bulundum.",
-            "responsibilities": [
-                "CMX geliştirme ekibine Java 17, Angular 13, TypeScript, Docker gibi son teknolojileri kullanarak sağlam web uygulamaları oluşturmada yardımcı oldum.",
-                "Test kapsamı hedefine ulaşmak için Mockito, JUnit ve Spring Tests framework kullanarak birim ve entegrasyon testleri oluşturdum.",
-                "Scrum ekibine katıldım ve sprint başına verilen hedefleri gerçekleştirdim",
-                "Müşteri çeyrek/yıllık planlama etkinliklerine yerinde katıldım",
-                "Mevcut uygulamadan geleceğe temel verilerin AWS Glue, Java Spark, Scala, Dagger vb. kullanılarak transferini kolaylaştırmak için AMx migrasyon ekibine katıldım.",
-                "Zorlu epic'ler için yenilikçi teknik çözümler ürettim ve sundum.",
-                "Kapsamlı kod kapsamı ve sağlam performans sağlamak için bileşen ve uçtan uca testler geliştirdim."
-            ]
-        },
-        {
-            "title": "Yazılım Geliştirme Takım Lideri",
-            "company": "Semtrio Sustainability",
-            "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://semtrio.com&size=128",
-            "location": "İstanbul, Türkiye",
-            "start": "Mart 2022",
-            "end": "Temmuz 2023",
-            "responsibilities": [
-                "Java Spring boot, Docker, VueJS 2, RabbitMQ, Redis, PostgreSQL, Swagger, AWS S3, Lambda, Cognito kullanarak kararlı, yüksek erişilebilirlikli web servisleri için hem front-end GUI'ler, hem REST API'ler hem de back-end sunucular oluşturmada 10(+/-) kişilik yazılım ekibine (Geliştiriciler, Analistler, Testçiler, QA) liderlik ettim",
-                "Monolitik uygulamayı yeniden tasarladım ve beş alt uygulama ve servislerini geliştirdim",
-                "Yedi uygulama için Docker, Digital Ocean, AWS, GitLab CI ve Shell Scriptleri kullanarak CI / CD ortamını hazırladım",
-                "Kod incelemeleri yaparak, ekip içi bilgi paylaşımı için toplantılar düzenleyerek, pair programming yaparak ve araç kullanımı ile kod kalitesini artırdım",
-                "Junior ekip üyelerini işe aldım, koçluk yaptım ve Java ve JavaScript en iyi uygulama tasarım kalıpları konusunda mentorluk yaptım ve geliştirme ortamlarına uyum sağlamalarını teşvik ettim"
-            ]
-        },
-        {
-            "title": "Yazılım Mimarı",
-            "company": "I2I Systems",
-            "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://i2i-systems.com&size=128",
-            "location": "İstanbul, Türkiye",
-            "start": "Ocak 2021",
-            "end": "Şubat 2022",
-            "description": "Terfi Etti"
-        },
-        {
-            "title": "Kıdemli Yazılım Analiz Geliştiricisi",
-            "company": "I2I Systems",
-            "location": "İstanbul, Türkiye",
-            "start": "Haziran 2018",
-            "end": "Ocak 2021",
-            "responsibilities": [
-                "Java 11, Kafka, Akka, VoltDB, Oracle, Hazelcast, Elastic vb. kullanarak yirmi sekiz mikro servisten oluşan üç kümelenmiş, yüksek erişilebilirlikli, çok iş parçacıklı uygulama oluşturdum.",
-                "CI/CD konsepti için geliştirme ortamı hazırladım, %100 daha hızlı ve hatasız dağıtım yeteneği kazanıldı. Şirkete ekip geliştirme kültürünü ve ortamını bu yönde dönüştürmede rehberlik ettim.",
-                "POC geliştirmeleriyle iyileştirmeleri kanıtladım ve teknolojileri yeni trendlerle dönüştürdüm.",
-                "100K TPS hedefine ulaşarak Kafka ile mikro servis mimarisinde hızlı, güvenilir, müdahaleci olmayan kümelenmiş uygulamalar tasarladım ve kodladım.",
-                "Grafana, Kibana ve Elastic kullanarak sistem KPI izleme tasarladım",
-                "Kullanıcı deneyimlerini geliştirmek için sunucu-istemci mimarisini uygulayan Angular + Spring Boot uygulamasını tasarladım.",
-                "Node.js + Vue.js dashboard uygulamasını kodladım"
-            ]
-        },
-        {
-            "title": "Yazılım Mühendisi",
-            "company": "T.C. Başbakanlık",
-            "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png",
-            "location": "Ankara, Türkiye",
-            "start": "Mart 2016",
-            "end": "Haziran 2018",
-            "responsibilities": [
-                "JSF, Spring Framework, PrimeFaces, Elastic, Apache Kafka vb. kullanarak web uygulaması projeleri tasarladım.",
-                "Elastic kümesi ile büyük veri akış uygulaması ve rapor sistemi tasarladım ve geliştirdim",
-                "Projenin değişim yönetimine öncülük ettim ve ardından dokuz geliştiriciyi içeren ekibe Scrum Master olarak liderlik ettim.",
-                "Çoğunlukla iki ila üç hafta süren ve 1000'den fazla sorunun çözüldüğü 41 sprint tamamladım."
-            ]
-        },
-        {
-            "title": "Yazılım Mühendisi",
-            "company": "NETAŞ",
-            "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://netas.com.tr&size=128",
-            "location": "İstanbul, Türkiye",
-            "start": "Şubat 2014",
-            "end": "Mart 2016",
-            "description": "Kurumsal Uygulama projeleri geliştirildi",
-            "responsibilities": [
-                "AYDES proje modüllerinin analiz ve tasarım aşamalarına katılındı; Spring, Spring Security, Spring EhCache, JSF 2.0, PrimeFaces, JDBC Template, Web Servisleri (Rest ve SOAP) ve JavaScript kullanılarak geliştirmeler yapıldı",
-                "Geo-Modüller Prime olarak GEO Veri Modülleri tasarlandı ve geliştirildi",
-                "Harita sağlayıcısı Başarsoft ile NETAŞ arasındaki iletişim koordine edildi ve JavaScript ile harita bileşeni kodlandı"
-            ]
-        },
-        {
-            "title": "Yazılım Mühendisi",
-            "company": "NETAŞ",
-            "location": "İstanbul, Türkiye",
-            "start": "Mart 2013",
-            "end": "Şubat 2014",
-            "responsibilities": [
-                "Turkcell BIP projesinde Mobil Uygulama Geliştirme ekibinde Back-end Geliştirici olarak yer alındı",
-                "Uygulama için hızlı ve güvenli bir çözümle Grup Sohbet Özelliği geliştirildi",
-                "İstemci-Sunucu mimarisinde CDI, Hibernate, JAX-RS ve J2EE bileşenleri kullanıldı"
-            ]
-        },
-        {
-            "title": "Yazılım Mühendisi",
-            "company": "Huawei",
-            "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://huawei.com&size=128",
-            "location": "İstanbul, Türkiye",
-            "start": "Ağustos 2011",
-            "end": "Temmuz 2012",
-            "responsibilities": [
-                "CRM Projesinde yer aldım ve hata düzeltmeleri yapıldı",
-                "JSF, EclipseLink, JQuery kullanarak projeye katkıda bulundum",
-                "Tabs Projesinde JSF 1.0, özel ORM kütüphanesi, JSF Facelets 1.1 kullanarak iki modül uyguladım",
-                "JSF 2.0, JPA, Richfaces kullanarak PTF Projesi geliştirmek için Kahire, Mısır'da müşteri lokasyonunda çok uluslu bir ekiple çalıştım",
-                "NGIN Projesinde Spring Framework, Web Servisleri ve özel Facelet kütüphanesi kullanarak özellikler uyguladım ve hata düzeltmeleri yaptım"
-            ]
-        },
-        {
-            "title": "Jr. Yazılım Mühendisi",
-            "company": "Efe Eroğlu Yazılım Ltd. Şti",
-            "logoUrl": "https://ui-avatars.com/api/?name=Efe+Eroglu&background=random&color=fff",
-            "location": "Eskişehir, Türkiye",
-            "start": "Haziran 2010",
-            "end": "Şubat 2011",
-            "responsibilities": [
-                "Jboss Seam, RichFaces, PrimeFaces, JSF 2.0, EJB 3.0, Glassfish AS, Hibernate, Ant teknolojilerini kullandım",
-                "Proje kullanılmayan işlevselliğini geliştirdim, müşteri isteği üzerine yeniden yapılandırdım"
-            ]
-        }
+  "personalInfo": {
+    "name": "Enes",
+    "surname": "Özdemir",
+    "location": "İstanbul, Türkiye — uzaktan çalışmaya / taşınmaya açık",
+    "titles": [
+      "Kıdemli Yazılım Mühendisi",
+      "Yazılım Mimarı",
+      "Dağıtık Sistemler ve Platform Mühendisliği"
     ],
-    "education": [
-        {
-            "institution": "İstanbul Üniversitesi",
-            "degree": "Lisans, Bilgisayar Mühendisliği",
-            "location": "İstanbul, Türkiye",
-            "years": "2005 - 2010"
-        }
+    "contact": {
+      "phone": "+90 533 690 65 47",
+      "email": "csenes1987@gmail.com"
+    },
+    "webProfiles": [
+      {
+        "name": "LinkedIn",
+        "url": "www.linkedin.com/in/eneso"
+      },
+      {
+        "name": "GitHub",
+        "url": "github.com/enesoz"
+      },
+      {
+        "name": "HackerRank",
+        "url": "hackerrank.com/csenes1987"
+      }
     ],
-    "awards": [
+    "about": {
+      "summary": "JVM üzerinde dağıtık, cloud-native, olay güdümlü platformlar ve yüksek verimli mikroservisler tasarlama konusunda 15+ yıllık deneyime sahip Kıdemli Yazılım Mühendisi ve Yazılım Mimarı. Özellikleri OpenAPI sözleşmesinden başlayarak Java / Spring Boot servisleri ve Kafka / SQS olay akışları üzerinden Kubernetes / GitOps dağıtımına, gözlemlenebilirliğe, güvenliğe ve canlıdaki React / TypeScript arayüzüne kadar uçtan uca taşıyan bir mühendis. Ölçekte kendini kanıtlamış — 100K TPS hedefli mikroservis platformları tasarladı — ve platform modernizasyonu ile büyük ölçekli veri taşıma gibi yüksek doğruluk gerektiren işlerde deneyimli. 10 kişiye kadar ekiplere liderlik ve mentorluk yapmış teknik lider ve Scrum Master. Son ~2 yıldır mimari tasarım, geliştirme, hata ayıklama, kod inceleme, test üretimi ve dokümantasyon süreçlerinde, ağırlıklı olarak AI kodlama ajanları ve Claude API ile agentic geliştirme (AI destekli mühendislik) uygulamaktadır.",
+      "languages": [
         {
-            "title": "Netaş Başarı Ödülleri 2013"
+          "name": "Türkçe",
+          "level": "Anadil"
         },
         {
-            "title": "2005 Üniversite Giriş Sınavı'nda ~1,5 milyon katılımcı arasında %4'lük dilimde yer aldım"
+          "name": "İngilizce",
+          "level": "Profesyonel Çalışma Yetkinliği"
         }
+      ],
+      "experience": "15+ yıl",
+      "militaryObligation": "Tamamlandı"
+    }
+  },
+  "technicalSkills": {
+    "languages": [
+      "Java (8–17)",
+      "Scala",
+      "JavaScript / TypeScript",
+      "SQL"
+    ],
+    "backendArchitecture": [
+      "Spring Boot 3.x",
+      "Spring Cloud",
+      "Mikroservisler",
+      "Dağıtık Sistemler",
+      "Olay Güdümlü Mimari",
+      "Hexagonal Mimari",
+      "Domain-Driven Design (DDD)",
+      "REST / OpenAPI",
+      "Sistem Tasarımı",
+      "Yüksek Erişilebilirlik / Yüksek Verim",
+      "JPA / Hibernate",
+      "MapStruct"
+    ],
+    "messagingStreaming": [
+      "Apache Kafka (Confluent, Avro, Kafka Streams)",
+      "RabbitMQ",
+      "AWS SQS / SNS",
+      "Akka",
+      "Transactional Outbox Deseni"
+    ],
+    "dataMigration": [
+      "PostgreSQL",
+      "Oracle",
+      "MongoDB",
+      "Elasticsearch",
+      "VoltDB",
+      "Flyway",
+      "JSONB",
+      "Çok Kiracılık (Multi-tenancy) / RLS",
+      "ETL Hatları",
+      "Büyük Ölçekli Veri Taşıma",
+      "Apache Spark (Spark Streaming)"
+    ],
+    "cachingPerformance": [
+      "Redis",
+      "Hazelcast",
+      "Performans İyileştirme"
+    ],
+    "cloudDevops": [
+      "AWS (Glue, RDS, S3, EC2, Lambda, Cognito, IAM, Route 53, SNS)",
+      "Kubernetes",
+      "Docker",
+      "ArgoCD",
+      "GitOps",
+      "GitLab CI/CD",
+      "Jenkins"
+    ],
+    "observability": [
+      "OpenTelemetry",
+      "Grafana",
+      "Prometheus",
+      "Kibana",
+      "Graylog",
+      "Datadog",
+      "CloudWatch"
+    ],
+    "frontend": [
+      "React",
+      "TypeScript",
+      "Angular",
+      "Vue.js",
+      "Node.js",
+      "JSF / PrimeFaces"
+    ],
+    "testing": [
+      "JUnit",
+      "Mockito",
+      "TestContainers",
+      "Entegrasyon ve Uçtan Uca Testler"
+    ],
+    "aiAssisted": [
+      "AI kodlama ajanlarıyla (Claude API dahil) agentic geliştirme",
+      "Mimari, geliştirme, hata ayıklama, kod inceleme, test üretimi ve dokümantasyon",
+      "Prompt ve bağlam mühendisliği"
+    ],
+    "tooling": [
+      "Maven",
+      "Gradle",
+      "Git",
+      "SonarQube",
+      "Nexus"
+    ],
+    "leadership": [
+      "Teknik Liderlik",
+      "Scrum Master",
+      "Mentorluk",
+      "Kod İnceleme",
+      "İşe Alım"
     ]
+  },
+  "experiences": [
+    {
+      "title": "Kıdemli Yazılım Mühendisliği Danışmanı",
+      "company": "Zoolatech",
+      "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://zoolatech.com&size=128",
+      "location": "Uzaktan",
+      "start": "Ağustos 2023",
+      "end": "Halen",
+      "isCurrent": true,
+      "description": "Müşteri: MasterControl",
+      "responsibilities": [
+        "Özellikleri tüm katmanlarda uçtan uca sahiplendim — OpenAPI sözleşmeleri, Java 17 / Spring Boot 3.x servisleri, Kafka (Confluent + Avro) ve AWS SQS/SNS olay akışları, Kubernetes / ArgoCD GitOps dağıtımı ve React / TypeScript arayüzü.",
+        "PostgreSQL, olay güdümlü domain event'leri ve transactional outbox deseni ile hexagonal mimaride cloud-native mikroservisler geliştirdim.",
+        "Eski sistemden yeni sisteme veri taşıma hatlarını (Scala, konfigürasyon güdümlü ETL) idempotency, dosya doğrulama, özel karakter, null güvenliği ve denetim (audit) kenar durumlarını çözerek sağlamlaştırdım.",
+        "Kiracı (tenant) farkındalıklı özellikler geliştirdim: kayıt düzeyinde veri yakalama, satır düzeyi güvenlik (RLS) ile yetkilendirme filtreleme, okuma modeli senkronizasyonu ve servisler arası yetki kontrolleri.",
+        "Platform düzeyinde güvenilirlik kazanımları sağladım — PostgreSQL bağlantı havuzu tükenmesi sorununu çözdüm ve çok kiracılı iş yükleri için kiracı bazlı kuyruk adaleti tasarladım — OpenTelemetry / Grafana gözlemlenebilirliği, TestContainers / E2E testleri ve güvenlik sıkılaştırması (Snyk, gitleaks) ile.",
+        "Yazılım yaşam döngüsü boyunca agentic geliştirme uyguladım; tasarım, geliştirme, hata ayıklama, kod inceleme ve test üretiminde AI kodlama ajanlarını (Claude API dahil) kullandım."
+      ]
+    },
+    {
+      "title": "Yazılım Geliştirme Takım Lideri",
+      "company": "Semtrio Sustainability",
+      "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://semtrio.com&size=128",
+      "location": "İstanbul, Türkiye",
+      "start": "Mart 2022",
+      "end": "Temmuz 2023",
+      "responsibilities": [
+        "Java / Spring Boot, Vue.js, RabbitMQ, Redis, PostgreSQL ve AWS (S3, Lambda, Cognito) ile yüksek erişilebilir web servisleri geliştiren 10 kişilik çapraz fonksiyonel bir ekibe (geliştiriciler, analistler, QA/test uzmanları) liderlik ettim.",
+        "Monolitik bir uygulamayı bağımsız olarak dağıtılabilen beş servise ayırarak dağıtılabilirliği ve ekip özerkliğini artırdım.",
+        "Yedi uygulama için CI/CD kurdum (Docker, DigitalOcean, AWS, GitLab CI) ve sürüm çıkarma sürtünmesini azalttım.",
+        "Kod inceleme, eşli programlama ve bilgi paylaşım oturumlarıyla mühendislik kalitesini yükselttim; junior mühendisleri işe aldım, koçluk ve mentorluk yaptım."
+      ]
+    },
+    {
+      "title": "Yazılım Mimarı",
+      "company": "I2I Systems",
+      "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://i2i-systems.com&size=128",
+      "location": "İstanbul, Türkiye",
+      "start": "Ocak 2021",
+      "end": "Şubat 2022",
+      "responsibilities": [
+        "Tasarımında ve geliştirilmesinde yer aldığım I2I'ın kümelenmiş, olay güdümlü mikroservis platformunun teknik yönünü ve mimari standartlarını sahiplenmek üzere Kıdemli Geliştiricilikten Mimarlığa terfi ettim.",
+        "Kafka tabanlı mikroservis yapısının uçtan uca mimarisini sahiplendim; yüksek erişilebilirlik ve yüksek verimli iş yüklerini sürdürmek için servis ayrıştırma, kümeleme, eşzamanlılık ve hata toleransı desenlerini tanımladım.",
+        "Mühendislik ekibi genelinde tasarım ve mimari incelemelerine liderlik ettim; yeni teknolojilerin benimsenmesindeki riski azaltmak ve yön vermek için kavram kanıtı (PoC) değerlendirmeleri yürüttüm.",
+        "Kıdemli ve orta seviye mühendislere dağıtık sistemler ve mikroservis tasarımı konusunda mentorluk yaparak ekibin mimari olgunluğunu artırdım."
+      ]
+    },
+    {
+      "title": "Kıdemli Yazılım Analiz Geliştirici",
+      "company": "I2I Systems",
+      "location": "İstanbul, Türkiye",
+      "start": "Haziran 2019",
+      "end": "Ocak 2021",
+      "responsibilities": [
+        "28 mikroservisten oluşan üç adet kümelenmiş, yüksek erişilebilir, çok iş parçacıklı uygulamanın mimarisini tasarladım ve geliştirdim (Java 11, Kafka, Akka, VoltDB, Oracle, Hazelcast, Elasticsearch).",
+        "Düşük gecikmeli, müdahalesiz işleme ile 100K TPS'e ulaşan Kafka tabanlı bir mikroservis mimarisi tasarladım.",
+        "CI/CD'yi hayata geçirerek hatasız dağıtımları mümkün kıldım ve ekibin teslimat kültürünü dönüştürdüm.",
+        "KPI / gözlemlenebilirlik panoları (Grafana, Kibana, Elasticsearch) ve Angular + Spring Boot istemci-sunucu uygulaması geliştirdim; Node.js + Vue.js ile bir dashboard uygulaması geliştirdim."
+      ]
+    },
+    {
+      "title": "Yazılım Mühendisi",
+      "company": "T.C. Başbakanlık",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png",
+      "location": "Ankara, Türkiye",
+      "start": "Mart 2016",
+      "end": "Haziran 2019",
+      "responsibilities": [
+        "Web uygulamalarının (JSF, Spring, PrimeFaces, Elasticsearch, Kafka) ve kümelenmiş bir büyük veri akış ve raporlama sisteminin mimarisini tasarladım.",
+        "Değişim yönetimine liderlik ettim ve dokuz kişilik ekipte Scrum Master olarak görev yaptım; 41 sprint ve 1.000+ çözülmüş kayıt teslim ettim."
+      ]
+    },
+    {
+      "title": "Yazılım Mühendisi",
+      "company": "Netaş",
+      "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://netas.com.tr&size=128",
+      "location": "İstanbul, Türkiye",
+      "start": "Mart 2013",
+      "end": "Mart 2016",
+      "responsibilities": [
+        "Spring, Spring Security, JSF, PrimeFaces ve REST/SOAP web servisleri kullanarak AYDES (Afet Yönetim ve Karar Destek Sistemi) modüllerini geliştirdim.",
+        "GEO veri modüllerini sahiplendim ve üçüncü parti harita entegrasyonunu (Başarsoft) gerçekleştirdim.",
+        "Turkcell BiP mesajlaşma projesinde backend geliştirici olarak hızlı ve güvenli bir grup sohbet özelliği geliştirdim."
+      ]
+    },
+    {
+      "title": "Yazılım Mühendisi",
+      "company": "Huawei",
+      "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://huawei.com&size=128",
+      "location": "İstanbul, Türkiye",
+      "start": "Ağustos 2011",
+      "end": "Temmuz 2012",
+      "responsibilities": [
+        "NGIN, Tabs ve PTF projelerinde CRM ve telekom modülleri (JSF, EclipseLink, JPA) geliştirdim; Kahire, Mısır'da çok uluslu bir ekiple müşteri lokasyonunda teslimat yaptım."
+      ]
+    },
+    {
+      "title": "Junior Yazılım Mühendisi",
+      "company": "Efe Eroğlu Yazılım",
+      "logoUrl": "https://ui-avatars.com/api/?name=Efe+Eroglu&background=random&color=fff",
+      "location": "Eskişehir, Türkiye",
+      "start": "Haziran 2010",
+      "end": "Şubat 2011",
+      "responsibilities": [
+        "JBoss Seam, RichFaces, PrimeFaces, JSF, EJB 3.0 ve Hibernate kullanarak müşteri gereksinimlerine göre uygulama özelliklerini geliştirdim ve yeniden yapılandırdım."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "İstanbul Üniversitesi",
+      "degree": "Lisans, Bilgisayar Mühendisliği",
+      "location": "İstanbul, Türkiye",
+      "years": "2005 - 2010"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Netaş Başarı Ödülleri 2013"
+    },
+    {
+      "title": "2005 Üniversite Giriş Sınavı'nda ~1,5 milyon katılımcı arasında %4'lük dilimde yer aldım"
+    }
+  ]
 }
