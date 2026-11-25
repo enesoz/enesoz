@@ -1,10 +1,5 @@
-export interface TechnicalSkill {
-  languages: string[];
-  frameworks: string[];
-  microservice: string[];
-  bigData: string[];
-  cloud: string[];
-  databases: string[];
-  monitoring: string[];
-  other: string[];
-}
+/**
+ * Skill categories keyed by their i18n label suffix (technicalSkills.<key>).
+ * Rendered in insertion order.
+ */
+export type TechnicalSkill = Record<string, string[]>;

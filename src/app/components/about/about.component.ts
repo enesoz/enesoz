@@ -1,7 +1,7 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { About } from '../../models/PersonalInfoInterfaces';
 import { TranslatePipe } from '../../../services/translate.pipe';
-import { NgForOf } from '@angular/common';
+import { NgForOf, NgIf } from '@angular/common';
 import { Experience } from '../../models/ExperienceInterface';
 import { TranslateService } from '../../../services/translate.service';
 
@@ -14,7 +14,8 @@ import { TranslateService } from '../../../services/translate.service';
   styleUrls: ['./about.component.css'],
   imports: [
     TranslatePipe,
-    NgForOf
+    NgForOf,
+    NgIf
   ]
 })
 export class AboutComponent implements OnChanges {
@@ -55,7 +56,7 @@ export class AboutComponent implements OnChanges {
       let endMonth: number;
       let endYear: number;
 
-      if (exp.end.toLowerCase() === 'now') {
+      if (exp.isCurrent || ['now', 'halen'].includes(exp.end.toLocaleLowerCase('tr'))) {
         endMonth = currentDate.getMonth();
         endYear = currentDate.getFullYear();
       } else {
@@ -96,6 +97,12 @@ export class AboutComponent implements OnChanges {
       'july', 'august', 'september', 'october', 'november', 'december'
     ];
 
-    return months.findIndex(month => month.toLowerCase() === monthName.toLowerCase());
+    const monthsTr = [
+      'ocak', 'şubat', 'mart', 'nisan', 'mayıs', 'haziran',
+      'temmuz', 'ağustos', 'eylül', 'ekim', 'kasım', 'aralık'
+    ];
+    const name = monthName.toLocaleLowerCase('tr');
+    const index = months.indexOf(monthName.toLowerCase());
+    return index !== -1 ? index : monthsTr.indexOf(name);
   }
 }

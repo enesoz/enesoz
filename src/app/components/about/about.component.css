@@ -18,3 +18,7 @@
   font-weight: var(--font-weight-bold);
   color: var(--primary-color);
 }
+.about-section .summary {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}

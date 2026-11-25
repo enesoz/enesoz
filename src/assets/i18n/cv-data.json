@@ -2,11 +2,11 @@
   "personalInfo": {
     "name": "Enes",
     "surname": "Özdemir",
-    "location": "İstanbul, TURKEY",
+    "location": "İstanbul, Turkey — open to remote / relocation",
     "titles": [
-      "Java Specialist",
+      "Senior Software Engineer",
       "Software Architect",
-      "Full-Stack Developer"
+      "Distributed Systems & Platform Engineering"
     ],
     "contact": {
       "phone": "+90 533 690 65 47",
@@ -27,6 +27,7 @@
       }
     ],
     "about": {
+      "summary": "Senior Software Engineer and Software Architect with 15+ years designing distributed, cloud-native, event-driven platforms and high-throughput microservices on the JVM. Full-lifecycle engineer who carries features from OpenAPI contract through Java / Spring Boot services and Kafka / SQS event flows to Kubernetes / GitOps deployment, observability, security, and a production React / TypeScript frontend. Proven at scale — architected microservices platforms targeting 100K TPS — and in the high-integrity work of platform modernization and large-scale data migration. Technical leader and Scrum Master who has led and mentored teams of up to 10. For the past ~2 years, has practiced agentic development (AI-assisted engineering) across architecture design, implementation, debugging, code review, test generation, and documentation, primarily via AI coding agents and the Claude API.",
       "languages": [
         {
           "name": "Turkish",
@@ -37,80 +38,106 @@
           "level": "Professional Working"
         }
       ],
-      "experience": "14+ years",
+      "experience": "15+ years",
       "militaryObligation": "Completed"
     }
   },
   "technicalSkills": {
     "languages": [
-      "Java",
-      "JavaScript",
+      "Java (8–17)",
       "Scala",
+      "JavaScript / TypeScript",
       "SQL"
     ],
-    "frameworks": [
-      "Spring",
-      "Spring Boot",
-      "JPA",
-      "Hibernate",
-      "VueJS 2.0",
-      "Angular (2-7-16)",
-      "NodeJS",
-      "NGINX",
-      "Swagger",
-      "AOP",
-      "JSF2.2",
-      "Seam 2.0",
-      "EJB 3.0",
-      "Dagger"
-    ],
-    "microservice": [
+    "backendArchitecture": [
+      "Spring Boot 3.x",
       "Spring Cloud",
-      "Apache Akka",
-      "Java Concurrent API",
-      "RabbitMQ"
+      "Microservices",
+      "Distributed Systems",
+      "Event-Driven Architecture",
+      "Hexagonal Architecture",
+      "Domain-Driven Design (DDD)",
+      "REST / OpenAPI",
+      "System Design",
+      "High Availability / High Throughput",
+      "JPA / Hibernate",
+      "MapStruct"
     ],
-    "bigData": [
-      "Apache Kafka",
-      "Kafka Streaming",
-      "Apache Spark",
-      "Spark Streaming"
+    "messagingStreaming": [
+      "Apache Kafka (Confluent, Avro, Kafka Streams)",
+      "RabbitMQ",
+      "AWS SQS / SNS",
+      "Akka",
+      "Transactional Outbox Pattern"
     ],
-    "cloud": [
-      "AWS (Glue, RDS, Route 53, S3, EC2, Cognito, IAM, Lambda, SNS)",
-      "DigitalOcean (Droplets, Databases, Spaces, Load Balancers)"
-    ],
-    "databases": [
-      "Oracle",
+    "dataMigration": [
       "PostgreSQL",
+      "Oracle",
       "MongoDB",
-      "Elastic",
+      "Elasticsearch",
+      "VoltDB",
+      "Flyway",
+      "JSONB",
+      "Multi-tenancy / RLS",
+      "ETL Pipelines",
+      "Large-scale Data Migration",
+      "Apache Spark (Spark Streaming)"
+    ],
+    "cachingPerformance": [
       "Redis",
       "Hazelcast",
-      "VoltDB"
+      "Performance Tuning"
     ],
-    "monitoring": [
-      "Kibana",
+    "cloudDevops": [
+      "AWS (Glue, RDS, S3, EC2, Lambda, Cognito, IAM, Route 53, SNS)",
+      "Kubernetes",
+      "Docker",
+      "ArgoCD",
+      "GitOps",
+      "GitLab CI/CD",
+      "Jenkins"
+    ],
+    "observability": [
+      "OpenTelemetry",
       "Grafana",
-      "Graylog",
       "Prometheus",
-      "CloudWatch",
-      "Datadog"
+      "Kibana",
+      "Graylog",
+      "Datadog",
+      "CloudWatch"
     ],
-    "other": [
+    "frontend": [
+      "React",
+      "TypeScript",
+      "Angular",
+      "Vue.js",
+      "Node.js",
+      "JSF / PrimeFaces"
+    ],
+    "testing": [
+      "JUnit",
+      "Mockito",
+      "TestContainers",
+      "Integration & End-to-End Testing"
+    ],
+    "aiAssisted": [
+      "Agentic development with AI coding agents (incl. Claude API)",
+      "Architecture, implementation, debugging, code review, test generation & documentation",
+      "Prompt & context engineering"
+    ],
+    "tooling": [
       "Maven",
       "Gradle",
-      "JIRA API",
-      "Nexus",
-      "SonarQube",
-      "Archiva",
-      "GitLab CI/CD",
-      "Jenkins",
-      "Bitbucket",
-      "SonarQube",
-      "Docker",
       "Git",
-      "Keycloak"
+      "SonarQube",
+      "Nexus"
+    ],
+    "leadership": [
+      "Technical Leadership",
+      "Scrum Master",
+      "Mentoring",
+      "Code Review",
+      "Hiring"
     ]
   },
   "experiences": [
@@ -121,15 +148,15 @@
       "location": "Remote",
       "start": "August 2023",
       "end": "now",
-      "description": "As a contractor, I have made noteworthy contributions to various projects for Zoolatech's prominent client, MasterControl.",
+      "isCurrent": true,
+      "description": "Client: MasterControl",
       "responsibilities": [
-        "Assisted the CMX development team in crafting robust web applications using cutting-edge technologies such as Java 17, Angular 13, TypeScript, Docker, and more.",
-        "Created unit and integration tests using Mockito, JUnit, and the Spring Tests framework to achieve the testing coverage objective.",
-        "Participated in a scrum team and accomplished the given goals per sprint",
-        "Attended customer quarter/yearly planning events on site",
-        "Participated in the AMx migration team to facilitate the transfer of essential data from the current application to the future using AWS Glue, Spark in Java, Scala, Dagger, etc.",
-        "Crafted and showcased innovative technical solutions for challenging epics.",
-        "Developed component and end-to-end tests to ensure comprehensive code coverage and robust performance."
+        "Owned features end to end across the stack — OpenAPI contracts, Java 17 / Spring Boot 3.x services, Kafka (Confluent + Avro) and AWS SQS/SNS event flows, Kubernetes / ArgoCD GitOps deployment, and a React / TypeScript frontend.",
+        "Built cloud-native microservices on a hexagonal architecture with PostgreSQL, event-driven domain events, and the transactional outbox pattern.",
+        "Hardened legacy-to-modern data-migration pipelines (Scala, config-driven ETL) by resolving idempotency, file-verification, special-character, null-safety, and audit edge cases.",
+        "Implemented tenant-aware features: record-level capture, row-level-security (RLS) authorization filtering, read-model synchronization, and service-to-service permission checks.",
+        "Delivered platform-level reliability wins — resolved a PostgreSQL connection-pool exhaustion issue and designed per-tenant queue fairness for multi-tenant workloads — with OpenTelemetry / Grafana observability, TestContainers / E2E tests, and security hardening (Snyk, gitleaks).",
+        "Applied agentic development across the lifecycle, using AI coding agents (including the Claude API) for design, implementation, debugging, code review, and test generation."
       ]
     },
     {
@@ -140,11 +167,10 @@
       "start": "March 2022",
       "end": "July 2023",
       "responsibilities": [
-        "Led the software team of 10(+/-) people (Developers, Analysts, Testers, QA) in building both front-end GUIs, REST APIs, and back-end servers for stable, high availability web services using Java Spring boot, Docker, VueJS 2, RabbitMQ, Redis, PostgreSQL, Swagger, AWS S3, Lambda, Cognito",
-        "Redesigned monolithic application and developed five sub-applications and their services",
-        "Prepared CI / CD environment by using Docker, Digital Ocean, AWS, GitLab CI, and Shell Scripts for seven applications",
-        "Enhanced code quality by doing code reviews, arranged meetups for knowledge sharing on the team, pair programming, and tool usage",
-        "Hired, coached, and mentored junior team members on Java and JavaScript best practices design patterns and encouraged them to adapt to development environments"
+        "Led a cross-functional team of 10 (developers, analysts, QA/testers) delivering high-availability web services with Java / Spring Boot, Vue.js, RabbitMQ, Redis, PostgreSQL, and AWS (S3, Lambda, Cognito).",
+        "Decomposed a monolith into five independently deployable services, improving deployability and team autonomy.",
+        "Stood up CI/CD across seven applications (Docker, DigitalOcean, AWS, GitLab CI), reducing release friction.",
+        "Raised engineering quality through code review, pair programming, and knowledge-sharing sessions; hired, coached, and mentored junior engineers."
       ]
     },
     {
@@ -154,62 +180,49 @@
       "location": "İstanbul, Turkey",
       "start": "January 2021",
       "end": "February 2022",
-      "description": "Promoted"
+      "responsibilities": [
+        "Promoted from Senior Developer to Architect to own the technical direction and architectural standards for I2I's clustered, event-driven microservices platform — the same system I had helped design and build.",
+        "Owned end-to-end architecture of the Kafka-based microservices estate, defining patterns for service decomposition, clustering, concurrency, and fault tolerance to sustain high-availability, high-throughput workloads.",
+        "Led design and architecture reviews across the engineering team and drove proof-of-concept evaluations to de-risk and guide new technology adoption.",
+        "Mentored senior and mid-level engineers on distributed-systems and microservices design, raising the team's architectural maturity."
+      ]
     },
     {
-      "title": "Sr. Software Analysis Developer",
+      "title": "Senior Software Analysis Developer",
       "company": "I2I Systems",
       "location": "İstanbul, Turkey",
-      "start": "June 2018",
+      "start": "June 2019",
       "end": "January 2021",
       "responsibilities": [
-        "Created three clustered, highly available, multi-threaded applications of twenty-eight microservices using Java 11, Kafka, Akka, VoltDB, Oracle, Hazelcast, Elastic, etc.",
-        "Prepared development environment for CI/CD concept, 100% faster and fail-safe deployment capability gained. Guided the company in converting the team development culture and environment in this way.",
-        "Proved enhancements with POC developments and transformed technologies with new trends.",
-        "Architected and coded fast, reliable, non-intrusive clustered applications on a microservices architecture with Kafka, achieving the goal of 100K TPS.",
-        "Designed system KPI monitoring using Grafana, Kibana, and Elastic",
-        "Architected Angular + Spring Boot application that applies server-client architecture to enhance user experiences.",
-        "Coded Node.js + Vue.js dashboard application"
+        "Architected and built three clustered, highly available, multi-threaded applications spanning 28 microservices (Java 11, Kafka, Akka, VoltDB, Oracle, Hazelcast, Elasticsearch).",
+        "Designed a Kafka-based microservices architecture achieving 100K TPS with low-latency, non-intrusive processing.",
+        "Introduced CI/CD, enabling fail-safe deployments and shifting the team's delivery culture.",
+        "Built KPI / observability dashboards (Grafana, Kibana, Elasticsearch) and an Angular + Spring Boot client-server application; developed a Node.js + Vue.js dashboard."
       ]
     },
     {
       "title": "Software Engineer",
-      "company": "Republic of Turkey Prime Ministry Office",
+      "company": "Republic of Türkiye Prime Ministry Office",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png",
       "location": "Ankara, Turkey",
       "start": "March 2016",
-      "end": "June 2018",
+      "end": "June 2019",
       "responsibilities": [
-        "Architected web application projects using JSF, Spring Framework, PrimeFaces, Elastic, Apache Kafka, etc.",
-        "Designed and developed a big-data streaming application and report system by clustered Elastic",
-        "Spearheaded the project's change management and then led the team, including nine developers, as a Scrum Master.",
-        "Completed 41 sprints, mainly two to three weeks, with 1000+ issues fixed."
+        "Architected web applications (JSF, Spring, PrimeFaces, Elasticsearch, Kafka) and a clustered big-data streaming and reporting system.",
+        "Led change management and served as Scrum Master for a team of nine; delivered 41 sprints and 1,000+ resolved issues."
       ]
     },
     {
       "title": "Software Engineer",
-      "company": "NETAŞ",
+      "company": "Netaş",
       "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://netas.com.tr&size=128",
       "location": "İstanbul, Turkey",
-      "start": "February 2014",
-      "end": "March 2016",
-      "description": "Developed Enterprise Application projects",
-      "responsibilities": [
-        "Participated Analyze, Design phases and developed AYDES project modules which using Spring, Spring Security, Spring EhCache, JSF 2.0, PrimeFaces, JDBC Template, Web Services (Rest and SOAP), JavaScript",
-        "Designed and Developed GEO Data Modules as a Geo-Modules Prime",
-        "Coordinate communication between NETAS and Başarsoft which is map provider and coded map component by JavaScript"
-      ]
-    },
-    {
-      "title": "Software Engineer",
-      "company": "NETAŞ",
-      "location": "İstanbul, Turkey",
       "start": "March 2013",
-      "end": "February 2014",
+      "end": "March 2016",
       "responsibilities": [
-        "Participated in Mobile Application Developer team for Turkcell BIP project as a Back-end Developer",
-        "Developed Group Chat Feature to application with a fast and secure solution",
-        "Used CDI, Hibernate, JAX-RS, J2EE components on Client-Server architecture"
+        "Built modules for AYDES (national Disaster Management & Decision Support System) using Spring, Spring Security, JSF, PrimeFaces, and REST/SOAP web services.",
+        "Owned GEO data modules and integrated third-party mapping (Başarsoft).",
+        "Delivered a fast, secure group-chat feature as backend developer on the Turkcell BiP messaging project."
       ]
     },
     {
@@ -220,31 +233,27 @@
       "start": "August 2011",
       "end": "July 2012",
       "responsibilities": [
-        "CRM Project involved, and bug fixing has been done",
-        "Contributed to the project using JSF, EclipseLink, JQuery",
-        "Implemented two modules using JSF 1.0, private ORM lib, JSF Facelets 1.1 in Tabs Project",
-        "Worked with a multi-national team on a customer location in Cairo, Egypt, to develop PTF Project using JSF 2.0, JPA, Richfaces",
-        "Implemented features and bug fixing with Used Spring Framework, Web Services, and private Facelet lib in NGIN Project"
+        "Delivered CRM and telecom modules (JSF, EclipseLink, JPA) across NGIN, Tabs, and PTF projects, including on-site delivery with a multinational team in Cairo, Egypt."
       ]
     },
     {
-      "title": "Jr. Software Engineer",
-      "company": "Efe Eroğlu Yazılım Ltd. Şti",
+      "title": "Junior Software Engineer",
+      "company": "Efe Eroğlu Yazılım",
       "logoUrl": "https://ui-avatars.com/api/?name=Efe+Eroglu&background=random&color=fff",
       "location": "Eskişehir, Turkey",
       "start": "June 2010",
       "end": "February 2011",
       "responsibilities": [
-        "Used technologies that Jboss Seam, RichFaces, PrimeFaces, JSF 2.0, EJB 3.0, Glassfish AS, Hibernate, Ant",
-        "Improved project unused functionality, restructured by customer request"
+        "Built and restructured application features to customer requirements using JBoss Seam, RichFaces, PrimeFaces, JSF, EJB 3.0, and Hibernate."
       ]
     }
   ],
   "education": [
     {
       "institution": "İstanbul University",
-      "degree": "BSc. Computer Engineering",
-      "location": "İstanbul, Turkey"
+      "degree": "BSc, Computer Engineering",
+      "location": "İstanbul, Turkey",
+      "years": "2005 - 2010"
     }
   ],
   "awards": [

@@ -43,7 +43,7 @@ export class CvPageComponent implements OnInit, OnDestroy {
     error = false;
     errorMessage = '';
     currentYear = new Date().getFullYear();
-    lastUpdated = new Date('2025-07-01');
+    lastUpdated = new Date('2026-11-01');
     viewCount = 0;
     downloadCount = 0;
 

@@ -1,5 +1,6 @@
 <section class="about-section cv-section">
   <h2 class="my-titles">{{ 'header.about' | translate }}</h2>
+  <p class="summary" *ngIf="about.summary">{{ about.summary }}</p>
   <p>
     <strong>{{ 'header.languages' | translate }}:</strong>
     <span *ngFor="let lang of about.languages; let last = last">

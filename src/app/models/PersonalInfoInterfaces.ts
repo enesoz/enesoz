@@ -14,6 +14,7 @@ export interface Contact {
 }
 
 export interface About {
+  summary?: string;
   languages: Language[];
   experience: string;
   militaryObligation: string;

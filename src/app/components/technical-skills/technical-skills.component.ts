@@ -19,6 +19,6 @@ export class TechnicalSkillsComponent {
     return this.skills ? Object.keys(this.skills) : [];
   }
   getSkillsBy(key: string): string[] {
-    return this.skills?.[key as keyof TechnicalSkill] || [];
+    return this.skills?.[key] || [];
   }
 }
