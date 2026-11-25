@@ -27,7 +27,7 @@
       }
     ],
     "about": {
-      "summary": "JVM üzerinde dağıtık, cloud-native, olay güdümlü platformlar ve yüksek verimli mikroservisler tasarlama konusunda 15+ yıllık deneyime sahip Kıdemli Yazılım Mühendisi ve Yazılım Mimarı. Özellikleri OpenAPI sözleşmesinden başlayarak Java / Spring Boot servisleri ve Kafka / SQS olay akışları üzerinden Kubernetes / GitOps dağıtımına, gözlemlenebilirliğe, güvenliğe ve canlıdaki React / TypeScript arayüzüne kadar uçtan uca taşıyan bir mühendis. Ölçekte kendini kanıtlamış — 100K TPS hedefli mikroservis platformları tasarladı — ve platform modernizasyonu ile büyük ölçekli veri taşıma gibi yüksek doğruluk gerektiren işlerde deneyimli. 10 kişiye kadar ekiplere liderlik ve mentorluk yapmış teknik lider ve Scrum Master. Son ~2 yıldır mimari tasarım, geliştirme, hata ayıklama, kod inceleme, test üretimi ve dokümantasyon süreçlerinde, ağırlıklı olarak AI kodlama ajanları ve Claude API ile agentic geliştirme (AI destekli mühendislik) uygulamaktadır.",
+      "summary": "JVM üzerinde dağıtık, cloud-native, olay güdümlü platformlar ve yüksek işlem hacimli mikroservisler tasarlama konusunda 15+ yıllık deneyime sahip Kıdemli Yazılım Mühendisi ve Yazılım Mimarı. Özellikleri OpenAPI sözleşmesinden başlayarak Java / Spring Boot servisleri ve Kafka / SQS olay akışları üzerinden Kubernetes / GitOps dağıtımına, gözlemlenebilirliğe, güvenliğe ve canlıdaki React / TypeScript arayüzüne kadar uçtan uca taşıyan bir mühendis. Ölçekte kanıtlanmış deneyim (100K TPS hedefli mikroservis platformları tasarladı); platform modernizasyonu ve büyük ölçekli veri taşıma gibi yüksek doğruluk gerektiren işlerde deneyimli. 10 kişiye kadar ekiplere liderlik ve mentorluk yapmış teknik lider ve Scrum Master. Son ~2 yıldır mimari tasarım, geliştirme, hata ayıklama, kod inceleme, test üretimi ve dokümantasyon süreçlerinde, ağırlıklı olarak AI kodlama ajanları ve Claude API ile agentic geliştirme (AI destekli mühendislik) uygulamaktadır.",
       "languages": [
         {
           "name": "Türkçe",
@@ -59,7 +59,7 @@
       "Domain-Driven Design (DDD)",
       "REST / OpenAPI",
       "Sistem Tasarımı",
-      "Yüksek Erişilebilirlik / Yüksek Verim",
+      "Yüksek Erişilebilirlik / Yüksek İşlem Hacmi",
       "JPA / Hibernate",
       "MapStruct"
     ],
@@ -155,7 +155,7 @@
         "PostgreSQL, olay güdümlü domain event'leri ve transactional outbox deseni ile hexagonal mimaride cloud-native mikroservisler geliştirdim.",
         "Eski sistemden yeni sisteme veri taşıma hatlarını (Scala, konfigürasyon güdümlü ETL) idempotency, dosya doğrulama, özel karakter, null güvenliği ve denetim (audit) kenar durumlarını çözerek sağlamlaştırdım.",
         "Kiracı (tenant) farkındalıklı özellikler geliştirdim: kayıt düzeyinde veri yakalama, satır düzeyi güvenlik (RLS) ile yetkilendirme filtreleme, okuma modeli senkronizasyonu ve servisler arası yetki kontrolleri.",
-        "Platform düzeyinde güvenilirlik kazanımları sağladım — PostgreSQL bağlantı havuzu tükenmesi sorununu çözdüm ve çok kiracılı iş yükleri için kiracı bazlı kuyruk adaleti tasarladım — OpenTelemetry / Grafana gözlemlenebilirliği, TestContainers / E2E testleri ve güvenlik sıkılaştırması (Snyk, gitleaks) ile.",
+        "OpenTelemetry / Grafana gözlemlenebilirliği, TestContainers / E2E testleri ve güvenlik sıkılaştırması (Snyk, gitleaks) ile platform düzeyinde güvenilirlik kazanımları sağladım: PostgreSQL bağlantı havuzu tükenmesi sorununu çözdüm ve çok kiracılı iş yükleri için kiracı bazında adil kuyruk paylaşımı tasarladım.",
         "Yazılım yaşam döngüsü boyunca agentic geliştirme uyguladım; tasarım, geliştirme, hata ayıklama, kod inceleme ve test üretiminde AI kodlama ajanlarını (Claude API dahil) kullandım."
       ]
     },
@@ -181,14 +181,14 @@
       "start": "Ocak 2021",
       "end": "Şubat 2022",
       "responsibilities": [
-        "Tasarımında ve geliştirilmesinde yer aldığım I2I'ın kümelenmiş, olay güdümlü mikroservis platformunun teknik yönünü ve mimari standartlarını sahiplenmek üzere Kıdemli Geliştiricilikten Mimarlığa terfi ettim.",
-        "Kafka tabanlı mikroservis yapısının uçtan uca mimarisini sahiplendim; yüksek erişilebilirlik ve yüksek verimli iş yüklerini sürdürmek için servis ayrıştırma, kümeleme, eşzamanlılık ve hata toleransı desenlerini tanımladım.",
+        "Tasarımında ve geliştirilmesinde yer aldığım I2I'ın kümelenmiş, olay güdümlü mikroservis platformunun teknik yönünü ve mimari standartlarını sahiplenmek üzere Kıdemli Geliştirici pozisyonundan Yazılım Mimarı pozisyonuna terfi ettim.",
+        "Kafka tabanlı mikroservis yapısının uçtan uca mimarisini sahiplendim; yüksek erişilebilirlik ve yüksek işlem hacimli iş yüklerini sürdürmek için servis ayrıştırma, kümeleme, eşzamanlılık ve hata toleransı desenlerini tanımladım.",
         "Mühendislik ekibi genelinde tasarım ve mimari incelemelerine liderlik ettim; yeni teknolojilerin benimsenmesindeki riski azaltmak ve yön vermek için kavram kanıtı (PoC) değerlendirmeleri yürüttüm.",
         "Kıdemli ve orta seviye mühendislere dağıtık sistemler ve mikroservis tasarımı konusunda mentorluk yaparak ekibin mimari olgunluğunu artırdım."
       ]
     },
     {
-      "title": "Kıdemli Yazılım Analiz Geliştirici",
+      "title": "Kıdemli Yazılım Analiz Geliştiricisi",
       "company": "I2I Systems",
       "location": "İstanbul, Türkiye",
       "start": "Haziran 2019",
@@ -196,7 +196,7 @@
       "responsibilities": [
         "28 mikroservisten oluşan üç adet kümelenmiş, yüksek erişilebilir, çok iş parçacıklı uygulamanın mimarisini tasarladım ve geliştirdim (Java 11, Kafka, Akka, VoltDB, Oracle, Hazelcast, Elasticsearch).",
         "Düşük gecikmeli, müdahalesiz işleme ile 100K TPS'e ulaşan Kafka tabanlı bir mikroservis mimarisi tasarladım.",
-        "CI/CD'yi hayata geçirerek hatasız dağıtımları mümkün kıldım ve ekibin teslimat kültürünü dönüştürdüm.",
+        "CI/CD'yi hayata geçirerek güvenli (fail-safe) dağıtımları mümkün kıldım ve ekibin teslimat kültürünü dönüştürdüm.",
         "KPI / gözlemlenebilirlik panoları (Grafana, Kibana, Elasticsearch) ve Angular + Spring Boot istemci-sunucu uygulaması geliştirdim; Node.js + Vue.js ile bir dashboard uygulaması geliştirdim."
       ]
     },
@@ -209,7 +209,7 @@
       "end": "Haziran 2019",
       "responsibilities": [
         "Web uygulamalarının (JSF, Spring, PrimeFaces, Elasticsearch, Kafka) ve kümelenmiş bir büyük veri akış ve raporlama sisteminin mimarisini tasarladım.",
-        "Değişim yönetimine liderlik ettim ve dokuz kişilik ekipte Scrum Master olarak görev yaptım; 41 sprint ve 1.000+ çözülmüş kayıt teslim ettim."
+        "Değişim yönetimine liderlik ettim ve dokuz kişilik ekipte Scrum Master olarak görev yaptım; 41 sprint tamamladık ve 1.000'den fazla kaydı (issue) çözdük."
       ]
     },
     {
@@ -220,7 +220,7 @@
       "start": "Mart 2013",
       "end": "Mart 2016",
       "responsibilities": [
-        "Spring, Spring Security, JSF, PrimeFaces ve REST/SOAP web servisleri kullanarak AYDES (Afet Yönetim ve Karar Destek Sistemi) modüllerini geliştirdim.",
+        "Spring, Spring Security, JSF, PrimeFaces ve REST/SOAP web servisleri kullanarak AYDES (ulusal Afet Yönetim ve Karar Destek Sistemi) modüllerini geliştirdim.",
         "GEO veri modüllerini sahiplendim ve üçüncü parti harita entegrasyonunu (Başarsoft) gerçekleştirdim.",
         "Turkcell BiP mesajlaşma projesinde backend geliştirici olarak hızlı ve güvenli bir grup sohbet özelliği geliştirdim."
       ]

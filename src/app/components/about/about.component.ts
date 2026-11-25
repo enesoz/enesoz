@@ -51,12 +51,13 @@ export class AboutComponent implements OnChanges {
 
       const startMonth = this.getMonthNumber(startParts[0]);
       const startYear = parseInt(startParts[1]);
+      if (startMonth === -1) return;
 
       // Parse end date
       let endMonth: number;
       let endYear: number;
 
-      if (exp.isCurrent || ['now', 'halen'].includes(exp.end.toLocaleLowerCase('tr'))) {
+      if (exp.isCurrent || ['now', 'present', 'halen'].includes(exp.end.toLocaleLowerCase('tr'))) {
         endMonth = currentDate.getMonth();
         endYear = currentDate.getFullYear();
       } else {
@@ -65,6 +66,7 @@ export class AboutComponent implements OnChanges {
 
         endMonth = this.getMonthNumber(endParts[0]);
         endYear = parseInt(endParts[1]);
+        if (endMonth === -1) return;
       }
 
       // Calculate months between dates
