@@ -5,8 +5,8 @@
     "location": "İstanbul, Turkey — open to remote / relocation",
     "titles": [
       "Senior Software Engineer",
-      "Software Architect",
-      "Distributed Systems & Platform Engineering"
+      "Team Lead & Software Architect",
+      "Java · Kafka · Distributed Systems"
     ],
     "contact": {
       "phone": "+90 533 690 65 47",
@@ -27,7 +27,7 @@
       }
     ],
     "about": {
-      "summary": "Senior Software Engineer and Software Architect with 15+ years designing distributed, cloud-native, event-driven platforms and high-throughput microservices on the JVM. Full-lifecycle engineer who carries features from OpenAPI contract through Java / Spring Boot services and Kafka / SQS event flows to Kubernetes / GitOps deployment, observability, security, and a production React / TypeScript frontend. Proven at scale — architected microservices platforms targeting 100K TPS — and in the high-integrity work of platform modernization and large-scale data migration. Technical leader and Scrum Master who has led and mentored teams of up to 10. For the past ~2 years, has practiced agentic development (AI-assisted engineering) across architecture design, implementation, debugging, code review, test generation, and documentation, primarily via AI coding agents and the Claude API.",
+      "summary": "Senior Software Engineer with 16+ years on the JVM — the last 7+ building distributed, event-driven systems with Java, Spring Boot and Kafka, and since 2022 cloud-native services on AWS and Kubernetes. Architected and built a Kafka-based microservices platform (28 services) that sustained 100K TPS in load tests and in production, and split a monolith into five independently deployable services. Team Lead and Scrum Master who has led and mentored teams of up to 10. For the past ~2 years, has practiced agentic development (AI-assisted engineering) with AI coding agents and the Claude API.",
       "languages": [
         {
           "name": "Turkish",
@@ -38,7 +38,7 @@
           "level": "Professional Working"
         }
       ],
-      "experience": "15+ years",
+      "experience": "16+ years",
       "militaryObligation": "Completed"
     }
   },
@@ -57,45 +57,50 @@
       "Event-Driven Architecture",
       "Hexagonal Architecture",
       "Domain-Driven Design (DDD)",
+      "Transactional Outbox Pattern",
       "REST / OpenAPI",
-      "System Design",
-      "High Availability / High Throughput",
       "JPA / Hibernate",
-      "MapStruct"
+      "Akka",
+      "Node.js",
+      "Performance Tuning"
     ],
     "messagingStreaming": [
       "Apache Kafka (Confluent, Avro, Kafka Streams)",
       "RabbitMQ",
-      "AWS SQS / SNS",
-      "Akka",
-      "Transactional Outbox Pattern"
+      "AWS SQS / SNS"
     ],
-    "dataMigration": [
+    "datastores": [
       "PostgreSQL",
       "Oracle",
       "MongoDB",
       "Elasticsearch",
       "VoltDB",
-      "Flyway",
-      "JSONB",
-      "Multi-tenancy / RLS",
+      "Redis",
+      "Hazelcast"
+    ],
+    "dataProcessing": [
+      "Apache Spark (Spark Streaming)",
+      "AWS Glue",
       "ETL Pipelines",
       "Large-scale Data Migration",
-      "Apache Spark (Spark Streaming)"
-    ],
-    "cachingPerformance": [
-      "Redis",
-      "Hazelcast",
-      "Performance Tuning"
+      "Flyway"
     ],
     "cloudDevops": [
-      "AWS (Glue, RDS, S3, EC2, Lambda, Cognito, IAM, Route 53, SNS)",
+      "AWS (RDS, S3, EC2, Lambda, Route 53)",
       "Kubernetes",
       "Docker",
       "ArgoCD",
       "GitOps",
       "GitLab CI/CD",
-      "Jenkins"
+      "Jenkins",
+      "DigitalOcean"
+    ],
+    "security": [
+      "Spring Security",
+      "AWS Cognito / IAM",
+      "Multi-tenancy / RLS",
+      "Snyk",
+      "gitleaks"
     ],
     "observability": [
       "OpenTelemetry",
@@ -108,10 +113,8 @@
     ],
     "frontend": [
       "React",
-      "TypeScript",
       "Angular",
       "Vue.js",
-      "Node.js",
       "JSF / PrimeFaces"
     ],
     "testing": [
@@ -121,8 +124,7 @@
       "Integration & End-to-End Testing"
     ],
     "aiAssisted": [
-      "Agentic development with AI coding agents (incl. Claude API)",
-      "Architecture, implementation, debugging, code review, test generation & documentation",
+      "Agentic development with AI coding agents (Claude API)",
       "Prompt & context engineering"
     ],
     "tooling": [
@@ -133,7 +135,7 @@
       "Nexus"
     ],
     "leadership": [
-      "Technical Leadership",
+      "Team Leadership",
       "Scrum Master",
       "Mentoring",
       "Code Review",
@@ -149,13 +151,14 @@
       "start": "August 2023",
       "end": "Present",
       "isCurrent": true,
-      "description": "Client: MasterControl",
+      "description": "Client: MasterControl — regulated (GxP) quality-management SaaS for life sciences",
       "responsibilities": [
         "Owned features end to end across the stack — OpenAPI contracts, Java / Spring Boot 3.x services, Kafka (Confluent + Avro) and AWS SQS/SNS event flows, Kubernetes / ArgoCD GitOps deployment, and a React / TypeScript frontend.",
         "Built cloud-native microservices on a hexagonal architecture with PostgreSQL, event-driven domain events, and the transactional outbox pattern.",
-        "Hardened legacy-to-modern data-migration pipelines (Scala, config-driven ETL) by resolving idempotency, file-verification, special-character, null-safety, and audit edge cases.",
+        "Hardened the Scala, config-driven legacy-to-modern data-migration pipeline: made runs idempotent, added file-level verification and audit trails, and fixed special-character and null-safety edge cases.",
         "Implemented tenant-aware features: record-level capture, row-level-security (RLS) authorization filtering, read-model synchronization, and service-to-service permission checks.",
-        "Delivered platform-level reliability wins — resolved a PostgreSQL connection-pool exhaustion issue and designed per-tenant queue fairness for multi-tenant workloads — with OpenTelemetry / Grafana observability, TestContainers / E2E tests, and security hardening (Snyk, gitleaks).",
+        "Diagnosed and fixed a PostgreSQL connection-pool exhaustion issue, and built per-tenant queue fairness so one tenant's workload no longer starves others.",
+        "Backed delivered features with OpenTelemetry / Grafana observability, TestContainers / E2E tests, and security hardening (Snyk, gitleaks).",
         "Applied agentic development across the lifecycle, using AI coding agents (including the Claude API) for design, implementation, debugging, code review, and test generation."
       ]
     },
@@ -181,11 +184,11 @@
       "start": "January 2021",
       "end": "February 2022",
       "responsibilities": [
-        "Promoted from Senior Developer to Architect to own the technical direction and architectural standards for I2I's clustered, event-driven microservices platform — the same system I had helped design and build.",
         "Owned end-to-end architecture of the Kafka-based microservices estate, defining patterns for service decomposition, clustering, concurrency, and fault tolerance to sustain high-availability, high-throughput workloads.",
         "Led design and architecture reviews across the engineering team and drove proof-of-concept evaluations to de-risk and guide new technology adoption.",
         "Mentored senior and mid-level engineers on distributed-systems and microservices design, raising the team's architectural maturity."
-      ]
+      ],
+      "description": "Promoted from Senior Software Analysis Developer"
     },
     {
       "title": "Senior Software Analysis Developer",
@@ -195,8 +198,8 @@
       "end": "January 2021",
       "responsibilities": [
         "Architected and built three clustered, highly available, multi-threaded applications spanning 28 microservices (Java, Kafka, Akka, VoltDB, Oracle, Hazelcast, Elasticsearch).",
-        "Designed a Kafka-based microservices architecture achieving 100K TPS with low-latency, non-intrusive processing.",
-        "Introduced CI/CD, enabling fail-safe deployments and shifting the team's delivery culture.",
+        "Designed a Kafka-based microservices architecture that sustained 100K TPS with low latency — verified in load tests and observed in production.",
+        "Introduced CI/CD with automated, repeatable deployments, changing the team's delivery culture.",
         "Built KPI / observability dashboards (Grafana, Kibana, Elasticsearch) and an Angular + Spring Boot client-server application; developed a Node.js + Vue.js dashboard."
       ]
     },
@@ -256,12 +259,5 @@
       "years": "2005 - 2010"
     }
   ],
-  "awards": [
-    {
-      "title": "Netas Success Awards 2013"
-    },
-    {
-      "title": "Placed %4 among ~1,5 million participants in the University Entrance Exam 2005"
-    }
-  ]
+  "awards": []
 }

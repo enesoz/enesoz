@@ -5,8 +5,8 @@
     "location": "İstanbul, Türkiye — uzaktan çalışmaya / taşınmaya açık",
     "titles": [
       "Senior Software Engineer",
-      "Software Architect",
-      "Distributed Systems & Platform Engineering"
+      "Team Lead & Software Architect",
+      "Java · Kafka · Distributed Systems"
     ],
     "contact": {
       "phone": "+90 533 690 65 47",
@@ -27,7 +27,7 @@
       }
     ],
     "about": {
-      "summary": "JVM üzerinde distributed, cloud-native, event-driven platformlar ve high-throughput microservice'ler tasarlama konusunda 15+ yıllık deneyime sahip Senior Software Engineer ve Software Architect. Feature'ları OpenAPI contract'tan başlayarak Java / Spring Boot servisleri ve Kafka / SQS event flow'ları üzerinden Kubernetes / GitOps deployment'a, observability'ye, security'ye ve production'daki React / TypeScript frontend'e kadar uçtan uca taşıyan full-lifecycle bir engineer. 100K TPS hedefli microservice platformları tasarlayarak ölçekte kendini kanıtladı; platform modernization ve large-scale data migration gibi yüksek doğruluk gerektiren işlerde deneyimli. 10 kişiye kadar ekiplere liderlik ve mentorluk yapmış Tech Lead ve Scrum Master. Son ~2 yıldır architecture design, implementation, debugging, code review, test generation ve documentation süreçlerinde, ağırlıklı olarak AI coding agent'ları ve Claude API ile agentic development (AI-assisted engineering) uyguluyor.",
+      "summary": "JVM üzerinde 16+ yıllık deneyime sahip Senior Software Engineer; son 7+ yılda Java, Spring Boot ve Kafka ile distributed, event-driven sistemler, 2022'den beri de AWS ve Kubernetes üzerinde cloud-native servisler geliştiriyor. Load test'lerde ve production'da 100K TPS'i sürdüren Kafka tabanlı bir microservice platformunun (28 servis) architecture'ını tasarlayıp geliştirdi; bir monolith'i bağımsız deploy edilebilen beş servise ayırdı. 10 kişiye kadar ekiplere liderlik ve mentorluk yapmış Team Lead ve Scrum Master. Son ~2 yıldır AI coding agent'ları ve Claude API ile agentic development (AI-assisted engineering) uyguluyor.",
       "languages": [
         {
           "name": "Türkçe",
@@ -38,7 +38,7 @@
           "level": "Profesyonel Çalışma Yetkinliği"
         }
       ],
-      "experience": "15+ yıl",
+      "experience": "16+ yıl",
       "militaryObligation": "Tamamlandı"
     }
   },
@@ -57,45 +57,50 @@
       "Event-Driven Architecture",
       "Hexagonal Architecture",
       "Domain-Driven Design (DDD)",
+      "Transactional Outbox Pattern",
       "REST / OpenAPI",
-      "System Design",
-      "High Availability / High Throughput",
       "JPA / Hibernate",
-      "MapStruct"
+      "Akka",
+      "Node.js",
+      "Performance Tuning"
     ],
     "messagingStreaming": [
       "Apache Kafka (Confluent, Avro, Kafka Streams)",
       "RabbitMQ",
-      "AWS SQS / SNS",
-      "Akka",
-      "Transactional Outbox Pattern"
+      "AWS SQS / SNS"
     ],
-    "dataMigration": [
+    "datastores": [
       "PostgreSQL",
       "Oracle",
       "MongoDB",
       "Elasticsearch",
       "VoltDB",
-      "Flyway",
-      "JSONB",
-      "Multi-tenancy / RLS",
+      "Redis",
+      "Hazelcast"
+    ],
+    "dataProcessing": [
+      "Apache Spark (Spark Streaming)",
+      "AWS Glue",
       "ETL Pipelines",
       "Large-scale Data Migration",
-      "Apache Spark (Spark Streaming)"
-    ],
-    "cachingPerformance": [
-      "Redis",
-      "Hazelcast",
-      "Performance Tuning"
+      "Flyway"
     ],
     "cloudDevops": [
-      "AWS (Glue, RDS, S3, EC2, Lambda, Cognito, IAM, Route 53, SNS)",
+      "AWS (RDS, S3, EC2, Lambda, Route 53)",
       "Kubernetes",
       "Docker",
       "ArgoCD",
       "GitOps",
       "GitLab CI/CD",
-      "Jenkins"
+      "Jenkins",
+      "DigitalOcean"
+    ],
+    "security": [
+      "Spring Security",
+      "AWS Cognito / IAM",
+      "Multi-tenancy / RLS",
+      "Snyk",
+      "gitleaks"
     ],
     "observability": [
       "OpenTelemetry",
@@ -108,10 +113,8 @@
     ],
     "frontend": [
       "React",
-      "TypeScript",
       "Angular",
       "Vue.js",
-      "Node.js",
       "JSF / PrimeFaces"
     ],
     "testing": [
@@ -121,8 +124,7 @@
       "Integration & End-to-End Testing"
     ],
     "aiAssisted": [
-      "Agentic development with AI coding agents (incl. Claude API)",
-      "Architecture, implementation, debugging, code review, test generation & documentation",
+      "Agentic development with AI coding agents (Claude API)",
       "Prompt & context engineering"
     ],
     "tooling": [
@@ -133,7 +135,7 @@
       "Nexus"
     ],
     "leadership": [
-      "Technical Leadership",
+      "Team Leadership",
       "Scrum Master",
       "Mentoring",
       "Code Review",
@@ -149,13 +151,14 @@
       "start": "Ağustos 2023",
       "end": "Halen",
       "isCurrent": true,
-      "description": "Müşteri: MasterControl",
+      "description": "Müşteri: MasterControl — life sciences sektörü için regüle (GxP) quality-management SaaS",
       "responsibilities": [
         "Feature'ları tüm stack boyunca uçtan uca sahiplendim — OpenAPI contract'ları, Java / Spring Boot 3.x servisleri, Kafka (Confluent + Avro) ve AWS SQS/SNS event flow'ları, Kubernetes / ArgoCD GitOps deployment ve React / TypeScript frontend.",
         "PostgreSQL, event-driven domain event'ler ve transactional outbox pattern ile hexagonal architecture üzerinde cloud-native microservice'ler geliştirdim.",
-        "Legacy'den modern sisteme data migration pipeline'larını (Scala, config-driven ETL) idempotency, file verification, special character, null-safety ve audit edge case'lerini çözerek sağlamlaştırdım.",
+        "Scala ile yazılmış, config-driven legacy'den modern sisteme data migration pipeline'ını sağlamlaştırdım: çalıştırmaları idempotent hale getirdim, file-level verification ve audit trail ekledim, special character ve null-safety edge case'lerini çözdüm.",
         "Tenant-aware feature'lar geliştirdim: record-level capture, row-level security (RLS) ile authorization filtering, read-model synchronization ve service-to-service permission check'leri.",
-        "Platform seviyesinde reliability iyileştirmeleri sağladım: PostgreSQL connection pool exhaustion sorununu çözdüm ve multi-tenant workload'lar için per-tenant queue fairness tasarladım; OpenTelemetry / Grafana observability, TestContainers / E2E testleri ve security hardening (Snyk, gitleaks) ile destekledim.",
+        "PostgreSQL connection pool exhaustion sorununun kök nedenini bulup çözdüm; bir tenant'ın workload'unun diğerlerini aç bırakmaması için per-tenant queue fairness geliştirdim.",
+        "Geliştirdiğim feature'ları OpenTelemetry / Grafana observability, TestContainers / E2E testleri ve security hardening (Snyk, gitleaks) ile destekledim.",
         "Tüm lifecycle boyunca agentic development uyguladım; design, implementation, debugging, code review ve test generation için AI coding agent'larını (Claude API dahil) kullandım."
       ]
     },
@@ -169,7 +172,7 @@
       "responsibilities": [
         "Java / Spring Boot, Vue.js, RabbitMQ, Redis, PostgreSQL ve AWS (S3, Lambda, Cognito) ile high-availability web servisleri geliştiren 10 kişilik cross-functional bir ekibe (developer, analist, QA/tester) liderlik ettim.",
         "Monolith bir uygulamayı bağımsız deploy edilebilen beş servise ayırarak deployability'yi ve ekip otonomisini artırdım.",
-        "Yedi uygulama için CI/CD kurdum (Docker, DigitalOcean, AWS, GitLab CI) ve release sürecini hızlandırdım.",
+        "Yedi uygulama için CI/CD kurdum (Docker, DigitalOcean, AWS, GitLab CI) ve release sürecindeki sürtünmeyi azalttım.",
         "Code review, pair programming ve knowledge-sharing oturumlarıyla engineering kalitesini yükselttim; junior engineer'ları işe aldım, coaching ve mentorluk yaptım."
       ]
     },
@@ -181,11 +184,11 @@
       "start": "Ocak 2021",
       "end": "Şubat 2022",
       "responsibilities": [
-        "Tasarımında ve geliştirilmesinde yer aldığım I2I'ın clustered, event-driven microservice platformunun teknik yönünü ve architectural standard'larını sahiplenmek üzere Senior Developer'lıktan Architect'liğe terfi ettim.",
         "Kafka tabanlı microservice yapısının uçtan uca architecture'ını sahiplendim; high-availability ve high-throughput workload'ları sürdürmek için service decomposition, clustering, concurrency ve fault tolerance pattern'lerini tanımladım.",
         "Ekip genelinde design ve architecture review'lara liderlik ettim; yeni teknolojilerin adoption riskini azaltmak için PoC değerlendirmeleri yürüttüm.",
         "Senior ve mid-level engineer'lara distributed systems ve microservice design konusunda mentorluk yaparak ekibin architectural olgunluğunu artırdım."
-      ]
+      ],
+      "description": "Senior Software Analysis Developer pozisyonundan terfi"
     },
     {
       "title": "Senior Software Analysis Developer",
@@ -195,8 +198,8 @@
       "end": "Ocak 2021",
       "responsibilities": [
         "28 microservice'ten oluşan üç adet clustered, highly available, multi-threaded uygulamayı tasarlayıp geliştirdim (Java, Kafka, Akka, VoltDB, Oracle, Hazelcast, Elasticsearch).",
-        "Low-latency, non-intrusive processing ile 100K TPS'e ulaşan Kafka tabanlı bir microservice architecture tasarladım.",
-        "CI/CD'yi hayata geçirerek fail-safe deployment'ları mümkün kıldım ve ekibin delivery kültürünü dönüştürdüm.",
+        "Low latency ile 100K TPS'i sürdüren Kafka tabanlı bir microservice architecture tasarladım — load test'lerde doğrulandı ve production'da gözlemlendi.",
+        "Otomatik ve tekrarlanabilir deployment'lar sağlayan CI/CD'yi hayata geçirerek ekibin delivery kültürünü dönüştürdüm.",
         "KPI / observability dashboard'ları (Grafana, Kibana, Elasticsearch) ve Angular + Spring Boot client-server uygulaması geliştirdim; Node.js + Vue.js ile bir dashboard geliştirdim."
       ]
     },
@@ -256,12 +259,5 @@
       "years": "2005 - 2010"
     }
   ],
-  "awards": [
-    {
-      "title": "Netaş Başarı Ödülleri 2013"
-    },
-    {
-      "title": "2005 Üniversite Giriş Sınavı'nda ~1,5 milyon katılımcı arasında %4'lük dilimde yer aldım"
-    }
-  ]
+  "awards": []
 }

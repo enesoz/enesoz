@@ -20,15 +20,16 @@
     "languages": "Programlama Dilleri",
     "backendArchitecture": "Backend & Architecture",
     "messagingStreaming": "Messaging & Streaming",
-    "dataMigration": "Data & Migration",
-    "cachingPerformance": "Caching & Performance",
     "cloudDevops": "Cloud & DevOps",
     "observability": "Observability",
     "frontend": "Frontend",
     "testing": "Testing",
     "aiAssisted": "AI-Assisted Development",
     "tooling": "Tooling",
-    "leadership": "Liderlik"
+    "leadership": "Liderlik",
+    "datastores": "Datastores",
+    "dataProcessing": "Data Processing & Migration",
+    "security": "Security"
   },
   "experience": {
     "title": "İŞ DENEYİMİ",
@@ -56,5 +57,11 @@
     "printCV": "CV'yi Yazdır",
     "downloadPDF": "PDF İndir",
     "downloadAlert": "PDF indirme işlevi entegre edilecek. Şimdilik Yazdır diyaloğu açılacak, PDF olarak kaydedin."
+  },
+  "footer": {
+    "lastUpdated": "Son güncelleme",
+    "views": "Görüntülenme",
+    "downloads": "İndirme",
+    "loading": "CV yükleniyor..."
   }
 }

@@ -36,58 +36,21 @@ export class AboutComponent implements OnChanges {
    * Calculates the total experience by summing up all experience periods
    */
   private calculateTotalExperience(): void {
-    if (!this.experiences || this.experiences.length === 0) {
+    const starts = (this.experiences || [])
+      .map(exp => exp.start.split(' '))
+      .filter(parts => parts.length === 2 && this.getMonthNumber(parts[0]) !== -1)
+      .map(parts => new Date(parseInt(parts[1]), this.getMonthNumber(parts[0])));
+
+    if (starts.length === 0) {
       this.calculatedExperience = this.about.experience;
       return;
     }
 
-    const currentDate = new Date();
-    let totalMonths = 0;
-
-    this.experiences.forEach(exp => {
-      // Parse start date
-      const startParts = exp.start.split(' ');
-      if (startParts.length !== 2) return;
-
-      const startMonth = this.getMonthNumber(startParts[0]);
-      const startYear = parseInt(startParts[1]);
-      if (startMonth === -1) return;
-
-      // Parse end date
-      let endMonth: number;
-      let endYear: number;
-
-      if (exp.isCurrent || ['now', 'present', 'halen'].includes(exp.end.toLocaleLowerCase('tr'))) {
-        endMonth = currentDate.getMonth();
-        endYear = currentDate.getFullYear();
-      } else {
-        const endParts = exp.end.split(' ');
-        if (endParts.length !== 2) return;
-
-        endMonth = this.getMonthNumber(endParts[0]);
-        endYear = parseInt(endParts[1]);
-        if (endMonth === -1) return;
-      }
-
-      // Calculate months between dates
-      const months = (endYear - startYear) * 12 + (endMonth - startMonth);
-      totalMonths += months > 0 ? months : 0;
-    });
-
-    // Convert total months to years and months
-    const years = Math.floor(totalMonths / 12);
-    const remainingMonths = totalMonths % 12;
-
-    const yearsText = this.translateService.translate('header.years');
-    const monthsText = this.translateService.translate('header.months');
-
-    if (years > 0 && remainingMonths > 0) {
-      this.calculatedExperience = `${years} ${yearsText}, ${remainingMonths} ${monthsText}`;
-    } else if (years > 0) {
-      this.calculatedExperience = `${years} ${yearsText}`;
-    } else {
-      this.calculatedExperience = `${remainingMonths} ${monthsText}`;
-    }
+    const first = new Date(Math.min(...starts.map(d => d.getTime())));
+    const now = new Date();
+    const months = (now.getFullYear() - first.getFullYear()) * 12 + (now.getMonth() - first.getMonth());
+    const years = Math.floor(months / 12);
+    this.calculatedExperience = `${years}+ ${this.translateService.translate('header.years')}`;
   }
 
   /**

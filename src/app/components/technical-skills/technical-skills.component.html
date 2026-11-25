@@ -5,9 +5,7 @@
     <div *ngFor="let key of getSkillKeys()" class="skill-category cv-item">
       <h3>{{ 'technicalSkills.' + key | translate }}</h3>
       <div class="skill-tags">
-        <span *ngFor="let skill of getSkillsBy(key)" class="skill-tag">
-          {{ skill }}
-        </span>
+        <span *ngFor="let skill of getSkillsBy(key)" class="skill-tag">{{ skill }}</span>
       </div>
     </div>
   </div>
