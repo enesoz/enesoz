@@ -65,7 +65,7 @@
       "Performance Tuning"
     ],
     "messagingStreaming": [
-      "Apache Kafka (Confluent, Avro, Kafka Streams)",
+      "Apache Kafka (Confluent, Avro)",
       "RabbitMQ",
       "AWS SQS / SNS"
     ],
@@ -158,7 +158,7 @@
         "Hardened the Scala, config-driven legacy-to-modern data-migration pipeline: made runs idempotent, added file-level verification and audit trails, and fixed special-character and null-safety edge cases.",
         "Implemented tenant-aware features: record-level capture, row-level-security (RLS) authorization filtering, read-model synchronization, and service-to-service permission checks.",
         "Diagnosed and fixed a PostgreSQL connection-pool exhaustion issue, and built per-tenant queue fairness so one tenant's workload no longer starves others.",
-        "Backed delivered features with OpenTelemetry / Grafana observability, TestContainers / E2E tests, and security hardening (Snyk, gitleaks).",
+        "Backed delivered features with observability — Datadog, then OpenTelemetry / Grafana after the team's migration — TestContainers / E2E tests, and security hardening (Snyk, gitleaks).",
         "Applied agentic development across the lifecycle, using AI coding agents (including the Claude API) for design, implementation, debugging, code review, and test generation."
       ]
     },
@@ -211,7 +211,7 @@
       "start": "March 2016",
       "end": "June 2019",
       "responsibilities": [
-        "Architected web applications (JSF, Spring, PrimeFaces, Elasticsearch, Kafka) and a clustered big-data streaming and reporting system.",
+        "Architected web applications (JSF, Spring, PrimeFaces, Kafka) and a clustered big-data streaming, search and analytics system built on Elasticsearch and MongoDB for high-speed data search and analysis.",
         "Led change management and served as Scrum Master for a team of nine; delivered 41 sprints and 1,000+ resolved issues."
       ]
     },

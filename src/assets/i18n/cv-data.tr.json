@@ -65,7 +65,7 @@
       "Performance Tuning"
     ],
     "messagingStreaming": [
-      "Apache Kafka (Confluent, Avro, Kafka Streams)",
+      "Apache Kafka (Confluent, Avro)",
       "RabbitMQ",
       "AWS SQS / SNS"
     ],
@@ -158,7 +158,7 @@
         "Scala ile yazılmış, config-driven legacy'den modern sisteme data migration pipeline'ını sağlamlaştırdım: çalıştırmaları idempotent hale getirdim, file-level verification ve audit trail ekledim, special character ve null-safety edge case'lerini çözdüm.",
         "Tenant-aware feature'lar geliştirdim: record-level capture, row-level security (RLS) ile authorization filtering, read-model synchronization ve service-to-service permission check'leri.",
         "PostgreSQL connection pool exhaustion sorununun kök nedenini bulup çözdüm; bir tenant'ın workload'unun diğerlerini aç bırakmaması için per-tenant queue fairness geliştirdim.",
-        "Geliştirdiğim feature'ları OpenTelemetry / Grafana observability, TestContainers / E2E testleri ve security hardening (Snyk, gitleaks) ile destekledim.",
+        "Geliştirdiğim feature'ları observability (önce Datadog, ekibin geçişinden sonra OpenTelemetry / Grafana), TestContainers / E2E testleri ve security hardening (Snyk, gitleaks) ile destekledim.",
         "Tüm lifecycle boyunca agentic development uyguladım; design, implementation, debugging, code review ve test generation için AI coding agent'larını (Claude API dahil) kullandım."
       ]
     },
@@ -211,7 +211,7 @@
       "start": "Mart 2016",
       "end": "Haziran 2019",
       "responsibilities": [
-        "Web uygulamalarının (JSF, Spring, PrimeFaces, Elasticsearch, Kafka) ve clustered bir big-data streaming ve reporting sisteminin architecture'ını tasarladım.",
+        "Web uygulamalarının (JSF, Spring, PrimeFaces, Kafka) ve big-data üzerinde yüksek hızlı veri arama ve analiz için Elasticsearch ve MongoDB üzerine kurulu clustered bir big-data streaming, search ve analytics sisteminin architecture'ını tasarladım.",
         "Change management'a liderlik ettim ve dokuz kişilik ekipte Scrum Master olarak görev yaptım; 41 sprint tamamladık ve 1.000'den fazla issue çözdük."
       ]
     },
