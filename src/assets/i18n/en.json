@@ -17,15 +17,19 @@
   },
   "technicalSkills": {
     "title": "TECHNICAL SKILLS",
-    "languages": "Programming Languages",
-    "frameworks": "Frameworks & Libraries",
-    "tools": "Tools & Technologies",
-    "microservice": "Microservices",
-    "bigData": "Big Data",
-    "cloud": "Cloud Technologies",
-    "databases": "Databases",
-    "monitoring": "Monitoring Tools",
-    "other": "Other Technologies"
+    "languages": "Languages",
+    "backendArchitecture": "Backend & Architecture",
+    "messagingStreaming": "Messaging & Streaming",
+    "cloudDevops": "Cloud & DevOps",
+    "observability": "Observability",
+    "frontend": "Frontend",
+    "testing": "Testing",
+    "aiAssisted": "AI-Assisted Development",
+    "tooling": "Tooling",
+    "leadership": "Leadership",
+    "datastores": "Datastores",
+    "dataProcessing": "Data Processing & Migration",
+    "security": "Security"
   },
   "experience": {
     "title": "WORK EXPERIENCE",
@@ -53,5 +57,11 @@
     "printCV": "Print CV",
     "downloadPDF": "Download PDF",
     "downloadAlert": "PDF download functionality will be integrated. For now, the Print dialog will open, save as PDF."
+  },
+  "footer": {
+    "lastUpdated": "Last updated",
+    "views": "Views",
+    "downloads": "Downloads",
+    "loading": "Loading CV data..."
   }
 }

@@ -4,6 +4,7 @@ import { Subject } from 'rxjs';
 import { takeUntil, retry, catchError, finalize } from 'rxjs/operators';
 import { CvService } from '../../../services/cv.service';
 import { TranslateService } from '../../../services/translate.service';
+import { TranslatePipe } from '../../../services/translate.pipe';
 import { StatsService } from '../../../services/stats.service';
 import { CvData } from '../../models/CvDataInterface';
 import { CommonModule } from '@angular/common';
@@ -32,7 +33,8 @@ import { PrintPageComponent } from '../print-page/print-page.component';
         AwardsComponent,
         ContactInfoComponent,
         AboutComponent,
-        PrintPageComponent
+        PrintPageComponent,
+        TranslatePipe
     ],
     templateUrl: './cv-page.component.html',
     styleUrl: './cv-page.component.css'
@@ -43,7 +45,12 @@ export class CvPageComponent implements OnInit, OnDestroy {
     error = false;
     errorMessage = '';
     currentYear = new Date().getFullYear();
-    lastUpdated = new Date('2025-07-01');
+    lastUpdated = new Date('2026-11-01');
+
+    get lastUpdatedLabel(): string {
+        const locale = this.translateService.getCurrentLang() === 'tr' ? 'tr-TR' : 'en-US';
+        return this.lastUpdated.toLocaleDateString(locale, { month: 'long', year: 'numeric' });
+    }
     viewCount = 0;
     downloadCount = 0;
 

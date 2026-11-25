@@ -10,20 +10,20 @@
 
     <section class="right-column" role="region" aria-label="Professional Details">
       <app-about [about]="cvData.personalInfo.about" [experiences]="cvData.experiences"></app-about>
-      <app-technical-skills [skills]="cvData.technicalSkills"></app-technical-skills>
       <app-experience [experiences]="cvData.experiences"></app-experience>
+      <app-technical-skills [skills]="cvData.technicalSkills"></app-technical-skills>
       <app-education [education]="cvData.education"></app-education>
-      <app-awards [awards]="cvData.awards"></app-awards>
+      <app-awards *ngIf="cvData.awards?.length" [awards]="cvData.awards"></app-awards>
     </section>
   </div>
 
   <footer class="cv-footer" role="contentinfo">
     <p>© {{ currentYear }} {{ cvData.personalInfo.name }} {{ cvData.personalInfo.surname }}</p>
-    <p>Last updated: {{ lastUpdated | date:'MMMM yyyy' }}</p>
+    <p>{{ 'footer.lastUpdated' | translate }}: {{ lastUpdatedLabel }}</p>
     <div class="footer-stats" *ngIf="viewCount > 0">
-      <small>Views: {{ viewCount }}</small>
+      <small>{{ 'footer.views' | translate }}: {{ viewCount }}</small>
       <span class="separator">|</span>
-      <small>Downloads: {{ downloadCount }}</small>
+      <small>{{ 'footer.downloads' | translate }}: {{ downloadCount }}</small>
     </div>
   </footer>
 </main>
@@ -32,7 +32,7 @@
   <svg class="spinner" viewBox="0 0 50 50" aria-hidden="true" focusable="false">
     <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
   </svg>
-  <span>Loading CV data...</span>
+  <span>{{ 'footer.loading' | translate }}</span>
 </div>
 
 <div *ngIf="error" class="error" role="alert" aria-live="assertive">

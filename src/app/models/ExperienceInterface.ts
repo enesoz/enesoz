@@ -7,4 +7,5 @@ export interface Experience {
   description?: string;
   responsibilities?: string[];
   logoUrl?: string;
+  isCurrent?: boolean;
 }
