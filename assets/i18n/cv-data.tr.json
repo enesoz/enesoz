@@ -4,9 +4,9 @@
     "surname": "Özdemir",
     "location": "İstanbul, Türkiye — uzaktan çalışmaya / taşınmaya açık",
     "titles": [
-      "Kıdemli Yazılım Mühendisi",
-      "Yazılım Mimarı",
-      "Dağıtık Sistemler ve Platform Mühendisliği"
+      "Senior Software Engineer",
+      "Software Architect",
+      "Distributed Systems & Platform Engineering"
     ],
     "contact": {
       "phone": "+90 533 690 65 47",
@@ -27,7 +27,7 @@
       }
     ],
     "about": {
-      "summary": "JVM üzerinde dağıtık, cloud-native, olay güdümlü platformlar ve yüksek işlem hacimli mikroservisler tasarlama konusunda 15+ yıllık deneyime sahip Kıdemli Yazılım Mühendisi ve Yazılım Mimarı. Özellikleri OpenAPI sözleşmesinden başlayarak Java / Spring Boot servisleri ve Kafka / SQS olay akışları üzerinden Kubernetes / GitOps dağıtımına, gözlemlenebilirliğe, güvenliğe ve canlıdaki React / TypeScript arayüzüne kadar uçtan uca taşıyan bir mühendis. Ölçekte kanıtlanmış deneyim (100K TPS hedefli mikroservis platformları tasarladı); platform modernizasyonu ve büyük ölçekli veri taşıma gibi yüksek doğruluk gerektiren işlerde deneyimli. 10 kişiye kadar ekiplere liderlik ve mentorluk yapmış teknik lider ve Scrum Master. Son ~2 yıldır mimari tasarım, geliştirme, hata ayıklama, kod inceleme, test üretimi ve dokümantasyon süreçlerinde, ağırlıklı olarak AI kodlama ajanları ve Claude API ile agentic geliştirme (AI destekli mühendislik) uygulamaktadır.",
+      "summary": "JVM üzerinde distributed, cloud-native, event-driven platformlar ve high-throughput microservice'ler tasarlama konusunda 15+ yıllık deneyime sahip Senior Software Engineer ve Software Architect. Feature'ları OpenAPI contract'tan başlayarak Java / Spring Boot servisleri ve Kafka / SQS event flow'ları üzerinden Kubernetes / GitOps deployment'a, observability'ye, security'ye ve production'daki React / TypeScript frontend'e kadar uçtan uca taşıyan full-lifecycle bir engineer. 100K TPS hedefli microservice platformları tasarlayarak ölçekte kendini kanıtladı; platform modernization ve large-scale data migration gibi yüksek doğruluk gerektiren işlerde deneyimli. 10 kişiye kadar ekiplere liderlik ve mentorluk yapmış Tech Lead ve Scrum Master. Son ~2 yıldır architecture design, implementation, debugging, code review, test generation ve documentation süreçlerinde, ağırlıklı olarak AI coding agent'ları ve Claude API ile agentic development (AI-assisted engineering) uyguluyor.",
       "languages": [
         {
           "name": "Türkçe",
@@ -52,14 +52,14 @@
     "backendArchitecture": [
       "Spring Boot 3.x",
       "Spring Cloud",
-      "Mikroservisler",
-      "Dağıtık Sistemler",
-      "Olay Güdümlü Mimari",
-      "Hexagonal Mimari",
+      "Microservices",
+      "Distributed Systems",
+      "Event-Driven Architecture",
+      "Hexagonal Architecture",
       "Domain-Driven Design (DDD)",
       "REST / OpenAPI",
-      "Sistem Tasarımı",
-      "Yüksek Erişilebilirlik / Yüksek İşlem Hacmi",
+      "System Design",
+      "High Availability / High Throughput",
       "JPA / Hibernate",
       "MapStruct"
     ],
@@ -68,7 +68,7 @@
       "RabbitMQ",
       "AWS SQS / SNS",
       "Akka",
-      "Transactional Outbox Deseni"
+      "Transactional Outbox Pattern"
     ],
     "dataMigration": [
       "PostgreSQL",
@@ -78,15 +78,15 @@
       "VoltDB",
       "Flyway",
       "JSONB",
-      "Çok Kiracılık (Multi-tenancy) / RLS",
-      "ETL Hatları",
-      "Büyük Ölçekli Veri Taşıma",
+      "Multi-tenancy / RLS",
+      "ETL Pipelines",
+      "Large-scale Data Migration",
       "Apache Spark (Spark Streaming)"
     ],
     "cachingPerformance": [
       "Redis",
       "Hazelcast",
-      "Performans İyileştirme"
+      "Performance Tuning"
     ],
     "cloudDevops": [
       "AWS (Glue, RDS, S3, EC2, Lambda, Cognito, IAM, Route 53, SNS)",
@@ -118,12 +118,12 @@
       "JUnit",
       "Mockito",
       "TestContainers",
-      "Entegrasyon ve Uçtan Uca Testler"
+      "Integration & End-to-End Testing"
     ],
     "aiAssisted": [
-      "AI kodlama ajanlarıyla (Claude API dahil) agentic geliştirme",
-      "Mimari, geliştirme, hata ayıklama, kod inceleme, test üretimi ve dokümantasyon",
-      "Prompt ve bağlam mühendisliği"
+      "Agentic development with AI coding agents (incl. Claude API)",
+      "Architecture, implementation, debugging, code review, test generation & documentation",
+      "Prompt & context engineering"
     ],
     "tooling": [
       "Maven",
@@ -133,16 +133,16 @@
       "Nexus"
     ],
     "leadership": [
-      "Teknik Liderlik",
+      "Technical Leadership",
       "Scrum Master",
-      "Mentorluk",
-      "Kod İnceleme",
-      "İşe Alım"
+      "Mentoring",
+      "Code Review",
+      "Hiring"
     ]
   },
   "experiences": [
     {
-      "title": "Kıdemli Yazılım Mühendisliği Danışmanı",
+      "title": "Senior Software Engineering Consultant",
       "company": "Zoolatech",
       "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://zoolatech.com&size=128",
       "location": "Uzaktan",
@@ -151,107 +151,107 @@
       "isCurrent": true,
       "description": "Müşteri: MasterControl",
       "responsibilities": [
-        "Özellikleri tüm katmanlarda uçtan uca sahiplendim — OpenAPI sözleşmeleri, Java 17 / Spring Boot 3.x servisleri, Kafka (Confluent + Avro) ve AWS SQS/SNS olay akışları, Kubernetes / ArgoCD GitOps dağıtımı ve React / TypeScript arayüzü.",
-        "PostgreSQL, olay güdümlü domain event'leri ve transactional outbox deseni ile hexagonal mimaride cloud-native mikroservisler geliştirdim.",
-        "Eski sistemden yeni sisteme veri taşıma hatlarını (Scala, konfigürasyon güdümlü ETL) idempotency, dosya doğrulama, özel karakter, null güvenliği ve denetim (audit) kenar durumlarını çözerek sağlamlaştırdım.",
-        "Kiracı (tenant) farkındalıklı özellikler geliştirdim: kayıt düzeyinde veri yakalama, satır düzeyi güvenlik (RLS) ile yetkilendirme filtreleme, okuma modeli senkronizasyonu ve servisler arası yetki kontrolleri.",
-        "OpenTelemetry / Grafana gözlemlenebilirliği, TestContainers / E2E testleri ve güvenlik sıkılaştırması (Snyk, gitleaks) ile platform düzeyinde güvenilirlik kazanımları sağladım: PostgreSQL bağlantı havuzu tükenmesi sorununu çözdüm ve çok kiracılı iş yükleri için kiracı bazında adil kuyruk paylaşımı tasarladım.",
-        "Yazılım yaşam döngüsü boyunca agentic geliştirme uyguladım; tasarım, geliştirme, hata ayıklama, kod inceleme ve test üretiminde AI kodlama ajanlarını (Claude API dahil) kullandım."
+        "Feature'ları tüm stack boyunca uçtan uca sahiplendim — OpenAPI contract'ları, Java 17 / Spring Boot 3.x servisleri, Kafka (Confluent + Avro) ve AWS SQS/SNS event flow'ları, Kubernetes / ArgoCD GitOps deployment ve React / TypeScript frontend.",
+        "PostgreSQL, event-driven domain event'ler ve transactional outbox pattern ile hexagonal architecture üzerinde cloud-native microservice'ler geliştirdim.",
+        "Legacy'den modern sisteme data migration pipeline'larını (Scala, config-driven ETL) idempotency, file verification, special character, null-safety ve audit edge case'lerini çözerek sağlamlaştırdım.",
+        "Tenant-aware feature'lar geliştirdim: record-level capture, row-level security (RLS) ile authorization filtering, read-model synchronization ve service-to-service permission check'leri.",
+        "Platform seviyesinde reliability iyileştirmeleri sağladım: PostgreSQL connection pool exhaustion sorununu çözdüm ve multi-tenant workload'lar için per-tenant queue fairness tasarladım; OpenTelemetry / Grafana observability, TestContainers / E2E testleri ve security hardening (Snyk, gitleaks) ile destekledim.",
+        "Tüm lifecycle boyunca agentic development uyguladım; design, implementation, debugging, code review ve test generation için AI coding agent'larını (Claude API dahil) kullandım."
       ]
     },
     {
-      "title": "Yazılım Geliştirme Takım Lideri",
+      "title": "Software Development Team Lead",
       "company": "Semtrio Sustainability",
       "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://semtrio.com&size=128",
       "location": "İstanbul, Türkiye",
       "start": "Mart 2022",
       "end": "Temmuz 2023",
       "responsibilities": [
-        "Java / Spring Boot, Vue.js, RabbitMQ, Redis, PostgreSQL ve AWS (S3, Lambda, Cognito) ile yüksek erişilebilir web servisleri geliştiren 10 kişilik çapraz fonksiyonel bir ekibe (geliştiriciler, analistler, QA/test uzmanları) liderlik ettim.",
-        "Monolitik bir uygulamayı bağımsız olarak dağıtılabilen beş servise ayırarak dağıtılabilirliği ve ekip özerkliğini artırdım.",
-        "Yedi uygulama için CI/CD kurdum (Docker, DigitalOcean, AWS, GitLab CI) ve sürüm çıkarma sürtünmesini azalttım.",
-        "Kod inceleme, eşli programlama ve bilgi paylaşım oturumlarıyla mühendislik kalitesini yükselttim; junior mühendisleri işe aldım, koçluk ve mentorluk yaptım."
+        "Java / Spring Boot, Vue.js, RabbitMQ, Redis, PostgreSQL ve AWS (S3, Lambda, Cognito) ile high-availability web servisleri geliştiren 10 kişilik cross-functional bir ekibe (developer, analist, QA/tester) liderlik ettim.",
+        "Monolith bir uygulamayı bağımsız deploy edilebilen beş servise ayırarak deployability'yi ve ekip otonomisini artırdım.",
+        "Yedi uygulama için CI/CD kurdum (Docker, DigitalOcean, AWS, GitLab CI) ve release sürecini hızlandırdım.",
+        "Code review, pair programming ve knowledge-sharing oturumlarıyla engineering kalitesini yükselttim; junior engineer'ları işe aldım, coaching ve mentorluk yaptım."
       ]
     },
     {
-      "title": "Yazılım Mimarı",
+      "title": "Software Architect",
       "company": "I2I Systems",
       "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://i2i-systems.com&size=128",
       "location": "İstanbul, Türkiye",
       "start": "Ocak 2021",
       "end": "Şubat 2022",
       "responsibilities": [
-        "Tasarımında ve geliştirilmesinde yer aldığım I2I'ın kümelenmiş, olay güdümlü mikroservis platformunun teknik yönünü ve mimari standartlarını sahiplenmek üzere Kıdemli Geliştirici pozisyonundan Yazılım Mimarı pozisyonuna terfi ettim.",
-        "Kafka tabanlı mikroservis yapısının uçtan uca mimarisini sahiplendim; yüksek erişilebilirlik ve yüksek işlem hacimli iş yüklerini sürdürmek için servis ayrıştırma, kümeleme, eşzamanlılık ve hata toleransı desenlerini tanımladım.",
-        "Mühendislik ekibi genelinde tasarım ve mimari incelemelerine liderlik ettim; yeni teknolojilerin benimsenmesindeki riski azaltmak ve yön vermek için kavram kanıtı (PoC) değerlendirmeleri yürüttüm.",
-        "Kıdemli ve orta seviye mühendislere dağıtık sistemler ve mikroservis tasarımı konusunda mentorluk yaparak ekibin mimari olgunluğunu artırdım."
+        "Tasarımında ve geliştirilmesinde yer aldığım I2I'ın clustered, event-driven microservice platformunun teknik yönünü ve architectural standard'larını sahiplenmek üzere Senior Developer'lıktan Architect'liğe terfi ettim.",
+        "Kafka tabanlı microservice yapısının uçtan uca architecture'ını sahiplendim; high-availability ve high-throughput workload'ları sürdürmek için service decomposition, clustering, concurrency ve fault tolerance pattern'lerini tanımladım.",
+        "Ekip genelinde design ve architecture review'lara liderlik ettim; yeni teknolojilerin adoption riskini azaltmak için PoC değerlendirmeleri yürüttüm.",
+        "Senior ve mid-level engineer'lara distributed systems ve microservice design konusunda mentorluk yaparak ekibin architectural olgunluğunu artırdım."
       ]
     },
     {
-      "title": "Kıdemli Yazılım Analiz Geliştiricisi",
+      "title": "Senior Software Analysis Developer",
       "company": "I2I Systems",
       "location": "İstanbul, Türkiye",
       "start": "Haziran 2019",
       "end": "Ocak 2021",
       "responsibilities": [
-        "28 mikroservisten oluşan üç adet kümelenmiş, yüksek erişilebilir, çok iş parçacıklı uygulamanın mimarisini tasarladım ve geliştirdim (Java 11, Kafka, Akka, VoltDB, Oracle, Hazelcast, Elasticsearch).",
-        "Düşük gecikmeli, müdahalesiz işleme ile 100K TPS'e ulaşan Kafka tabanlı bir mikroservis mimarisi tasarladım.",
-        "CI/CD'yi hayata geçirerek güvenli (fail-safe) dağıtımları mümkün kıldım ve ekibin teslimat kültürünü dönüştürdüm.",
-        "KPI / gözlemlenebilirlik panoları (Grafana, Kibana, Elasticsearch) ve Angular + Spring Boot istemci-sunucu uygulaması geliştirdim; Node.js + Vue.js ile bir dashboard uygulaması geliştirdim."
+        "28 microservice'ten oluşan üç adet clustered, highly available, multi-threaded uygulamayı tasarlayıp geliştirdim (Java 11, Kafka, Akka, VoltDB, Oracle, Hazelcast, Elasticsearch).",
+        "Low-latency, non-intrusive processing ile 100K TPS'e ulaşan Kafka tabanlı bir microservice architecture tasarladım.",
+        "CI/CD'yi hayata geçirerek fail-safe deployment'ları mümkün kıldım ve ekibin delivery kültürünü dönüştürdüm.",
+        "KPI / observability dashboard'ları (Grafana, Kibana, Elasticsearch) ve Angular + Spring Boot client-server uygulaması geliştirdim; Node.js + Vue.js ile bir dashboard geliştirdim."
       ]
     },
     {
-      "title": "Yazılım Mühendisi",
+      "title": "Software Engineer",
       "company": "T.C. Başbakanlık",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png",
       "location": "Ankara, Türkiye",
       "start": "Mart 2016",
       "end": "Haziran 2019",
       "responsibilities": [
-        "Web uygulamalarının (JSF, Spring, PrimeFaces, Elasticsearch, Kafka) ve kümelenmiş bir büyük veri akış ve raporlama sisteminin mimarisini tasarladım.",
-        "Değişim yönetimine liderlik ettim ve dokuz kişilik ekipte Scrum Master olarak görev yaptım; 41 sprint tamamladık ve 1.000'den fazla kaydı (issue) çözdük."
+        "Web uygulamalarının (JSF, Spring, PrimeFaces, Elasticsearch, Kafka) ve clustered bir big-data streaming ve reporting sisteminin architecture'ını tasarladım.",
+        "Change management'a liderlik ettim ve dokuz kişilik ekipte Scrum Master olarak görev yaptım; 41 sprint tamamladık ve 1.000'den fazla issue çözdük."
       ]
     },
     {
-      "title": "Yazılım Mühendisi",
+      "title": "Software Engineer",
       "company": "Netaş",
       "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://netas.com.tr&size=128",
       "location": "İstanbul, Türkiye",
       "start": "Mart 2013",
       "end": "Mart 2016",
       "responsibilities": [
-        "Spring, Spring Security, JSF, PrimeFaces ve REST/SOAP web servisleri kullanarak AYDES (ulusal Afet Yönetim ve Karar Destek Sistemi) modüllerini geliştirdim.",
-        "GEO veri modüllerini sahiplendim ve üçüncü parti harita entegrasyonunu (Başarsoft) gerçekleştirdim.",
-        "Turkcell BiP mesajlaşma projesinde backend geliştirici olarak hızlı ve güvenli bir grup sohbet özelliği geliştirdim."
+        "Spring, Spring Security, JSF, PrimeFaces ve REST/SOAP web service'leri kullanarak AYDES (ulusal Afet Yönetim ve Karar Destek Sistemi) modüllerini geliştirdim.",
+        "GEO data modüllerini sahiplendim ve third-party harita entegrasyonunu (Başarsoft) gerçekleştirdim.",
+        "Turkcell BiP mesajlaşma projesinde backend developer olarak hızlı ve güvenli bir group chat feature'ı geliştirdim."
       ]
     },
     {
-      "title": "Yazılım Mühendisi",
+      "title": "Software Engineer",
       "company": "Huawei",
       "logoUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://huawei.com&size=128",
       "location": "İstanbul, Türkiye",
       "start": "Ağustos 2011",
       "end": "Temmuz 2012",
       "responsibilities": [
-        "NGIN, Tabs ve PTF projelerinde CRM ve telekom modülleri (JSF, EclipseLink, JPA) geliştirdim; Kahire, Mısır'da çok uluslu bir ekiple müşteri lokasyonunda teslimat yaptım."
+        "NGIN, Tabs ve PTF projelerinde CRM ve telecom modülleri (JSF, EclipseLink, JPA) geliştirdim; Kahire, Mısır'da multinational bir ekiple on-site delivery yaptım."
       ]
     },
     {
-      "title": "Junior Yazılım Mühendisi",
+      "title": "Junior Software Engineer",
       "company": "Efe Eroğlu Yazılım",
       "logoUrl": "https://ui-avatars.com/api/?name=Efe+Eroglu&background=random&color=fff",
       "location": "Eskişehir, Türkiye",
       "start": "Haziran 2010",
       "end": "Şubat 2011",
       "responsibilities": [
-        "JBoss Seam, RichFaces, PrimeFaces, JSF, EJB 3.0 ve Hibernate kullanarak müşteri gereksinimlerine göre uygulama özelliklerini geliştirdim ve yeniden yapılandırdım."
+        "JBoss Seam, RichFaces, PrimeFaces, JSF, EJB 3.0 ve Hibernate kullanarak müşteri gereksinimlerine göre feature'lar geliştirdim ve yeniden yapılandırdım."
       ]
     }
   ],
   "education": [
     {
       "institution": "İstanbul Üniversitesi",
-      "degree": "Lisans, Bilgisayar Mühendisliği",
+      "degree": "BSc, Computer Engineering",
       "location": "İstanbul, Türkiye",
       "years": "2005 - 2010"
     }
